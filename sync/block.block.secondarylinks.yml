@@ -1,0 +1,20 @@
+uuid: 7ba2209d-7431-42b0-b71a-ca52272e94d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - tb_megamenu
+  theme:
+    - buriton5
+id: secondarylinks
+theme: buriton5
+region: mega_menu
+weight: 0
+provider: null
+plugin: 'tb_megamenu_menu_block:secondary-links'
+settings:
+  id: 'tb_megamenu_menu_block:secondary-links'
+  label: 'Secondary links'
+  label_display: '0'
+  provider: tb_megamenu
+visibility: {  }

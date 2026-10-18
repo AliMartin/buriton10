@@ -1,0 +1,36 @@
+uuid: fc92540c-a1c1-4836-bc44-61e5cc828489
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.parish_council.body
+    - field.field.node.parish_council.field_attachments
+    - field.field.node.parish_council.field_section
+    - field.field.node.parish_council.field_year
+    - node.type.parish_council
+  module:
+    - text
+    - user
+id: node.parish_council.teaser
+targetEntityType: node
+bundle: parish_council
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_attachments: true
+  field_section: true
+  field_year: true

@@ -1,0 +1,21 @@
+uuid: cc166954-c5c1-45bb-9df3-08b377ea3d44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.quickevent
+  module:
+    - datetime
+id: node.quickevent.field_date
+field_name: field_date
+entity_type: node
+bundle: quickevent
+label: Date
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

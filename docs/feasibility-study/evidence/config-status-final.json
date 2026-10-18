@@ -1,0 +1,22 @@
+{
+    "core.extension": {
+        "name": "core.extension",
+        "state": "Different"
+    },
+    "upgrade_status.settings": {
+        "name": "upgrade_status.settings",
+        "state": "Only in DB"
+    },
+    "views.view.parish_council_financial_reports": {
+        "name": "views.view.parish_council_financial_reports",
+        "state": "Only in DB"
+    },
+    "webform.webform.contact": {
+        "name": "webform.webform.contact",
+        "state": "Different"
+    },
+    "webform.webform.contact_buriton_village_hall": {
+        "name": "webform.webform.contact_buriton_village_hall",
+        "state": "Different"
+    }
+}

@@ -1,0 +1,22 @@
+uuid: 8c694152-59ae-4155-bbc2-6d594f0262f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - buriton5
+_core:
+  default_config_hash: IM5JcPg2xiYOdNeh_7mlt_2odF9gOEQW9XeQjVG2M2g
+id: buriton5_messages
+theme: buriton5
+region: content
+weight: -10
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

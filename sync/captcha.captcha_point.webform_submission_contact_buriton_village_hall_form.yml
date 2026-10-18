@@ -1,0 +1,7 @@
+uuid: cebc4265-8291-40e0-b350-6703291e17f1
+langcode: en
+status: true
+dependencies: {  }
+formId: webform_submission_contact_buriton_village_hall_form
+captchaType: recaptcha/reCAPTCHA
+label: webform-submission-contact-buriton-village-hall-form

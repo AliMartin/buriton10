@@ -1,0 +1,25 @@
+uuid: 1162488e-5299-4cda-aadd-6ac15a6e5a3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.tags
+    - node.type.files
+    - taxonomy.vocabulary.tags
+id: node.files.tags
+field_name: tags
+entity_type: node
+bundle: files
+label: Tags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      - tags
+    auto_create: true
+field_type: entity_reference

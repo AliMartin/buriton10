@@ -1,0 +1,1308 @@
+CUSTOM PROJECTS
+--------------------------------------------------------------------------------
+Buriton Bootstrap 5
+Scanned on Sat, 17/10/2026 - 4:47pm.
+
+1 warning found.
+
+themes/custom/buriton5/buriton5.info.yml:
+┌──────────┬──────┬────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                          MESSAGE                           │
+├──────────┼──────┼────────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ Value of core_version_requirement: ^8.9 || ^9 is not       │
+│ manually │      │ compatible with the next major version of Drupal core. See │
+│          │      │ https://drupal.org/node/3070687.                           │
+│          │      │                                                            │
+└──────────┴──────┴────────────────────────────────────────────────────────────┘
+
+
+
+
+CONTRIBUTED PROJECTS
+--------------------------------------------------------------------------------
+Adminimal Admin Toolbar 8.x-1.11
+Scanned on Sat, 17/10/2026 - 4:47pm.
+
+4 warnings found.
+
+modules/contrib/adminimal_admin_toolbar:
+┌──────────┬──────┬───────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                          MESSAGE                          │
+├──────────┼──────┼───────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ The 'adminimal_admin_toolbar' extension is not installed. │
+│ manually │      │ Cannot check deprecated library use.                      │
+│          │      │                                                           │
+└──────────┴──────┴───────────────────────────────────────────────────────────┘
+
+modules/contrib/adminimal_admin_toolbar/adminimal_admin_toolbar.module:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 24   │ The 'adminimal_admin_toolbar/adminimal-admin-toolbar'        │
+│ manually │      │ library is not defined because the defining extension is not │
+│          │      │ installed. Cannot decide if it is deprecated or not.         │
+│          │      │                                                              │
+│ Check    │ 28   │ The 'adminimal_admin_toolbar/google-fonts' library is not    │
+│ manually │      │ defined because the defining extension is not installed.     │
+│          │      │ Cannot decide if it is deprecated or not.                    │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/adminimal_admin_toolbar/adminimal_admin_toolbar.info.yml:
+┌──────────┬──────┬────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                          MESSAGE                           │
+├──────────┼──────┼────────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ Value of core_version_requirement: ^8 || ^9 is not         │
+│ manually │      │ compatible with the next major version of Drupal core. See │
+│          │      │ https://drupal.org/node/3070687.                           │
+│          │      │                                                            │
+└──────────┴──────┴────────────────────────────────────────────────────────────┘
+
+
+
+--------------------------------------------------------------------------------
+Popup Message 2.0.3
+Scanned on Sat, 17/10/2026 - 4:47pm.
+
+4 warnings found.
+
+modules/contrib/popup_message:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ The 'popup_message' extension is not installed. Cannot check │
+│ manually │      │ deprecated library use.                                      │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/popup_message/src/EventSubscriber/PopupMessageSubscriber.php:
+┌──────────┬──────┬──────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                         MESSAGE                          │
+├──────────┼──────┼──────────────────────────────────────────────────────────┤
+│ Check    │ 137  │ The 'popup_message/popup_message_style' library is not   │
+│ manually │      │ defined because the defining extension is not installed. │
+│          │      │ Cannot decide if it is deprecated or not.                │
+│          │      │                                                          │
+└──────────┴──────┴──────────────────────────────────────────────────────────┘
+
+modules/contrib/popup_message/popup_message.info.yml:
+┌──────────┬──────┬────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                          MESSAGE                           │
+├──────────┼──────┼────────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ Value of core_version_requirement: ^8 || ^9 is not         │
+│ manually │      │ compatible with the next major version of Drupal core. See │
+│          │      │ https://drupal.org/node/3070687.                           │
+│          │      │                                                            │
+└──────────┴──────┴────────────────────────────────────────────────────────────┘
+
+modules/contrib/popup_message/composer.json:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ The drupal/core requirement is not compatible with the next  │
+│ manually │      │ major version of Drupal. Either remove it or update it to be │
+│          │      │ compatible. See                                              │
+│          │      │ https://drupal.org/node/2514612#s-drupal-9-compatibility.    │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+
+
+--------------------------------------------------------------------------------
+Image field to media 1.0.2
+Scanned on Sat, 17/10/2026 - 4:47pm.
+
+1 error found. 3 warnings found. Avoid some manual work by using drupal-rector
+for fixing issues automatically or Upgrade Rector to generate patches.
+
+modules/contrib/image_field_to_media/image_field_to_media.batch.inc:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 33   │ Relying on entity queries to check access by default is      │
+│ manually │      │ deprecated in drupal:9.2.0 and an error will be thrown from  │
+│          │      │ drupal:10.0.0. Call                                          │
+│          │      │ \Drupal\Core\Entity\Query\QueryInterface::accessCheck() with │
+│          │      │ TRUE or FALSE to specify whether access should be checked.   │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/image_field_to_media/src/Form/ImageFieldToMediaForm.php:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Fix with │ 230  │ Call to deprecated function drupal_get_path(). Deprecated in │
+│ rector   │      │ drupal:9.3.0 and is removed from drupal:10.0.0. Use          │
+│          │      │ Drupal\Core\Extension\ExtensionPathResolver::getPath()       │
+│          │      │ instead.                                                     │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/image_field_to_media/image_field_to_media.info.yml:
+┌──────────┬──────┬────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                          MESSAGE                           │
+├──────────┼──────┼────────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ Value of core_version_requirement: ^8 || ^9 is not         │
+│ manually │      │ compatible with the next major version of Drupal core. See │
+│          │      │ https://drupal.org/node/3070687.                           │
+│          │      │                                                            │
+└──────────┴──────┴────────────────────────────────────────────────────────────┘
+
+modules/contrib/image_field_to_media/composer.json:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ The drupal/core requirement is not compatible with the next  │
+│ manually │      │ major version of Drupal. Either remove it or update it to be │
+│          │      │ compatible. See                                              │
+│          │      │ https://drupal.org/node/2514612#s-drupal-9-compatibility.    │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+
+
+--------------------------------------------------------------------------------
+Bootstrap5 2.0.10
+Scanned on Sat, 17/10/2026 - 4:47pm.
+
+2 warnings found.
+
+themes/contrib/bootstrap5/bootstrap5.info.yml:
+┌──────────┬──────┬───────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                          MESSAGE                          │
+├──────────┼──────┼───────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ Value of core_version_requirement: ^9.4 is not compatible │
+│ manually │      │ with the next major version of Drupal core. See           │
+│          │      │ https://drupal.org/node/3070687.                          │
+│          │      │                                                           │
+│ Check    │ 0    │ This extension is deprecated. Don't use it. See           │
+│ manually │      │ https://www.drupal.org/project/bootstrap5/issues/3387456. │
+│          │      │                                                           │
+└──────────┴──────┴───────────────────────────────────────────────────────────┘
+
+
+
+--------------------------------------------------------------------------------
+Zircon 8.x-1.0-rc1
+Scanned on Sat, 17/10/2026 - 4:47pm.
+
+2 warnings found.
+
+themes/custom/zircon/zircon.libraries.yml:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ The 'global-styling' library is depending on a deprecated    │
+│ manually │      │ library. The core/jquery.once asset library is deprecated in │
+│          │      │ Drupal 9.3.0 and will be removed in Drupal 10.0.0. Use the   │
+│          │      │ core/once library instead. See                               │
+│          │      │ https://www.drupal.org/node/3158256                          │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+themes/custom/zircon/zircon.info.yml:
+┌──────────┬──────┬────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                          MESSAGE                           │
+├──────────┼──────┼────────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ Value of core_version_requirement: ^8 || ^9 is not         │
+│ manually │      │ compatible with the next major version of Drupal core. See │
+│          │      │ https://drupal.org/node/3070687.                           │
+│          │      │                                                            │
+└──────────┴──────┴────────────────────────────────────────────────────────────┘
+
+
+
+--------------------------------------------------------------------------------
+CKEditor 4 (contrib) 1.0.2
+Scanned on Sat, 17/10/2026 - 4:47pm.
+
+14 warnings found.
+
+modules/contrib/ckeditor:
+┌──────────┬──────┬─────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                         MESSAGE                         │
+├──────────┼──────┼─────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ The 'ckeditor' extension is not installed. Cannot check │
+│ manually │      │ deprecated library use.                                 │
+│          │      │                                                         │
+└──────────┴──────┴─────────────────────────────────────────────────────────┘
+
+modules/contrib/ckeditor/src/Plugin/Editor/CKEditor.php:
+┌──────────┬──────┬─────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                           │
+├──────────┼──────┼─────────────────────────────────────────────────────────────┤
+│ Check    │ 197  │ The 'ckeditor/drupal.ckeditor.admin' library is not defined │
+│ manually │      │ because the defining extension is not installed. Cannot     │
+│          │      │ decide if it is deprecated or not.                          │
+│          │      │                                                             │
+│ Check    │ 431  │ The 'ckeditor/drupal.ckeditor' library is not defined       │
+│ manually │      │ because the defining extension is not installed. Cannot     │
+│          │      │ decide if it is deprecated or not.                          │
+│          │      │                                                             │
+└──────────┴──────┴─────────────────────────────────────────────────────────────┘
+
+modules/contrib/ckeditor/src/Plugin/CKEditorPlugin/Language.php:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 42   │ The 'ckeditor/drupal.ckeditor.plugins.language' library is   │
+│ manually │      │ not defined because the defining extension is not installed. │
+│          │      │ Cannot decide if it is deprecated or not.                    │
+│          │      │                                                              │
+│ Check    │ 121  │ The 'ckeditor/drupal.ckeditor.language.admin' library is not │
+│ manually │      │ defined because the defining extension is not installed.     │
+│          │      │ Cannot decide if it is deprecated or not.                    │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/ckeditor/src/Plugin/CKEditorPlugin/StylesCombo.php:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 85   │ The 'ckeditor/drupal.ckeditor.stylescombo.admin' library is  │
+│ manually │      │ not defined because the defining extension is not installed. │
+│          │      │ Cannot decide if it is deprecated or not.                    │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/ckeditor/src/Plugin/CKEditorPlugin/DrupalImageCaption.php:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 63   │ The 'ckeditor/drupal.ckeditor.plugins.drupalimagecaption'    │
+│ manually │      │ library is not defined because the defining extension is not │
+│          │      │ installed. Cannot decide if it is deprecated or not.         │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/ckeditor/src/Plugin/CKEditorPlugin/DrupalMedia.php:
+┌──────────┬──────┬────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                          MESSAGE                           │
+├──────────┼──────┼────────────────────────────────────────────────────────────┤
+│ Check    │ 90   │ The 'ckeditor/drupal.ckeditor.plugins.drupalmedia' library │
+│ manually │      │ is not defined because the defining extension is not       │
+│          │      │ installed. Cannot decide if it is deprecated or not.       │
+│          │      │                                                            │
+└──────────┴──────┴────────────────────────────────────────────────────────────┘
+
+modules/contrib/ckeditor/src/Plugin/CKEditorPlugin/DrupalImage.php:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 68   │ The 'ckeditor/drupal.ckeditor.drupalimage.admin' library is  │
+│ manually │      │ not defined because the defining extension is not installed. │
+│          │      │ Cannot decide if it is deprecated or not.                    │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/ckeditor/ckeditor.module:
+┌──────────┬──────┬─────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                           │
+├──────────┼──────┼─────────────────────────────────────────────────────────────┤
+│ Check    │ 194  │ The 'ckeditor/ckeditor' library is not defined because the  │
+│ manually │      │ defining extension is not installed. Cannot decide if it is │
+│          │      │ deprecated or not.                                          │
+│          │      │                                                             │
+└──────────┴──────┴─────────────────────────────────────────────────────────────┘
+
+modules/contrib/ckeditor/tests/src/Functional/CKEditorLoadingTest.php:
+┌──────────┬──────┬─────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                         MESSAGE                         │
+├──────────┼──────┼─────────────────────────────────────────────────────────┤
+│ Check    │ 138  │ The 'ckeditor/drupal.ckeditor' library is not defined   │
+│ manually │      │ because the defining extension is not installed. Cannot │
+│          │      │ decide if it is deprecated or not.                      │
+│          │      │                                                         │
+│ Check    │ 167  │ The 'ckeditor/drupal.ckeditor' library is not defined   │
+│ manually │      │ because the defining extension is not installed. Cannot │
+│          │      │ decide if it is deprecated or not.                      │
+│          │      │                                                         │
+│ Check    │ 229  │ The 'ckeditor/drupal.ckeditor' library is not defined   │
+│ manually │      │ because the defining extension is not installed. Cannot │
+│          │      │ decide if it is deprecated or not.                      │
+│          │      │                                                         │
+└──────────┴──────┴─────────────────────────────────────────────────────────┘
+
+modules/contrib/ckeditor/ckeditor.info.yml:
+┌──────────┬──────┬─────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                     MESSAGE                     │
+├──────────┼──────┼─────────────────────────────────────────────────┤
+│ Check    │ 0    │ This extension is deprecated. Don't use it. See │
+│ manually │      │ https://www.drupal.org/node/3223395#s-ckeditor. │
+│          │      │                                                 │
+└──────────┴──────┴─────────────────────────────────────────────────┘
+
+
+
+--------------------------------------------------------------------------------
+Admin Toolbar 3.6.2
+Scanned on Sat, 17/10/2026 - 4:47pm.
+
+1 warning found.
+
+modules/contrib/admin_toolbar/admin_toolbar_links_access_filter/admin_toolbar_li
+nks_access_filter.info.yml:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ This extension is deprecated. Don't use it. See              │
+│ manually │      │ https://www.drupal.org/project/admin_toolbar/issues/3463291. │
+│          │      │                                                              │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+
+
+--------------------------------------------------------------------------------
+Backup and Migrate 5.1.0
+Scanned on Sat, 17/10/2026 - 4:47pm.
+
+No known issues found.
+
+--------------------------------------------------------------------------------
+CAPTCHA 8.x-1.16
+Scanned on Sat, 17/10/2026 - 4:47pm.
+
+No known issues found.
+
+--------------------------------------------------------------------------------
+CKEditor iFrame 8.x-2.2
+Scanned on Sat, 17/10/2026 - 4:47pm.
+
+1 warning found.
+
+modules/contrib/ckeditor_iframe:
+┌──────────┬──────┬──────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                         MESSAGE                          │
+├──────────┼──────┼──────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ The 'ckeditor_iframe' extension is not installed. Cannot │
+│ manually │      │ check deprecated library use.                            │
+│          │      │                                                          │
+└──────────┴──────┴──────────────────────────────────────────────────────────┘
+
+
+
+--------------------------------------------------------------------------------
+Chaos Tools 4.1.0
+Scanned on Sat, 17/10/2026 - 4:47pm.
+
+1 warning found.
+
+modules/contrib/ctools/ctools.module:
+┌──────────┬──────┬────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                        MESSAGE                         │
+├──────────┼──────┼────────────────────────────────────────────────────────┤
+│ Check    │ 105  │ Fetching class constant class of deprecated class      │
+│ manually │      │ Drupal\ctools\Plugin\Condition\NodeType. Deprecated in │
+│          │      │ ctools:8.x-1.10. Use                                   │
+│          │      │ Drupal\ctools\Plugin\Condition\EntityBundle instead.   │
+│          │      │                                                        │
+└──────────┴──────┴────────────────────────────────────────────────────────┘
+
+
+
+--------------------------------------------------------------------------------
+Entity Clone 2.1.0-beta1
+Scanned on Sat, 17/10/2026 - 4:47pm.
+
+No known issues found.
+
+--------------------------------------------------------------------------------
+FakeObjects 8.x-1.3
+Scanned on Sat, 17/10/2026 - 4:47pm.
+
+1 warning found.
+
+modules/contrib/fakeobjects:
+┌──────────┬──────┬────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                          MESSAGE                           │
+├──────────┼──────┼────────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ The 'fakeobjects' extension is not installed. Cannot check │
+│ manually │      │ deprecated library use.                                    │
+│          │      │                                                            │
+└──────────┴──────┴────────────────────────────────────────────────────────────┘
+
+
+
+--------------------------------------------------------------------------------
+FitVids 2.1.0
+Scanned on Sat, 17/10/2026 - 4:47pm.
+
+No known issues found.
+
+--------------------------------------------------------------------------------
+Font Awesome 8.x-2.26
+Scanned on Sat, 17/10/2026 - 4:47pm.
+
+1 warning found.
+
+modules/contrib/fontawesome/modules/fontawesome_iconpicker_widget/src/Plugin/Fie
+ld/FieldWidget/FontAwesomeIconpickerWidget.php:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 110  │ The 'fontawesome_iconpicker_widget/fontawesome-iconpicker'   │
+│ manually │      │ library is not defined because the defining extension is not │
+│          │      │ installed. Cannot decide if it is deprecated or not.         │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+
+
+--------------------------------------------------------------------------------
+Google Analytics 4.0.3
+Scanned on Sat, 17/10/2026 - 4:47pm.
+
+8 warnings found.
+
+modules/contrib/google_analytics/src/EventSubscriber/PagePath/ContentTranslation
+.php:
+┌──────────┬──────┬─────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                           │
+├──────────┼──────┼─────────────────────────────────────────────────────────────┤
+│ Check    │ 97   │ Call to deprecated method stopPropagation() of class        │
+│ manually │      │ Symfony\Component\EventDispatcher\Event: since Symfony 4.3, │
+│          │      │ use "Symfony\Contracts\EventDispatcher\Event" instead       │
+│          │      │                                                             │
+└──────────┴──────┴─────────────────────────────────────────────────────────────┘
+
+modules/contrib/google_analytics/src/EventSubscriber/PagePath/HttpStatus.php:
+┌──────────┬──────┬─────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                           │
+├──────────┼──────┼─────────────────────────────────────────────────────────────┤
+│ Check    │ 74   │ Call to deprecated method stopPropagation() of class        │
+│ manually │      │ Symfony\Component\EventDispatcher\Event: since Symfony 4.3, │
+│          │      │ use "Symfony\Contracts\EventDispatcher\Event" instead       │
+│          │      │                                                             │
+└──────────┴──────┴─────────────────────────────────────────────────────────────┘
+
+modules/contrib/google_analytics/src/EventSubscriber/PagePath/InvalidUserLogin.p
+hp:
+┌──────────┬──────┬─────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                           │
+├──────────┼──────┼─────────────────────────────────────────────────────────────┤
+│ Check    │ 68   │ Call to deprecated method stopPropagation() of class        │
+│ manually │      │ Symfony\Component\EventDispatcher\Event: since Symfony 4.3, │
+│          │      │ use "Symfony\Contracts\EventDispatcher\Event" instead       │
+│          │      │                                                             │
+└──────────┴──────┴─────────────────────────────────────────────────────────────┘
+
+modules/contrib/google_analytics/src/EventSubscriber/PagePath/Search.php:
+┌──────────┬──────┬─────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                           │
+├──────────┼──────┼─────────────────────────────────────────────────────────────┤
+│ Check    │ 89   │ Call to deprecated method stopPropagation() of class        │
+│ manually │      │ Symfony\Component\EventDispatcher\Event: since Symfony 4.3, │
+│          │      │ use "Symfony\Contracts\EventDispatcher\Event" instead       │
+│          │      │                                                             │
+└──────────┴──────┴─────────────────────────────────────────────────────────────┘
+
+modules/contrib/google_analytics:
+┌──────────┬──────┬───────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                          MESSAGE                          │
+├──────────┼──────┼───────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ The 'google_analytics' extension is not installed. Cannot │
+│ manually │      │ check deprecated library use.                             │
+│          │      │                                                           │
+└──────────┴──────┴───────────────────────────────────────────────────────────┘
+
+modules/contrib/google_analytics/src/Form/GoogleAnalyticsAdminSettingsForm.php:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 168  │ The 'google_analytics/google_analytics.admin' library is not │
+│ manually │      │ defined because the defining extension is not installed.     │
+│          │      │ Cannot decide if it is deprecated or not.                    │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/google_analytics/google_analytics.module:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 127  │ The 'google_analytics/google_analytics.debug' library is not │
+│ manually │      │ defined because the defining extension is not installed.     │
+│          │      │ Cannot decide if it is deprecated or not.                    │
+│          │      │                                                              │
+│ Check    │ 134  │ The 'google_analytics/google_analytics' library is not       │
+│ manually │      │ defined because the defining extension is not installed.     │
+│          │      │ Cannot decide if it is deprecated or not.                    │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+
+
+--------------------------------------------------------------------------------
+Honeypot 2.1.4
+Scanned on Sat, 17/10/2026 - 4:47pm.
+
+No known issues found.
+
+--------------------------------------------------------------------------------
+HTTPS and WWW Redirect 2.1.3
+Scanned on Sat, 17/10/2026 - 4:47pm.
+
+1 warning found.
+
+modules/contrib/httpswww:
+┌──────────┬──────┬─────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                         MESSAGE                         │
+├──────────┼──────┼─────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ The 'httpswww' extension is not installed. Cannot check │
+│ manually │      │ deprecated library use.                                 │
+│          │      │                                                         │
+└──────────┴──────┴─────────────────────────────────────────────────────────┘
+
+
+
+--------------------------------------------------------------------------------
+Pathauto 8.x-1.13
+Scanned on Sat, 17/10/2026 - 4:47pm.
+
+No known issues found.
+
+--------------------------------------------------------------------------------
+reCAPTCHA 8.x-3.2
+Scanned on Sat, 17/10/2026 - 4:48pm.
+
+No known issues found.
+
+--------------------------------------------------------------------------------
+Redirect 8.x-1.11
+Scanned on Sat, 17/10/2026 - 4:48pm.
+
+No known issues found.
+
+--------------------------------------------------------------------------------
+Rules 8.x-3.0-alpha9
+Scanned on Sat, 17/10/2026 - 4:48pm.
+
+1 warning found.
+
+modules/contrib/rules/rules.libraries.yml:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ The 'rules.debug' library is depending on a deprecated       │
+│ manually │      │ library. The "core/jquery.ui" asset library is deprecated in │
+│          │      │ drupal:9.2.0 and is removed from drupal:10.0.0. See          │
+│          │      │ https://www.drupal.org/node/3067969                          │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+
+
+--------------------------------------------------------------------------------
+Similar By Terms 8.x-1.9
+Scanned on Sat, 17/10/2026 - 4:48pm.
+
+No known issues found.
+
+--------------------------------------------------------------------------------
+Taxonomy Menu 8.x-3.7
+Scanned on Sat, 17/10/2026 - 4:48pm.
+
+1 warning found.
+
+modules/contrib/taxonomy_menu:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ The 'taxonomy_menu' extension is not installed. Cannot check │
+│ manually │      │ deprecated library use.                                      │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+
+
+--------------------------------------------------------------------------------
+The Better Mega Menu 8.x-1.9
+Scanned on Sat, 17/10/2026 - 4:48pm.
+
+No known issues found.
+
+--------------------------------------------------------------------------------
+Token 8.x-1.15
+Scanned on Sat, 17/10/2026 - 4:48pm.
+
+No known issues found.
+
+--------------------------------------------------------------------------------
+Typed Data 2.0.0
+Scanned on Sat, 17/10/2026 - 4:48pm.
+
+No known issues found.
+
+--------------------------------------------------------------------------------
+Views Slideshow 5.0.1
+Scanned on Sat, 17/10/2026 - 4:48pm.
+
+No known issues found.
+
+--------------------------------------------------------------------------------
+Webform 6.2.6
+Scanned on Sat, 17/10/2026 - 4:48pm.
+
+5 errors found. 43 warnings found.
+
+modules/contrib/webform/src/Plugin/WebformElement/Address.php:
+┌──────────┬──────┬───────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                      MESSAGE                      │
+├──────────┼──────┼───────────────────────────────────────────────────┤
+│ Check    │ 291  │ #post_render callback array{'\\Drupal\\address…', │
+│ manually │      │ 'postRender'} at key '0' is not callable.         │
+│          │      │                                                   │
+└──────────┴──────┴───────────────────────────────────────────────────┘
+
+modules/contrib/webform/src/Utility/WebformElementHelper.php:
+┌──────────┬──────┬────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                          MESSAGE                           │
+├──────────┼──────┼────────────────────────────────────────────────────────────┤
+│ Check    │ 32   │ #access_callback callback '#access_callback' at key '0' is │
+│ manually │      │ not callable.                                              │
+│          │      │                                                            │
+│ Check    │ 36   │ The "#lazy_builder" expects a callable array with          │
+│ manually │      │ arguments.                                                 │
+│          │      │                                                            │
+│ Check    │ 37   │ The "#post_render" render array value expects an array of  │
+│ manually │      │ callbacks.                                                 │
+│          │      │                                                            │
+│ Check    │ 38   │ The "#pre_render" render array value expects an array of   │
+│ manually │      │ callbacks.                                                 │
+│          │      │                                                            │
+│ Check    │ 45   │ The "#date_date_callbacks" render array value expects an   │
+│ manually │      │ array of callbacks.                                        │
+│          │      │                                                            │
+│ Check    │ 46   │ The "#date_time_callbacks" render array value expects an   │
+│ manually │      │ array of callbacks.                                        │
+│          │      │                                                            │
+└──────────┴──────┴────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/tests/modules/webform_test_editorial/src/Controller/Webf
+ormTestEditorialController.php:
+┌──────────┬──────┬────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                          MESSAGE                           │
+├──────────┼──────┼────────────────────────────────────────────────────────────┤
+│ Check    │ 371  │ File modules/contrib/webform/drush/webform.drush.inc could │
+│ manually │      │ not be loaded from                                         │
+│          │      │ Drupal\Core\Extension\ModuleHandlerInterface::loadInclude  │
+│          │      │                                                            │
+└──────────┴──────┴────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/tests/src/Functional/Composite/WebformCompositeFormatTes
+t.php:
+┌─────────┬──────┬─────────────────────────────────────────────────────────┐
+│ STATUS  │ LINE │                         MESSAGE                         │
+├─────────┼──────┼─────────────────────────────────────────────────────────┤
+│ Fix now │ 231  │ Call to deprecated method verbose() of class            │
+│         │      │ Drupal\Tests\webform\Functional\WebformBrowserTestBase. │
+│         │      │ Deprecated in drupal:9.2.0 and is removed from          │
+│         │      │ drupal:10.0.0. Use dump() instead.                      │
+│         │      │                                                         │
+└─────────┴──────┴─────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/tests/src/Functional/Element/WebformElementFormatTest.ph
+p:
+┌─────────┬──────┬─────────────────────────────────────────────────────────┐
+│ STATUS  │ LINE │                         MESSAGE                         │
+├─────────┼──────┼─────────────────────────────────────────────────────────┤
+│ Fix now │ 319  │ Call to deprecated method verbose() of class            │
+│         │      │ Drupal\Tests\webform\Functional\WebformBrowserTestBase. │
+│         │      │ Deprecated in drupal:9.2.0 and is removed from          │
+│         │      │ drupal:10.0.0. Use dump() instead.                      │
+│         │      │                                                         │
+└─────────┴──────┴─────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/tests/src/Functional/Element/WebformElementManagedFileTe
+stBase.php:
+┌─────────┬──────┬─────────────────────────────────────────────────────────┐
+│ STATUS  │ LINE │                         MESSAGE                         │
+├─────────┼──────┼─────────────────────────────────────────────────────────┤
+│ Fix now │ 45   │ Call to deprecated method verbose() of class            │
+│         │      │ Drupal\Tests\webform\Functional\WebformBrowserTestBase. │
+│         │      │ Deprecated in drupal:9.2.0 and is removed from          │
+│         │      │ drupal:10.0.0. Use dump() instead.                      │
+│         │      │                                                         │
+└─────────┴──────┴─────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/tests/src/Functional/Settings/WebformSettingsAdminTest.p
+hp:
+┌─────────┬──────┬─────────────────────────────────────────────────────────┐
+│ STATUS  │ LINE │                         MESSAGE                         │
+├─────────┼──────┼─────────────────────────────────────────────────────────┤
+│ Fix now │ 75   │ Call to deprecated method verbose() of class            │
+│         │      │ Drupal\Tests\webform\Functional\WebformBrowserTestBase. │
+│         │      │ Deprecated in drupal:9.2.0 and is removed from          │
+│         │      │ drupal:10.0.0. Use dump() instead.                      │
+│         │      │                                                         │
+│ Fix now │ 76   │ Call to deprecated method verbose() of class            │
+│         │      │ Drupal\Tests\webform\Functional\WebformBrowserTestBase. │
+│         │      │ Deprecated in drupal:9.2.0 and is removed from          │
+│         │      │ drupal:10.0.0. Use dump() instead.                      │
+│         │      │                                                         │
+└─────────┴──────┴─────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/webform.libraries.yml:
+┌──────────┬──────┬─────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                           │
+├──────────┼──────┼─────────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ The 'imce/drupal.imce.input' library (a dependency of       │
+│ manually │      │ 'imce.input') is not defined because the defining extension │
+│          │      │ is not installed. Cannot decide if it is deprecated or not. │
+│          │      │                                                             │
+└──────────┴──────┴─────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_example_composite/templates/webform-exam
+ple-composite.html.twig:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 14   │ The 'webform_example_composite/webform_example_composite'    │
+│ manually │      │ library is not defined because the defining extension is not │
+│          │      │ installed. Cannot decide if it is deprecated or not.         │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_icheck/webform_icheck.module:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 98   │ The 'webform_icheck/webform_icheck.element' library is not   │
+│ manually │      │ defined because the defining extension is not installed.     │
+│          │      │ Cannot decide if it is deprecated or not.                    │
+│          │      │                                                              │
+│ Check    │ 99   │ The 'webform_icheck/libraries.jquery.icheck.' library is not │
+│ manually │      │ defined because the defining extension is not installed.     │
+│          │      │ Cannot decide if it is deprecated or not.                    │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_bootstrap/webform_bootstrap.module:
+┌──────────┬──────┬──────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                         MESSAGE                          │
+├──────────┼──────┼──────────────────────────────────────────────────────────┤
+│ Check    │ 23   │ The 'webform_bootstrap/webform_bootstrap' library is not │
+│ manually │      │ defined because the defining extension is not installed. │
+│          │      │ Cannot decide if it is deprecated or not.                │
+│          │      │                                                          │
+└──────────┴──────┴──────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_location_geocomplete/src/Element/Webform
+LocationGeocomplete.php:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 70   │ The                                                          │
+│ manually │      │ 'webform_location_geocomplete/webform_location_geocomplete.e │
+│          │      │ lement' library is not defined because the defining          │
+│          │      │ extension is not installed. Cannot decide if it is           │
+│          │      │ deprecated or not.                                           │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_clientside_validation/webform_clientside
+_validation.module:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 15   │ The                                                          │
+│ manually │      │ 'webform_clientside_validation/webform_clientside_validation │
+│          │      │ .ife' library is not defined because the defining extension  │
+│          │      │ is not installed. Cannot decide if it is deprecated or not.  │
+│          │      │                                                              │
+│ Check    │ 19   │ The                                                          │
+│ manually │      │ 'webform_clientside_validation/webform_clientside_validation │
+│          │      │ .novalidate' library is not defined because the defining     │
+│          │      │ extension is not installed. Cannot decide if it is           │
+│          │      │ deprecated or not.                                           │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_schema/src/Form/WebformSchemaEntitySchem
+aForm.php:
+┌──────────┬──────┬────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                          MESSAGE                           │
+├──────────┼──────┼────────────────────────────────────────────────────────────┤
+│ Check    │ 112  │ The 'webform_schema/webform_schema' library is not defined │
+│ manually │      │ because the defining extension is not installed. Cannot    │
+│          │      │ decide if it is deprecated or not.                         │
+│          │      │                                                            │
+└──────────┴──────┴────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_node/src/Controller/WebformNodeReference
+sListController.php:
+┌──────────┬──────┬───────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                          MESSAGE                          │
+├──────────┼──────┼───────────────────────────────────────────────────────────┤
+│ Check    │ 396  │ The 'webform_node/webform_node.references' library is not │
+│ manually │      │ defined because the defining extension is not installed.  │
+│          │      │ Cannot decide if it is deprecated or not.                 │
+│          │      │                                                           │
+└──────────┴──────┴───────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_node/webform_node.module:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 254  │ The 'webform_node/webform_node.entity_references' library is │
+│ manually │      │ not defined because the defining extension is not installed. │
+│          │      │ Cannot decide if it is deprecated or not.                    │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_share/src/Controller/WebformShareControl
+ler.php:
+┌──────────┬──────┬──────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                         MESSAGE                          │
+├──────────┼──────┼──────────────────────────────────────────────────────────┤
+│ Check    │ 81   │ The 'webform_share/webform_share.page' library is not    │
+│ manually │      │ defined because the defining extension is not installed. │
+│          │      │ Cannot decide if it is deprecated or not.                │
+│          │      │                                                          │
+│ Check    │ 186  │ The 'webform_share/webform_share.admin' library is not   │
+│ manually │      │ defined because the defining extension is not installed. │
+│          │      │ Cannot decide if it is deprecated or not.                │
+│          │      │                                                          │
+│ Check    │ 224  │ The 'webform_share/webform_share.admin' library is not   │
+│ manually │      │ defined because the defining extension is not installed. │
+│          │      │ Cannot decide if it is deprecated or not.                │
+│          │      │                                                          │
+└──────────┴──────┴──────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_share/src/Form/WebformShareEmbedForm.php:
+┌──────────┬──────┬──────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                         MESSAGE                          │
+├──────────┼──────┼──────────────────────────────────────────────────────────┤
+│ Check    │ 132  │ The 'webform_share/webform_share.admin' library is not   │
+│ manually │      │ defined because the defining extension is not installed. │
+│          │      │ Cannot decide if it is deprecated or not.                │
+│          │      │                                                          │
+└──────────┴──────┴──────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_examples_accessibility/webform_examples_
+accessibility.module:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 18   │ The                                                          │
+│ manually │      │ 'webform_examples_accessibility/webform_examples_accessibili │
+│          │      │ ty' library is not defined because the defining extension is │
+│          │      │ not installed. Cannot decide if it is deprecated or not.     │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_toggles/src/Element/WebformToggle.php:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 78   │ The 'webform_toggles/webform_toggles.element' library is not │
+│ manually │      │ defined because the defining extension is not installed.     │
+│          │      │ Cannot decide if it is deprecated or not.                    │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_entity_print/src/EventSubscriber/Webform
+EntityPrintCssAlterSubscriber.php:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 27   │ The 'webform_entity_print/webform_entity_print' library is   │
+│ manually │      │ not defined because the defining extension is not installed. │
+│          │      │ Cannot decide if it is deprecated or not.                    │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_location_places/src/Element/WebformLocat
+ionPlaces.php:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 74   │ The                                                          │
+│ manually │      │ 'webform_location_places/webform_location_places.element'    │
+│          │      │ library is not defined because the defining extension is not │
+│          │      │ installed. Cannot decide if it is deprecated or not.         │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_jqueryui_datepicker/webform_jqueryui_dat
+epicker.module:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 190  │ The                                                          │
+│ manually │      │ 'webform_jqueryui_datepicker/webform_jqueryui_datepicker.ele │
+│          │      │ ment' library is not defined because the defining extension  │
+│          │      │ is not installed. Cannot decide if it is deprecated or not.  │
+│          │      │                                                              │
+│ Check    │ 198  │ The                                                          │
+│ manually │      │ 'webform_jqueryui_datepicker/webform_jqueryui_datepicker.ele │
+│          │      │ ment' library is not defined because the defining extension  │
+│          │      │ is not installed. Cannot decide if it is deprecated or not.  │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_access/src/WebformAccessGroupForm.php:
+┌──────────┬──────┬──────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                         MESSAGE                          │
+├──────────┼──────┼──────────────────────────────────────────────────────────┤
+│ Check    │ 309  │ The 'webform_access/webform_access.admin' library is not │
+│ manually │      │ defined because the defining extension is not installed. │
+│          │      │ Cannot decide if it is deprecated or not.                │
+│          │      │                                                          │
+└──────────┴──────┴──────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_shortcuts/webform_shortcuts.module:
+┌──────────┬──────┬──────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                         MESSAGE                          │
+├──────────┼──────┼──────────────────────────────────────────────────────────┤
+│ Check    │ 93   │ The 'webform_shortcuts/webform_shortcuts' library is not │
+│ manually │      │ defined because the defining extension is not installed. │
+│          │      │ Cannot decide if it is deprecated or not.                │
+│          │      │                                                          │
+└──────────┴──────┴──────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_jqueryui_buttons/src/Element/WebformButt
+ons.php:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 25   │ The                                                          │
+│ manually │      │ 'webform_jqueryui_buttons/webform_jqueryui_buttons.element'  │
+│          │      │ library is not defined because the defining extension is not │
+│          │      │ installed. Cannot decide if it is deprecated or not.         │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_options_custom/src/Element/WebformOption
+sCustom.php:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 210  │ The 'webform_options_custom/webform_options_custom.element'  │
+│ manually │      │ library is not defined because the defining extension is not │
+│          │      │ installed. Cannot decide if it is deprecated or not.         │
+│          │      │                                                              │
+│ Check    │ 212  │ The 'webform_options_custom/libraries.svg-pan-zoom' library  │
+│ manually │      │ is not defined because the defining extension is not         │
+│          │      │ installed. Cannot decide if it is deprecated or not.         │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_cards/webform_cards.module:
+┌──────────┬──────┬──────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                         MESSAGE                          │
+├──────────┼──────┼──────────────────────────────────────────────────────────┤
+│ Check    │ 122  │ The 'webform_cards/webform_cards.test' library is not    │
+│ manually │      │ defined because the defining extension is not installed. │
+│          │      │ Cannot decide if it is deprecated or not.                │
+│          │      │                                                          │
+│ Check    │ 126  │ The 'webform_cards/webform_cards' library is not defined │
+│ manually │      │ because the defining extension is not installed. Cannot  │
+│          │      │ decide if it is deprecated or not.                       │
+│          │      │                                                          │
+│ Check    │ 306  │ The 'webform_cards/webform_cards.admin' library is not   │
+│ manually │      │ defined because the defining extension is not installed. │
+│          │      │ Cannot decide if it is deprecated or not.                │
+│          │      │                                                          │
+└──────────┴──────┴──────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_image_select/src/Element/WebformImageSel
+ect.php:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 116  │ The 'webform_image_select/webform_image_select.element'      │
+│ manually │      │ library is not defined because the defining extension is not │
+│          │      │ installed. Cannot decide if it is deprecated or not.         │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_icheck/webform_icheck.info.yml:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ This extension is deprecated. Don't use it. See              │
+│ manually │      │ https://www.drupal.org/docs/8/modules/webform/webform-freque │
+│          │      │ ntly-asked-questions/what-to-do-about-deprecated-external-li │
+│          │      │ braries-in-webform-6x.                                       │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_location_geocomplete/webform_location_ge
+ocomplete.info.yml:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ This extension is deprecated. Don't use it. See              │
+│ manually │      │ https://www.drupal.org/docs/8/modules/webform/webform-freque │
+│          │      │ ntly-asked-questions/what-to-do-about-deprecated-external-li │
+│          │      │ braries-in-webform-6x.                                       │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_toggles/webform_toggles.info.yml:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ This extension is deprecated. Don't use it. See              │
+│ manually │      │ https://www.drupal.org/docs/8/modules/webform/webform-freque │
+│          │      │ ntly-asked-questions/what-to-do-about-deprecated-external-li │
+│          │      │ braries-in-webform-6x.                                       │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/modules/webform_jqueryui_buttons/webform_jqueryui_button
+s.info.yml:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ This extension is deprecated. Don't use it. See              │
+│ manually │      │ https://www.drupal.org/docs/8/modules/webform/webform-freque │
+│          │      │ ntly-asked-questions/what-to-do-about-deprecated-external-li │
+│          │      │ braries-in-webform-6x.                                       │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+modules/contrib/webform/css/webform.theme.claro.css:
+┌──────────┬──────┬─────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                       MESSAGE                       │
+├──────────┼──────┼─────────────────────────────────────────────────────┤
+│ Check    │ 0    │ The #drupal-off-canvas selector is deprecated in    │
+│ manually │      │ drupal:9.5.0 and is removed from drupal:10.0.0. See │
+│          │      │ https://www.drupal.org/node/3305664.                │
+│          │      │                                                     │
+└──────────┴──────┴─────────────────────────────────────────────────────┘
+
+
+
+--------------------------------------------------------------------------------
+Seven 1.0.0
+Scanned on Sat, 17/10/2026 - 4:50pm.
+
+24 warnings found.
+
+themes/contrib/seven:
+┌──────────┬──────┬──────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                       MESSAGE                        │
+├──────────┼──────┼──────────────────────────────────────────────────────┤
+│ Check    │ 0    │ The 'seven' extension is not installed. Cannot check │
+│ manually │      │ deprecated library use.                              │
+│          │      │                                                      │
+└──────────┴──────┴──────────────────────────────────────────────────────┘
+
+seven.info.yml:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ Theme is extending a deprecated library. The "core/ckeditor" │
+│ manually │      │ asset library is deprecated in drupal:9.5.0 and is removed   │
+│          │      │ from drupal:10.0.0. There is no replacement. See             │
+│          │      │ https://www.drupal.org/node/3304481                          │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+themes/contrib/seven/templates/classy/content-edit/file-managed-file.html.twig:
+┌──────────┬──────┬─────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                           │
+├──────────┼──────┼─────────────────────────────────────────────────────────────┤
+│ Check    │ 13   │ The 'seven/classy.file' library is not defined because the  │
+│ manually │      │ defining extension is not installed. Cannot decide if it is │
+│          │      │ deprecated or not.                                          │
+│          │      │                                                             │
+└──────────┴──────┴─────────────────────────────────────────────────────────────┘
+
+themes/contrib/seven/templates/classy/dataset/forums.html.twig:
+┌──────────┬──────┬─────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                           │
+├──────────┼──────┼─────────────────────────────────────────────────────────────┤
+│ Check    │ 17   │ The 'seven/classy.forum' library is not defined because the │
+│ manually │      │ defining extension is not installed. Cannot decide if it is │
+│          │      │ deprecated or not.                                          │
+│          │      │                                                             │
+└──────────┴──────┴─────────────────────────────────────────────────────────────┘
+
+themes/contrib/seven/templates/classy/field/file-video.html.twig:
+┌──────────┬──────┬─────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                           │
+├──────────┼──────┼─────────────────────────────────────────────────────────────┤
+│ Check    │ 18   │ The 'seven/classy.file' library is not defined because the  │
+│ manually │      │ defining extension is not installed. Cannot decide if it is │
+│          │      │ deprecated or not.                                          │
+│          │      │                                                             │
+└──────────┴──────┴─────────────────────────────────────────────────────────────┘
+
+themes/contrib/seven/templates/classy/field/file-audio.html.twig:
+┌──────────┬──────┬─────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                           │
+├──────────┼──────┼─────────────────────────────────────────────────────────────┤
+│ Check    │ 18   │ The 'seven/classy.file' library is not defined because the  │
+│ manually │      │ defining extension is not installed. Cannot decide if it is │
+│          │      │ deprecated or not.                                          │
+│          │      │                                                             │
+└──────────┴──────┴─────────────────────────────────────────────────────────────┘
+
+themes/contrib/seven/templates/classy/content/node.html.twig:
+┌──────────┬──────┬─────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                           │
+├──────────┼──────┼─────────────────────────────────────────────────────────────┤
+│ Check    │ 80   │ The 'seven/classy.node' library is not defined because the  │
+│ manually │      │ defining extension is not installed. Cannot decide if it is │
+│          │      │ deprecated or not.                                          │
+│          │      │                                                             │
+└──────────┴──────┴─────────────────────────────────────────────────────────────┘
+
+themes/contrib/seven/templates/classy/content/search-result.html.twig:
+┌──────────┬──────┬──────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                         MESSAGE                          │
+├──────────┼──────┼──────────────────────────────────────────────────────────┤
+│ Check    │ 59   │ The 'seven/classy.search-results' library is not defined │
+│ manually │      │ because the defining extension is not installed. Cannot  │
+│          │      │ decide if it is deprecated or not.                       │
+│          │      │                                                          │
+└──────────┴──────┴──────────────────────────────────────────────────────────┘
+
+themes/contrib/seven/templates/classy/content/comment.html.twig:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 70   │ The 'seven/classy.indented' library is not defined because   │
+│ manually │      │ the defining extension is not installed. Cannot decide if it │
+│          │      │ is deprecated or not.                                        │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+themes/contrib/seven/templates/classy/content/media-embed-error.html.twig:
+┌──────────┬──────┬─────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                           │
+├──────────┼──────┼─────────────────────────────────────────────────────────────┤
+│ Check    │ 18   │ The 'seven/classy.media_embed_error' library is not defined │
+│ manually │      │ because the defining extension is not installed. Cannot     │
+│          │      │ decide if it is deprecated or not.                          │
+│          │      │                                                             │
+└──────────┴──────┴─────────────────────────────────────────────────────────────┘
+
+themes/contrib/seven/templates/classy/misc/progress-bar.html.twig:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 14   │ The 'seven/classy.progress' library is not defined because   │
+│ manually │      │ the defining extension is not installed. Cannot decide if it │
+│          │      │ is deprecated or not.                                        │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+themes/contrib/seven/templates/classy/navigation/book-navigation.html.twig:
+┌──────────┬──────┬───────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                          MESSAGE                          │
+├──────────┼──────┼───────────────────────────────────────────────────────────┤
+│ Check    │ 31   │ The 'seven/classy.book-navigation' library is not defined │
+│ manually │      │ because the defining extension is not installed. Cannot   │
+│          │      │ decide if it is deprecated or not.                        │
+│          │      │                                                           │
+└──────────┴──────┴───────────────────────────────────────────────────────────┘
+
+themes/contrib/seven/templates/status-report-grouped.html.twig:
+┌──────────┬──────┬─────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                           │
+├──────────┼──────┼─────────────────────────────────────────────────────────────┤
+│ Check    │ 20   │ The 'seven/drupal.responsive-detail' library is not defined │
+│ manually │      │ because the defining extension is not installed. Cannot     │
+│          │      │ decide if it is deprecated or not.                          │
+│          │      │                                                             │
+└──────────┴──────┴─────────────────────────────────────────────────────────────┘
+
+themes/contrib/seven/templates/image-widget.html.twig:
+┌──────────┬──────┬─────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                         MESSAGE                         │
+├──────────┼──────┼─────────────────────────────────────────────────────────┤
+│ Check    │ 13   │ The 'seven/classy.image-widget' library is not defined  │
+│ manually │      │ because the defining extension is not installed. Cannot │
+│          │      │ decide if it is deprecated or not.                      │
+│          │      │                                                         │
+└──────────┴──────┴─────────────────────────────────────────────────────────┘
+
+themes/contrib/seven/templates/field/file-link.html.twig:
+┌──────────┬──────┬─────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                           │
+├──────────┼──────┼─────────────────────────────────────────────────────────────┤
+│ Check    │ 15   │ The 'seven/classy.file' library is not defined because the  │
+│ manually │      │ defining extension is not installed. Cannot decide if it is │
+│          │      │ deprecated or not.                                          │
+│          │      │                                                             │
+└──────────┴──────┴─────────────────────────────────────────────────────────────┘
+
+themes/contrib/seven/seven.theme:
+┌──────────┬──────┬──────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                            │
+├──────────┼──────┼──────────────────────────────────────────────────────────────┤
+│ Check    │ 40   │ The 'seven/drupal.nav-tabs' library is not defined because   │
+│ manually │      │ the defining extension is not installed. Cannot decide if it │
+│          │      │ is deprecated or not.                                        │
+│          │      │                                                              │
+│ Check    │ 47   │ The 'seven/drupal.nav-tabs' library is not defined because   │
+│ manually │      │ the defining extension is not installed. Cannot decide if it │
+│          │      │ is deprecated or not.                                        │
+│          │      │                                                              │
+│ Check    │ 140  │ The 'seven/install-page' library is not defined because the  │
+│ manually │      │ defining extension is not installed. Cannot decide if it is  │
+│          │      │ deprecated or not.                                           │
+│          │      │                                                              │
+│ Check    │ 148  │ The 'seven/maintenance-page' library is not defined because  │
+│ manually │      │ the defining extension is not installed. Cannot decide if it │
+│          │      │ is deprecated or not.                                        │
+│          │      │                                                              │
+│ Check    │ 158  │ The 'seven/node-form' library is not defined because the     │
+│ manually │      │ defining extension is not installed. Cannot decide if it is  │
+│          │      │ deprecated or not.                                           │
+│          │      │                                                              │
+│ Check    │ 181  │ The 'seven/media-form' library is not defined because the    │
+│ manually │      │ defining extension is not installed. Cannot decide if it is  │
+│          │      │ deprecated or not.                                           │
+│          │      │                                                              │
+│ Check    │ 189  │ The 'seven/layout_builder_content_translation_admin' library │
+│ manually │      │ is not defined because the defining extension is not         │
+│          │      │ installed. Cannot decide if it is deprecated or not.         │
+│          │      │                                                              │
+│ Check    │ 240  │ The 'seven/media_library' library is not defined because the │
+│ manually │      │ defining extension is not installed. Cannot decide if it is  │
+│          │      │ deprecated or not.                                           │
+│          │      │                                                              │
+│ Check    │ 446  │ The 'seven/update-report' library is not defined because the │
+│ manually │      │ defining extension is not installed. Cannot decide if it is  │
+│          │      │ deprecated or not.                                           │
+│          │      │                                                              │
+└──────────┴──────┴──────────────────────────────────────────────────────────────┘
+
+
+
+--------------------------------------------------------------------------------
+Adminimal 8.x-1.7
+Scanned on Sat, 17/10/2026 - 4:50pm.
+
+3 warnings found.
+
+themes/contrib/adminimal_theme:
+┌──────────┬──────┬──────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                         MESSAGE                          │
+├──────────┼──────┼──────────────────────────────────────────────────────────┤
+│ Check    │ 0    │ The 'adminimal_theme' extension is not installed. Cannot │
+│ manually │      │ check deprecated library use.                            │
+│          │      │                                                          │
+└──────────┴──────┴──────────────────────────────────────────────────────────┘
+
+themes/contrib/adminimal_theme/adminimal_theme.theme:
+┌──────────┬──────┬─────────────────────────────────────────────────────────────┐
+│  STATUS  │ LINE │                           MESSAGE                           │
+├──────────┼──────┼─────────────────────────────────────────────────────────────┤
+│ Check    │ 26   │ The 'adminimal_theme/custom-styling' library is not defined │
+│ manually │      │ because the defining extension is not installed. Cannot     │
+│          │      │ decide if it is deprecated or not.                          │
+│          │      │                                                             │
+│ Check    │ 30   │ The 'adminimal_theme/google-fonts' library is not defined   │
+│ manually │      │ because the defining extension is not installed. Cannot     │
+│          │      │ decide if it is deprecated or not.                          │
+│          │      │                                                             │
+└──────────┴──────┴─────────────────────────────────────────────────────────────┘
+
+
+

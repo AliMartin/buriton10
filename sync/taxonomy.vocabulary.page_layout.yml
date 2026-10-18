@@ -1,0 +1,9 @@
+uuid: 29e60589-de14-4b88-a5e4-3be8857a4e94
+langcode: en
+status: true
+dependencies: {  }
+name: 'Page layout'
+vid: page_layout
+description: 'Flag if content has a low resolution main image'
+weight: 0
+new_revision: false

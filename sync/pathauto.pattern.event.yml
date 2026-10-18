@@ -1,0 +1,25 @@
+uuid: 3ee5a6df-c6fc-44a9-b7a7-6d5587bd03f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.event
+    - node.type.quickevent
+  module:
+    - node
+id: event
+label: Event
+type: 'canonical_entities:node'
+pattern: '/event/[node:title]'
+selection_criteria:
+  8ebd152d-c34a-4fd7-a35c-3b604b3cbbb6:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      event: event
+      quickevent: quickevent
+selection_logic: and
+weight: -5
+relationships: {  }

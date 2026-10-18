@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+langcode: en
+uuid: a8c50829-fc0d-4aa1-aaa3-90f4e63bcb4b
+name: 'Buriton Community Website'
+mail: noreply@buriton.info
+slogan: ''
+page:
+  403: /home
+  404: /node/874
+  front: /home
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null

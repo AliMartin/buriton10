@@ -1,0 +1,25 @@
+uuid: d138bfbb-ac85-41fe-827c-e0e604c156b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.section
+    - node.type.files
+    - taxonomy.vocabulary.section
+id: node.files.section
+field_name: section
+entity_type: node
+bundle: files
+label: Section
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      - section
+    auto_create: true
+field_type: entity_reference

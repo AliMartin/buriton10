@@ -1,0 +1,14 @@
+uuid: f903c168-facd-4d97-9861-76e1c7e6c511
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.website_editor
+  module:
+    - user
+id: user_add_role_action.website_editor
+label: 'Add the Website Editor role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: website_editor

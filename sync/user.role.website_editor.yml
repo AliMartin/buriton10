@@ -1,0 +1,42 @@
+uuid: ef98b772-be4a-49d8-a35c-5e9e9e3ecb74
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.code
+    - filter.format.full_html
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+  module:
+    - comment
+    - file
+    - filter
+    - media
+    - node
+id: website_editor
+label: 'Website Editor'
+weight: 7
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'administer comments'
+  - 'administer nodes'
+  - 'bypass node access'
+  - 'delete any audio media'
+  - 'delete any document media'
+  - 'delete any image media'
+  - 'delete any media'
+  - 'delete any remote_video media'
+  - 'delete any video media'
+  - 'delete own files'
+  - 'edit any audio media'
+  - 'edit any document media'
+  - 'edit any image media'
+  - 'edit any remote_video media'
+  - 'edit any video media'
+  - 'update any media'
+  - 'use text format code'
+  - 'use text format full_html'

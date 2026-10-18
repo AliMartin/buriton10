@@ -1,0 +1,40 @@
+{
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 44617
+    },
+    {
+      "path": "/parish-council-minutes",
+      "status": 200,
+      "bytes": 71582
+    },
+    {
+      "path": "/contact",
+      "status": 200,
+      "bytes": 32890
+    },
+    {
+      "path": "/user/login",
+      "status": 200,
+      "bytes": 28770
+    },
+    {
+      "path": "/aggregator/sources",
+      "status": 200,
+      "bytes": 30792
+    },
+    {
+      "path": "/aggregator/sources/1",
+      "status": 200,
+      "bytes": 47100
+    },
+    {
+      "path": "/aggregator/rss",
+      "status": 200,
+      "bytes": 2187
+    }
+  ],
+  "css_js_assets_ok": 15
+}

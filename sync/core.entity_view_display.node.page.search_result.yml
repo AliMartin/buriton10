@@ -1,0 +1,50 @@
+uuid: eaed70f2-c733-4bc9-84cc-a6884211d188
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.page.body
+    - field.field.node.page.comment
+    - field.field.node.page.field_image_media_page
+    - field.field.node.page.field_news_picture
+    - field.field.node.page.section
+    - field.field.node.page.upload
+    - node.type.page
+  module:
+    - image
+    - user
+id: node.page.search_result
+targetEntityType: node
+bundle: page
+mode: search_result
+content:
+  field_image_media_page:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  field_news_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  comment: true
+  section: true
+  upload: true

@@ -1,0 +1,22 @@
+uuid: 1e893c10-5a19-4090-9126-9a43b0c0a8ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - aggregator
+  theme:
+    - buriton5
+id: aggregatorfeed_2
+theme: buriton5
+region: footer
+weight: -9
+provider: null
+plugin: aggregator_feed_block
+settings:
+  id: aggregator_feed_block
+  label: 'Local BBC News'
+  label_display: visible
+  provider: aggregator
+  block_count: 5
+  feed: '1'
+visibility: {  }

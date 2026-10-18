@@ -1,0 +1,17 @@
+uuid: da1a703d-2043-4f6c-8861-71b6124f94c1
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: Onwyr2kH5zCeHvMfSSPDJIKUKrvX7x7tAr-7Uv_-k-c
+id: titles
+label: Titles
+options: |
+  Miss: Miss
+  Ms: Ms
+  Mr: Mr
+  Mrs: Mrs
+  Dr: Dr

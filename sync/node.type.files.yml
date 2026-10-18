@@ -1,0 +1,11 @@
+uuid: 9492981f-c65e-4b2f-b15a-47d1b2c9041d
+langcode: en
+status: true
+dependencies: {  }
+name: Files
+type: files
+description: 'Upload files to your area.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

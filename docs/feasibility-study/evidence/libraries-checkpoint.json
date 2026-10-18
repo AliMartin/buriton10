@@ -1,0 +1,131 @@
+{
+  "recorded_on": "2026-10-18",
+  "core": "10.6.19",
+  "packages": {
+    "briancherne/jquery.hover-intent": {
+      "version": "1.10.2",
+      "directory": "jquery.hover-intent"
+    },
+    "choices/choices": {
+      "version": "11.0.2",
+      "directory": "choices"
+    },
+    "codemirror/codemirror": {
+      "version": "5.65.12",
+      "directory": "codemirror"
+    },
+    "davatron5000/fitvids": {
+      "version": "1.1.0",
+      "directory": "fitvids"
+    },
+    "douglascrockford/json2": {
+      "version": "2023.05.10",
+      "directory": "json2"
+    },
+    "drupal-ckeditor-libraries-group/fakeobjects": {
+      "version": "4.22.1",
+      "directory": "fakeobjects"
+    },
+    "drupal-ckeditor-libraries-group/iframe": {
+      "version": "4.22.1",
+      "directory": "iframe"
+    },
+    "jquery/chosen": {
+      "version": "1.8.7",
+      "directory": "jquery.chosen"
+    },
+    "jquery/hotkeys": {
+      "version": "0.2.0",
+      "directory": "jquery.hotkeys"
+    },
+    "jquery/image-picker": {
+      "version": "0.3.1",
+      "directory": "jquery.image-picker"
+    },
+    "jquery/inputmask": {
+      "version": "5.0.9",
+      "directory": "jquery.inputmask"
+    },
+    "jquery/intl-tel-input": {
+      "version": "17.0.19",
+      "directory": "jquery.intl-tel-input"
+    },
+    "jquery/rateit": {
+      "version": "1.1.5",
+      "directory": "jquery.rateit"
+    },
+    "jquery/select2": {
+      "version": "4.0.13",
+      "directory": "jquery.select2"
+    },
+    "jquery/textcounter": {
+      "version": "0.9.1",
+      "directory": "jquery.textcounter"
+    },
+    "jquery/timepicker": {
+      "version": "1.14.0",
+      "directory": "jquery.timepicker"
+    },
+    "malsup/jquery.cycle": {
+      "version": "3.0.3",
+      "directory": "jquery.cycle"
+    },
+    "popperjs/popperjs": {
+      "version": "2.11.6",
+      "directory": "popperjs"
+    },
+    "progress-tracker/progress-tracker": {
+      "version": "2.0.7",
+      "directory": "progress-tracker"
+    },
+    "signature_pad/signature_pad": {
+      "version": "2.3.0",
+      "directory": "signature_pad"
+    },
+    "svg-pan-zoom/svg-pan-zoom": {
+      "version": "3.6.1",
+      "directory": "svg-pan-zoom"
+    },
+    "tabby/tabby": {
+      "version": "12.0.3",
+      "directory": "tabby"
+    },
+    "tippyjs/tippyjs": {
+      "version": "6.3.7",
+      "directory": "tippyjs"
+    }
+  },
+  "definition_sha256": {
+    "composer.json": "6f7e05ef4b17c02f667edaa2d1f95866753fc720bba9e7efaefc52dd19cf5c98",
+    "composer.lock": "d10358c373020e776a39ce5d74032a9aebea556744eca94bb39d09185630569c",
+    "composer.libraries.json": "91304c6b2dbcc7701e006c4146abee7f6f27b47e0381fa92e208e7c5a3925fc3",
+    ".gitignore": "74b2d9ba64c61dad95e5659aa192f8016ba143efd332be1cf094036e357a6bb9",
+    "tools/check-libraries.php": "b5524f068b3e14abcea56d39bfe89f4175e23e5549414dea00eedcc2762ad51e"
+  },
+  "legacy_directories_archived": [
+    "ckeditor",
+    "ckeditor.autogrow",
+    "ckeditor.codemirror",
+    "ckeditor.fakeobjects",
+    "ckeditor.image",
+    "ckeditor.link",
+    "codemirror",
+    "fitvids",
+    "geocomplete",
+    "iframe",
+    "jquery.cycle",
+    "jquery.geocomplete",
+    "jquery.icheck",
+    "jquery.image-picker",
+    "jquery.inputmask",
+    "jquery.intl-tel-input",
+    "jquery.rateit",
+    "jquery.select2",
+    "jquery.timepicker",
+    "jquery.toggles",
+    "jquery.word-and-character-counter",
+    "json2",
+    "progress-tracker",
+    "signature_pad"
+  ]
+}

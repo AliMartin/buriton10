@@ -1,0 +1,22 @@
+uuid: 2f6fea91-d39a-43ac-9ef9-9cb473efa953
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.parish_council
+  module:
+    - comment
+    - file
+    - node
+id: parish_council
+label: 'Parish Council'
+weight: 18
+is_admin: null
+permissions:
+  - 'administer comments'
+  - 'create parish_council content'
+  - 'delete any parish_council content'
+  - 'delete own files'
+  - 'delete own parish_council content'
+  - 'edit any parish_council content'
+  - 'edit own parish_council content'

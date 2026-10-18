@@ -1,0 +1,15 @@
+uuid: 31efe7b2-7968-4f03-b1f3-e32865fdd89e
+langcode: en
+status: true
+dependencies: {  }
+name: fast_gallery_small
+label: fast_gallery_small
+effects:
+  fad0a217-9fcc-474b-b431-e8d59f2503fc:
+    uuid: fad0a217-9fcc-474b-b431-e8d59f2503fc
+    id: image_scale_and_crop
+    weight: 0
+    data:
+      width: 100
+      height: 80
+      anchor: center-center

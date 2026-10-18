@@ -1,0 +1,56 @@
+uuid: 62c5ca53-889b-4382-b813-a532d2588c39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.parish_council.body
+    - field.field.node.parish_council.field_attachments
+    - field.field.node.parish_council.field_section
+    - field.field.node.parish_council.field_year
+    - node.type.parish_council
+  module:
+    - file
+    - text
+    - user
+id: node.parish_council.default
+targetEntityType: node
+bundle: parish_council
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_attachments:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_section:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_year:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

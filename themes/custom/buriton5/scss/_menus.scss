@@ -1,0 +1,65 @@
+#mega_menu {
+
+  > .container {
+    padding: 0;
+    border-bottom: 1px solid $blue;
+  }
+
+  .tbm {
+    background-color: $white;
+
+    .tbm-link.level-1 {
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: $black;
+      padding: 1rem 1rem;
+    }
+
+    .tbm-item.level-1 {
+      border-right: none;
+
+      a {
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+          background-color: $blue;
+          color: $white;
+        }
+      }
+    }
+
+    .tbm-item--has-dropdown a.level-1::after {
+      margin-left: 5px;
+      color: $green;
+      content: "";
+      display: inline-block;
+      border-left: 0.3em solid transparent;
+      border-right: 0.3em solid transparent;
+      border-top: 0.35em solid currentColor;
+      position: relative;
+      top: -3px;
+    }
+  }
+}
+
+#mega_menu .tbm-submenu {
+  border: 1px solid $blue;
+}
+
+@media only screen and (min-width :  992px) and (max-width : 1199px) {
+  #mega_menu .tbm .tbm-link.level-1 {
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 1rem 0.8rem;
+  }
+}
+
+
+@media only screen and (min-width : 1200px) and (max-width : 1399px) {
+  #mega_menu .tbm .tbm-link.level-1 {
+    font-size: 1rem;
+    padding: 1rem 0.9rem;
+  }
+}

@@ -1,0 +1,63 @@
+uuid: ac7b1138-7702-4f55-9186-337322162215
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - filter.format.webform_default
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+  module:
+    - aggregator
+    - comment
+    - contact
+    - file
+    - filter
+    - fontawesome
+    - media
+    - search
+    - system
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access fontawesome additional settings'
+  - 'access news feeds'
+  - 'access site-wide contact form'
+  - 'access user profiles'
+  - 'create audio media'
+  - 'create document media'
+  - 'create image media'
+  - 'create media'
+  - 'create remote_video media'
+  - 'create video media'
+  - 'delete media'
+  - 'delete own audio media'
+  - 'delete own document media'
+  - 'delete own files'
+  - 'delete own image media'
+  - 'delete own remote_video media'
+  - 'delete own video media'
+  - 'edit own audio media'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own remote_video media'
+  - 'edit own video media'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'update media'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'use text format webform_default'
+  - 'view media'
+  - 'view own unpublished media'

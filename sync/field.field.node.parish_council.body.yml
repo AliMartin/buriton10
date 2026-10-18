@@ -1,0 +1,23 @@
+uuid: 18fa45dc-f441-4b40-aa6b-7d0661779f2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.parish_council
+  module:
+    - text
+id: node.parish_council.body
+field_name: body
+entity_type: node
+bundle: parish_council
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

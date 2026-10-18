@@ -1,0 +1,22 @@
+uuid: 70605fbd-6941-4443-9acf-5f850ba88cd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.files
+id: node.files.status
+field_name: status
+entity_type: node
+bundle: files
+label: 'Publishing status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

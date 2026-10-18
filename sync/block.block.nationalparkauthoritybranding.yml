@@ -1,0 +1,25 @@
+uuid: 924090c4-62d5-4389-bada-6e02846a93cb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:86693e15-2961-499e-a01c-a2b90a2fc7bd'
+  module:
+    - block_content
+  theme:
+    - zircon
+id: nationalparkauthoritybranding
+theme: zircon
+region: panel_first_1
+weight: 0
+provider: null
+plugin: 'block_content:86693e15-2961-499e-a01c-a2b90a2fc7bd'
+settings:
+  id: 'block_content:86693e15-2961-499e-a01c-a2b90a2fc7bd'
+  label: 'National Park Authority branding'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

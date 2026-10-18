@@ -1,0 +1,1672 @@
+{
+    "action": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Actions UI (action)",
+        "name": "action",
+        "type": "module",
+        "path": "core/modules/action",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "announcements_feed": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Announcements (announcements_feed)",
+        "name": "announcements_feed",
+        "type": "module",
+        "path": "core/modules/announcements_feed",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "automated_cron": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Automated Cron (automated_cron)",
+        "name": "automated_cron",
+        "type": "module",
+        "path": "core/modules/automated_cron",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "ban": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Ban (ban)",
+        "name": "ban",
+        "type": "module",
+        "path": "core/modules/ban",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "basic_auth": {
+        "package": "Web services",
+        "project": "",
+        "display_name": "HTTP Basic Authentication (basic_auth)",
+        "name": "basic_auth",
+        "type": "module",
+        "path": "core/modules/basic_auth",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "big_pipe": {
+        "package": "Core",
+        "project": "",
+        "display_name": "BigPipe (big_pipe)",
+        "name": "big_pipe",
+        "type": "module",
+        "path": "core/modules/big_pipe",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "block": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Block (block)",
+        "name": "block",
+        "type": "module",
+        "path": "core/modules/block",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "block_content": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Block Content (block_content)",
+        "name": "block_content",
+        "type": "module",
+        "path": "core/modules/block_content",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "book": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Book (book)",
+        "name": "book",
+        "type": "module",
+        "path": "core/modules/book",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "breakpoint": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Breakpoint (breakpoint)",
+        "name": "breakpoint",
+        "type": "module",
+        "path": "core/modules/breakpoint",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "ckeditor5": {
+        "package": "Core",
+        "project": "",
+        "display_name": "CKEditor 5 (ckeditor5)",
+        "name": "ckeditor5",
+        "type": "module",
+        "path": "core/modules/ckeditor5",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "comment": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Comment (comment)",
+        "name": "comment",
+        "type": "module",
+        "path": "core/modules/comment",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "config": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Configuration Manager (config)",
+        "name": "config",
+        "type": "module",
+        "path": "core/modules/config",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "config_translation": {
+        "package": "Multilingual",
+        "project": "",
+        "display_name": "Configuration Translation (config_translation)",
+        "name": "config_translation",
+        "type": "module",
+        "path": "core/modules/config_translation",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "contact": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Contact (contact)",
+        "name": "contact",
+        "type": "module",
+        "path": "core/modules/contact",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "content_moderation": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Content Moderation (content_moderation)",
+        "name": "content_moderation",
+        "type": "module",
+        "path": "core/modules/content_moderation",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "content_translation": {
+        "package": "Multilingual",
+        "project": "",
+        "display_name": "Content Translation (content_translation)",
+        "name": "content_translation",
+        "type": "module",
+        "path": "core/modules/content_translation",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "contextual": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Contextual Links (contextual)",
+        "name": "contextual",
+        "type": "module",
+        "path": "core/modules/contextual",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "datetime": {
+        "package": "Field types",
+        "project": "",
+        "display_name": "Datetime (datetime)",
+        "name": "datetime",
+        "type": "module",
+        "path": "core/modules/datetime",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "datetime_range": {
+        "package": "Field types",
+        "project": "",
+        "display_name": "Datetime Range (datetime_range)",
+        "name": "datetime_range",
+        "type": "module",
+        "path": "core/modules/datetime_range",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "dblog": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Database Logging (dblog)",
+        "name": "dblog",
+        "type": "module",
+        "path": "core/modules/dblog",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "dynamic_page_cache": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Internal Dynamic Page Cache (dynamic_page_cache)",
+        "name": "dynamic_page_cache",
+        "type": "module",
+        "path": "core/modules/dynamic_page_cache",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "editor": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Text Editor (editor)",
+        "name": "editor",
+        "type": "module",
+        "path": "core/modules/editor",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "field": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Field (field)",
+        "name": "field",
+        "type": "module",
+        "path": "core/modules/field",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "field_layout": {
+        "package": "Core (Experimental)",
+        "project": "",
+        "display_name": "Field Layout (field_layout)",
+        "name": "field_layout",
+        "type": "module",
+        "path": "core/modules/field_layout",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "field_ui": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Field UI (field_ui)",
+        "name": "field_ui",
+        "type": "module",
+        "path": "core/modules/field_ui",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "file": {
+        "package": "Field types",
+        "project": "",
+        "display_name": "File (file)",
+        "name": "file",
+        "type": "module",
+        "path": "core/modules/file",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "filter": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Filter (filter)",
+        "name": "filter",
+        "type": "module",
+        "path": "core/modules/filter",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "forum": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Forum (forum)",
+        "name": "forum",
+        "type": "module",
+        "path": "core/modules/forum",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "help": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Help (help)",
+        "name": "help",
+        "type": "module",
+        "path": "core/modules/help",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "help_topics": {
+        "package": "Core (Experimental)",
+        "project": "",
+        "display_name": "Help Topics (help_topics)",
+        "name": "help_topics",
+        "type": "module",
+        "path": "core/modules/help_topics",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "history": {
+        "package": "Core",
+        "project": "",
+        "display_name": "History (history)",
+        "name": "history",
+        "type": "module",
+        "path": "core/modules/history",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "image": {
+        "package": "Field types",
+        "project": "",
+        "display_name": "Image (image)",
+        "name": "image",
+        "type": "module",
+        "path": "core/modules/image",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "inline_form_errors": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Inline Form Errors (inline_form_errors)",
+        "name": "inline_form_errors",
+        "type": "module",
+        "path": "core/modules/inline_form_errors",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "jsonapi": {
+        "package": "Web services",
+        "project": "",
+        "display_name": "JSON:API (jsonapi)",
+        "name": "jsonapi",
+        "type": "module",
+        "path": "core/modules/jsonapi",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "language": {
+        "package": "Multilingual",
+        "project": "",
+        "display_name": "Language (language)",
+        "name": "language",
+        "type": "module",
+        "path": "core/modules/language",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "layout_builder": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Layout Builder (layout_builder)",
+        "name": "layout_builder",
+        "type": "module",
+        "path": "core/modules/layout_builder",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "layout_builder_expose_all_field_blocks": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Layout Builder Expose All Field Blocks (layout_builder_expose_all_field_blocks)",
+        "name": "layout_builder_expose_all_field_blocks",
+        "type": "module",
+        "path": "core/modules/layout_builder/modules/layout_builder_expose_all_field_blocks",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "layout_discovery": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Layout Discovery (layout_discovery)",
+        "name": "layout_discovery",
+        "type": "module",
+        "path": "core/modules/layout_discovery",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "link": {
+        "package": "Field types",
+        "project": "",
+        "display_name": "Link (link)",
+        "name": "link",
+        "type": "module",
+        "path": "core/modules/link",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "locale": {
+        "package": "Multilingual",
+        "project": "",
+        "display_name": "Interface Translation (locale)",
+        "name": "locale",
+        "type": "module",
+        "path": "core/modules/locale",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "media": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Media (media)",
+        "name": "media",
+        "type": "module",
+        "path": "core/modules/media",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "media_library": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Media Library (media_library)",
+        "name": "media_library",
+        "type": "module",
+        "path": "core/modules/media_library",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "menu_link_content": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Custom Menu Links (menu_link_content)",
+        "name": "menu_link_content",
+        "type": "module",
+        "path": "core/modules/menu_link_content",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "menu_ui": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Menu UI (menu_ui)",
+        "name": "menu_ui",
+        "type": "module",
+        "path": "core/modules/menu_ui",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "migrate": {
+        "package": "Migration",
+        "project": "",
+        "display_name": "Migrate (migrate)",
+        "name": "migrate",
+        "type": "module",
+        "path": "core/modules/migrate",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "migrate_drupal": {
+        "package": "Migration",
+        "project": "",
+        "display_name": "Migrate Drupal (migrate_drupal)",
+        "name": "migrate_drupal",
+        "type": "module",
+        "path": "core/modules/migrate_drupal",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "migrate_drupal_ui": {
+        "package": "Migration",
+        "project": "",
+        "display_name": "Migrate Drupal UI (migrate_drupal_ui)",
+        "name": "migrate_drupal_ui",
+        "type": "module",
+        "path": "core/modules/migrate_drupal_ui",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "mysql": {
+        "package": "Core",
+        "project": "",
+        "display_name": "MySQL (mysql)",
+        "name": "mysql",
+        "type": "module",
+        "path": "core/modules/mysql",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "navigation_top_bar": {
+        "package": "Core (Experimental)",
+        "project": "",
+        "display_name": "Navigation Top Bar (navigation_top_bar)",
+        "name": "navigation_top_bar",
+        "type": "module",
+        "path": "core/modules/navigation/modules/navigation_top_bar",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "navigation": {
+        "package": "Core (Experimental)",
+        "project": "",
+        "display_name": "Navigation (navigation)",
+        "name": "navigation",
+        "type": "module",
+        "path": "core/modules/navigation",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "node": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Node (node)",
+        "name": "node",
+        "type": "module",
+        "path": "core/modules/node",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "options": {
+        "package": "Field types",
+        "project": "",
+        "display_name": "Options (options)",
+        "name": "options",
+        "type": "module",
+        "path": "core/modules/options",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "page_cache": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Internal Page Cache (page_cache)",
+        "name": "page_cache",
+        "type": "module",
+        "path": "core/modules/page_cache",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "path": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Path (path)",
+        "name": "path",
+        "type": "module",
+        "path": "core/modules/path",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "path_alias": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Path alias (path_alias)",
+        "name": "path_alias",
+        "type": "module",
+        "path": "core/modules/path_alias",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "pgsql": {
+        "package": "Core",
+        "project": "",
+        "display_name": "PostgreSQL (pgsql)",
+        "name": "pgsql",
+        "type": "module",
+        "path": "core/modules/pgsql",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "phpass": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Password Compatibility (phpass)",
+        "name": "phpass",
+        "type": "module",
+        "path": "core/modules/phpass",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "responsive_image": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Responsive Image (responsive_image)",
+        "name": "responsive_image",
+        "type": "module",
+        "path": "core/modules/responsive_image",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "rest": {
+        "package": "Web services",
+        "project": "",
+        "display_name": "RESTful Web Services (rest)",
+        "name": "rest",
+        "type": "module",
+        "path": "core/modules/rest",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "sdc": {
+        "package": "Core (Experimental)",
+        "project": "",
+        "display_name": "Single-Directory Components (sdc)",
+        "name": "sdc",
+        "type": "module",
+        "path": "core/modules/sdc",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "search": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Search (search)",
+        "name": "search",
+        "type": "module",
+        "path": "core/modules/search",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "serialization": {
+        "package": "Web services",
+        "project": "",
+        "display_name": "Serialization (serialization)",
+        "name": "serialization",
+        "type": "module",
+        "path": "core/modules/serialization",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "settings_tray": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Settings Tray (settings_tray)",
+        "name": "settings_tray",
+        "type": "module",
+        "path": "core/modules/settings_tray",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "shortcut": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Shortcut (shortcut)",
+        "name": "shortcut",
+        "type": "module",
+        "path": "core/modules/shortcut",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "sqlite": {
+        "package": "Core",
+        "project": "",
+        "display_name": "SQLite (sqlite)",
+        "name": "sqlite",
+        "type": "module",
+        "path": "core/modules/sqlite",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "statistics": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Statistics (statistics)",
+        "name": "statistics",
+        "type": "module",
+        "path": "core/modules/statistics",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "syslog": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Syslog (syslog)",
+        "name": "syslog",
+        "type": "module",
+        "path": "core/modules/syslog",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "system": {
+        "package": "Core",
+        "project": "",
+        "display_name": "System (system)",
+        "name": "system",
+        "type": "module",
+        "path": "core/modules/system",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "taxonomy": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Taxonomy (taxonomy)",
+        "name": "taxonomy",
+        "type": "module",
+        "path": "core/modules/taxonomy",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "telephone": {
+        "package": "Field types",
+        "project": "",
+        "display_name": "Telephone (telephone)",
+        "name": "telephone",
+        "type": "module",
+        "path": "core/modules/telephone",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "text": {
+        "package": "Field types",
+        "project": "",
+        "display_name": "Text (text)",
+        "name": "text",
+        "type": "module",
+        "path": "core/modules/text",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "toolbar": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Toolbar (toolbar)",
+        "name": "toolbar",
+        "type": "module",
+        "path": "core/modules/toolbar",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "tour": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Tour (tour)",
+        "name": "tour",
+        "type": "module",
+        "path": "core/modules/tour",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "tracker": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Activity Tracker (tracker)",
+        "name": "tracker",
+        "type": "module",
+        "path": "core/modules/tracker",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "update": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Update Manager (update)",
+        "name": "update",
+        "type": "module",
+        "path": "core/modules/update",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "user": {
+        "package": "Core",
+        "project": "",
+        "display_name": "User (user)",
+        "name": "user",
+        "type": "module",
+        "path": "core/modules/user",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "views": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Views (views)",
+        "name": "views",
+        "type": "module",
+        "path": "core/modules/views",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "views_ui": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Views UI (views_ui)",
+        "name": "views_ui",
+        "type": "module",
+        "path": "core/modules/views_ui",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "workflows": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Workflows (workflows)",
+        "name": "workflows",
+        "type": "module",
+        "path": "core/modules/workflows",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "workspaces": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Workspaces (workspaces)",
+        "name": "workspaces",
+        "type": "module",
+        "path": "core/modules/workspaces",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "admin_toolbar": {
+        "package": "Administration",
+        "project": "admin_toolbar",
+        "display_name": "Admin Toolbar (admin_toolbar)",
+        "name": "admin_toolbar",
+        "type": "module",
+        "path": "modules/contrib/admin_toolbar",
+        "status": "Enabled",
+        "version": "3.6.3"
+    },
+    "admin_toolbar_links_access_filter": {
+        "package": "Administration",
+        "project": "admin_toolbar",
+        "display_name": "Admin Toolbar Links Access Filter (admin_toolbar_links_access_filter)",
+        "name": "admin_toolbar_links_access_filter",
+        "type": "module",
+        "path": "modules/contrib/admin_toolbar/admin_toolbar_links_access_filter",
+        "status": "Disabled",
+        "version": "3.6.3"
+    },
+    "admin_toolbar_search": {
+        "package": "Administration",
+        "project": "admin_toolbar",
+        "display_name": "Admin Toolbar Search (admin_toolbar_search)",
+        "name": "admin_toolbar_search",
+        "type": "module",
+        "path": "modules/contrib/admin_toolbar/admin_toolbar_search",
+        "status": "Enabled",
+        "version": "3.6.3"
+    },
+    "admin_toolbar_tools": {
+        "package": "Administration",
+        "project": "admin_toolbar",
+        "display_name": "Admin Toolbar Extra Tools (admin_toolbar_tools)",
+        "name": "admin_toolbar_tools",
+        "type": "module",
+        "path": "modules/contrib/admin_toolbar/admin_toolbar_tools",
+        "status": "Enabled",
+        "version": "3.6.3"
+    },
+    "adminimal_admin_toolbar": {
+        "package": "Administration",
+        "project": "adminimal_admin_toolbar",
+        "display_name": "Adminimal Admin Toolbar (adminimal_admin_toolbar)",
+        "name": "adminimal_admin_toolbar",
+        "type": "module",
+        "path": "modules/contrib/adminimal_admin_toolbar",
+        "status": "Disabled",
+        "version": "2.0.0"
+    },
+    "aggregator": {
+        "package": "Web services",
+        "project": "aggregator",
+        "display_name": "Aggregator (aggregator)",
+        "name": "aggregator",
+        "type": "module",
+        "path": "modules/contrib/aggregator",
+        "status": "Enabled",
+        "version": "2.2.6"
+    },
+    "backup_migrate": {
+        "package": "Other",
+        "project": "backup_migrate",
+        "display_name": "Backup and Migrate (backup_migrate)",
+        "name": "backup_migrate",
+        "type": "module",
+        "path": "modules/contrib/backup_migrate",
+        "status": "Enabled",
+        "version": "5.1.5"
+    },
+    "captcha": {
+        "package": "Spam control",
+        "project": "captcha",
+        "display_name": "CAPTCHA (captcha)",
+        "name": "captcha",
+        "type": "module",
+        "path": "modules/contrib/captcha",
+        "status": "Enabled",
+        "version": "2.0.10"
+    },
+    "image_captcha": {
+        "package": "Spam control",
+        "project": "captcha",
+        "display_name": "Image CAPTCHA (image_captcha)",
+        "name": "image_captcha",
+        "type": "module",
+        "path": "modules/contrib/captcha/modules/image_captcha",
+        "status": "Enabled",
+        "version": "2.0.10"
+    },
+    "ckeditor": {
+        "package": "Other",
+        "project": "ckeditor",
+        "display_name": "CKEditor 4 (contrib) (ckeditor)",
+        "name": "ckeditor",
+        "type": "module",
+        "path": "modules/contrib/ckeditor",
+        "status": "Disabled",
+        "version": "1.0.2"
+    },
+    "ckeditor_iframe": {
+        "package": "CKEditor",
+        "project": "ckeditor_iframe",
+        "display_name": "CKEditor iFrame (ckeditor_iframe)",
+        "name": "ckeditor_iframe",
+        "type": "module",
+        "path": "modules/contrib/ckeditor_iframe",
+        "status": "Disabled",
+        "version": "8.x-2.2"
+    },
+    "ctools": {
+        "package": "Chaos tool suite",
+        "project": "ctools",
+        "display_name": "Chaos Tools (ctools)",
+        "name": "ctools",
+        "type": "module",
+        "path": "modules/contrib/ctools",
+        "status": "Enabled",
+        "version": "4.1.1"
+    },
+    "ctools_block": {
+        "package": "Chaos tool suite (Experimental)",
+        "project": "ctools",
+        "display_name": "Chaos Tools Blocks (ctools_block)",
+        "name": "ctools_block",
+        "type": "module",
+        "path": "modules/contrib/ctools/modules/ctools_block",
+        "status": "Disabled",
+        "version": "4.1.1"
+    },
+    "ctools_entity_mask": {
+        "package": "Other",
+        "project": "ctools",
+        "display_name": "Entity Mask (ctools_entity_mask)",
+        "name": "ctools_entity_mask",
+        "type": "module",
+        "path": "modules/contrib/ctools/modules/ctools_entity_mask",
+        "status": "Disabled",
+        "version": "4.1.1"
+    },
+    "ctools_views": {
+        "package": "Chaos tool suite (Experimental)",
+        "project": "ctools",
+        "display_name": "Chaos Tools Views (ctools_views)",
+        "name": "ctools_views",
+        "type": "module",
+        "path": "modules/contrib/ctools/modules/ctools_views",
+        "status": "Disabled",
+        "version": "4.1.1"
+    },
+    "entity_clone": {
+        "package": "Entity Clone",
+        "project": "entity_clone",
+        "display_name": "Entity Clone (entity_clone)",
+        "name": "entity_clone",
+        "type": "module",
+        "path": "modules/contrib/entity_clone",
+        "status": "Enabled",
+        "version": "2.2.0-beta1"
+    },
+    "entity_clone_extras": {
+        "package": "Entity Clone",
+        "project": "entity_clone",
+        "display_name": "Entity Clone Extras (entity_clone_extras)",
+        "name": "entity_clone_extras",
+        "type": "module",
+        "path": "modules/contrib/entity_clone/modules/entity_clone_extras",
+        "status": "Disabled",
+        "version": "2.2.0-beta1"
+    },
+    "fakeobjects": {
+        "package": "CKEditor",
+        "project": "fakeobjects",
+        "display_name": "FakeObjects (fakeobjects)",
+        "name": "fakeobjects",
+        "type": "module",
+        "path": "modules/contrib/fakeobjects",
+        "status": "Disabled",
+        "version": "8.x-1.3"
+    },
+    "fitvids": {
+        "package": "Other",
+        "project": "fitvids",
+        "display_name": "FitVids (fitvids)",
+        "name": "fitvids",
+        "type": "module",
+        "path": "modules/contrib/fitvids",
+        "status": "Enabled",
+        "version": "2.1.0"
+    },
+    "fontawesome": {
+        "package": "Other",
+        "project": "fontawesome",
+        "display_name": "Font Awesome (fontawesome)",
+        "name": "fontawesome",
+        "type": "module",
+        "path": "modules/contrib/fontawesome",
+        "status": "Enabled",
+        "version": "8.x-2.26"
+    },
+    "fontawesome_iconpicker_widget": {
+        "package": "Other",
+        "project": "fontawesome",
+        "display_name": "Font Awesome Iconpicker Widget (fontawesome_iconpicker_widget)",
+        "name": "fontawesome_iconpicker_widget",
+        "type": "module",
+        "path": "modules/contrib/fontawesome/modules/fontawesome_iconpicker_widget",
+        "status": "Disabled",
+        "version": "8.x-2.26"
+    },
+    "fontawesome_media": {
+        "package": "Other",
+        "project": "fontawesome",
+        "display_name": "Font Awesome Media Entity (fontawesome_media)",
+        "name": "fontawesome_media",
+        "type": "module",
+        "path": "modules/contrib/fontawesome/modules/fontawesome_media",
+        "status": "Disabled",
+        "version": "8.x-2.26"
+    },
+    "google_analytics": {
+        "package": "Statistics",
+        "project": "google_analytics",
+        "display_name": "Google Analytics (google_analytics)",
+        "name": "google_analytics",
+        "type": "module",
+        "path": "modules/contrib/google_analytics",
+        "status": "Disabled",
+        "version": "4.0.3"
+    },
+    "honeypot": {
+        "package": "Spam control",
+        "project": "honeypot",
+        "display_name": "Honeypot (honeypot)",
+        "name": "honeypot",
+        "type": "module",
+        "path": "modules/contrib/honeypot",
+        "status": "Enabled",
+        "version": "2.2.2"
+    },
+    "httpswww": {
+        "package": "Other",
+        "project": "httpswww",
+        "display_name": "HTTPS and WWW Redirect (httpswww)",
+        "name": "httpswww",
+        "type": "module",
+        "path": "modules/contrib/httpswww",
+        "status": "Disabled",
+        "version": "2.1.3"
+    },
+    "image_field_to_media": {
+        "package": "Fields",
+        "project": "image_field_to_media",
+        "display_name": "Image field to media (image_field_to_media)",
+        "name": "image_field_to_media",
+        "type": "module",
+        "path": "modules/contrib/image_field_to_media",
+        "status": "Enabled",
+        "version": "2.0.2"
+    },
+    "pathauto": {
+        "package": "Other",
+        "project": "pathauto",
+        "display_name": "Pathauto (pathauto)",
+        "name": "pathauto",
+        "type": "module",
+        "path": "modules/contrib/pathauto",
+        "status": "Enabled",
+        "version": "8.x-1.15"
+    },
+    "recaptcha": {
+        "package": "Spam control",
+        "project": "recaptcha",
+        "display_name": "reCAPTCHA (recaptcha)",
+        "name": "recaptcha",
+        "type": "module",
+        "path": "modules/contrib/recaptcha",
+        "status": "Enabled",
+        "version": "8.x-3.5"
+    },
+    "redirect_404": {
+        "package": "Other",
+        "project": "redirect",
+        "display_name": "Redirect 404 (redirect_404)",
+        "name": "redirect_404",
+        "type": "module",
+        "path": "modules/contrib/redirect/modules/redirect_404",
+        "status": "Disabled",
+        "version": "8.x-1.13"
+    },
+    "redirect_domain": {
+        "package": "Other",
+        "project": "redirect",
+        "display_name": "Redirect Domain (redirect_domain)",
+        "name": "redirect_domain",
+        "type": "module",
+        "path": "modules/contrib/redirect/modules/redirect_domain",
+        "status": "Disabled",
+        "version": "8.x-1.13"
+    },
+    "redirect": {
+        "package": "Other",
+        "project": "redirect",
+        "display_name": "Redirect (redirect)",
+        "name": "redirect",
+        "type": "module",
+        "path": "modules/contrib/redirect",
+        "status": "Enabled",
+        "version": "8.x-1.13"
+    },
+    "rules": {
+        "package": "Rules",
+        "project": "rules",
+        "display_name": "Rules (rules)",
+        "name": "rules",
+        "type": "module",
+        "path": "modules/contrib/rules",
+        "status": "Enabled",
+        "version": "4.0.1"
+    },
+    "similarterms": {
+        "package": "Other",
+        "project": "similarterms",
+        "display_name": "Similar By Terms (similarterms)",
+        "name": "similarterms",
+        "type": "module",
+        "path": "modules/contrib/similarterms",
+        "status": "Enabled",
+        "version": "8.x-1.10"
+    },
+    "taxonomy_menu": {
+        "package": "Menu",
+        "project": "taxonomy_menu",
+        "display_name": "Taxonomy Menu (taxonomy_menu)",
+        "name": "taxonomy_menu",
+        "type": "module",
+        "path": "modules/contrib/taxonomy_menu",
+        "status": "Disabled",
+        "version": "8.x-3.9"
+    },
+    "tb_megamenu": {
+        "package": "Menu",
+        "project": "tb_megamenu",
+        "display_name": "The Better Mega Menu (tb_megamenu)",
+        "name": "tb_megamenu",
+        "type": "module",
+        "path": "modules/contrib/tb_megamenu",
+        "status": "Enabled",
+        "version": "8.x-1.10"
+    },
+    "token": {
+        "package": "Other",
+        "project": "token",
+        "display_name": "Token (token)",
+        "name": "token",
+        "type": "module",
+        "path": "modules/contrib/token",
+        "status": "Enabled",
+        "version": "8.x-1.17"
+    },
+    "typed_data": {
+        "package": "Other",
+        "project": "typed_data",
+        "display_name": "Typed Data (typed_data)",
+        "name": "typed_data",
+        "type": "module",
+        "path": "modules/contrib/typed_data",
+        "status": "Enabled",
+        "version": "2.1.1"
+    },
+    "upgrade_status": {
+        "package": "Administration",
+        "project": "upgrade_status",
+        "display_name": "Upgrade Status (upgrade_status)",
+        "name": "upgrade_status",
+        "type": "module",
+        "path": "modules/contrib/upgrade_status",
+        "status": "Enabled",
+        "version": "4.3.10"
+    },
+    "views_slideshow_cycle": {
+        "package": "Views",
+        "project": "views_slideshow",
+        "display_name": "Views Slideshow Cycle (views_slideshow_cycle)",
+        "name": "views_slideshow_cycle",
+        "type": "module",
+        "path": "modules/contrib/views_slideshow/modules/views_slideshow_cycle",
+        "status": "Enabled",
+        "version": "5.0.1"
+    },
+    "views_slideshow": {
+        "package": "Views",
+        "project": "views_slideshow",
+        "display_name": "Views Slideshow (views_slideshow)",
+        "name": "views_slideshow",
+        "type": "module",
+        "path": "modules/contrib/views_slideshow",
+        "status": "Enabled",
+        "version": "5.0.1"
+    },
+    "webform_access": {
+        "package": "Webform",
+        "project": "webform",
+        "display_name": "Webform Access (webform_access)",
+        "name": "webform_access",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_access",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_attachment": {
+        "package": "Webform",
+        "project": "webform",
+        "display_name": "Webform Attachment (webform_attachment)",
+        "name": "webform_attachment",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_attachment",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_bootstrap": {
+        "package": "Webform [DEPRECATED]",
+        "project": "webform",
+        "display_name": "Webform Bootstrap (3.x) (webform_bootstrap)",
+        "name": "webform_bootstrap",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_bootstrap",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_cards": {
+        "package": "Webform",
+        "project": "webform",
+        "display_name": "Webform Cards (webform_cards)",
+        "name": "webform_cards",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_cards",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_clientside_validation": {
+        "package": "Webform",
+        "project": "webform",
+        "display_name": "Webform Clientside Validation (webform_clientside_validation)",
+        "name": "webform_clientside_validation",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_clientside_validation",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_demo_application_evaluation": {
+        "package": "Webform Demo",
+        "project": "webform",
+        "display_name": "Webform Demo: Application/Evaluation System (webform_demo_application_evaluation)",
+        "name": "webform_demo_application_evaluation",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_demo/webform_demo_application_evaluation",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_demo_event_registration": {
+        "package": "Webform Demo",
+        "project": "webform",
+        "display_name": "Webform Demo: Event Registration System (webform_demo_event_registration)",
+        "name": "webform_demo_event_registration",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_demo/webform_demo_event_registration",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_demo_region_contact": {
+        "package": "Webform Demo",
+        "project": "webform",
+        "display_name": "Webform Demo: Region Contact System (webform_demo_region_contact)",
+        "name": "webform_demo_region_contact",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_demo/webform_demo_region_contact",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_devel": {
+        "package": "Webform",
+        "project": "webform",
+        "display_name": "Webform Devel (webform_devel)",
+        "name": "webform_devel",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_devel",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_entity_print": {
+        "package": "Webform",
+        "project": "webform",
+        "display_name": "Webform Entity Print (PDF) (webform_entity_print)",
+        "name": "webform_entity_print",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_entity_print",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_entity_print_attachment": {
+        "package": "Webform",
+        "project": "webform",
+        "display_name": "Webform Entity Print (PDF) Attachment (webform_entity_print_attachment)",
+        "name": "webform_entity_print_attachment",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_entity_print_attachment",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_example_composite": {
+        "package": "Webform example",
+        "project": "webform",
+        "display_name": "Webform Example Composite (webform_example_composite)",
+        "name": "webform_example_composite",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_example_composite",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_example_custom_form": {
+        "package": "Webform example",
+        "project": "webform",
+        "display_name": "Webform Custom Form Example (webform_example_custom_form)",
+        "name": "webform_example_custom_form",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_example_custom_form",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_example_element": {
+        "package": "Webform example",
+        "project": "webform",
+        "display_name": "Webform Element Example (webform_example_element)",
+        "name": "webform_example_element",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_example_element",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_example_element_properties": {
+        "package": "Webform example",
+        "project": "webform",
+        "display_name": "Webform Element Properties Example (webform_example_element_properties)",
+        "name": "webform_example_element_properties",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_example_element_properties",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_example_handler": {
+        "package": "Webform example",
+        "project": "webform",
+        "display_name": "Webform Handler Example (webform_example_handler)",
+        "name": "webform_example_handler",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_example_handler",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_example_remote_post": {
+        "package": "Webform example",
+        "project": "webform",
+        "display_name": "Webform Remote Post Example (webform_example_remote_post)",
+        "name": "webform_example_remote_post",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_example_remote_post",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_example_variant": {
+        "package": "Webform example",
+        "project": "webform",
+        "display_name": "Webform Variant Example (webform_example_variant)",
+        "name": "webform_example_variant",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_example_variant",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_examples": {
+        "package": "Webform example",
+        "project": "webform",
+        "display_name": "Webform Examples (webform_examples)",
+        "name": "webform_examples",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_examples",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_examples_accessibility": {
+        "package": "Webform example",
+        "project": "webform",
+        "display_name": "Webform Examples Accessibility (webform_examples_accessibility)",
+        "name": "webform_examples_accessibility",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_examples_accessibility",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_image_select": {
+        "package": "Webform",
+        "project": "webform",
+        "display_name": "Webform Image Select (webform_image_select)",
+        "name": "webform_image_select",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_image_select",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_jqueryui_buttons": {
+        "package": "Webform [DEPRECATED]",
+        "project": "webform",
+        "display_name": "Webform jQueryUI Buttons (webform_jqueryui_buttons)",
+        "name": "webform_jqueryui_buttons",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_jqueryui_buttons",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_jqueryui_datepicker": {
+        "package": "Webform [DEPRECATED]",
+        "project": "webform",
+        "display_name": "Webform jQueryUI Datepicker (webform_jqueryui_datepicker)",
+        "name": "webform_jqueryui_datepicker",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_jqueryui_datepicker",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_node": {
+        "package": "Webform",
+        "project": "webform",
+        "display_name": "Webform Node (webform_node)",
+        "name": "webform_node",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_node",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_options_custom": {
+        "package": "Webform",
+        "project": "webform",
+        "display_name": "Webform Custom Options (webform_options_custom)",
+        "name": "webform_options_custom",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_options_custom",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_options_limit": {
+        "package": "Webform",
+        "project": "webform",
+        "display_name": "Webform Options Limit (webform_options_limit)",
+        "name": "webform_options_limit",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_options_limit",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_scheduled_email": {
+        "package": "Webform",
+        "project": "webform",
+        "display_name": "Webform Scheduled Email Handler (webform_scheduled_email)",
+        "name": "webform_scheduled_email",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_scheduled_email",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_schema": {
+        "package": "Webform",
+        "project": "webform",
+        "display_name": "Webform Schema (webform_schema)",
+        "name": "webform_schema",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_schema",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_share": {
+        "package": "Webform",
+        "project": "webform",
+        "display_name": "Webform Share (webform_share)",
+        "name": "webform_share",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_share",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_submission_export_import": {
+        "package": "Webform",
+        "project": "webform",
+        "display_name": "Webform Submission Export/Import (webform_submission_export_import)",
+        "name": "webform_submission_export_import",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_submission_export_import",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_submission_log": {
+        "package": "Webform",
+        "project": "webform",
+        "display_name": "Webform Submission Log (webform_submission_log)",
+        "name": "webform_submission_log",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_submission_log",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_templates": {
+        "package": "Webform",
+        "project": "webform",
+        "display_name": "Webform Templates (webform_templates)",
+        "name": "webform_templates",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_templates",
+        "status": "Disabled",
+        "version": "6.3.1"
+    },
+    "webform_ui": {
+        "package": "Webform",
+        "project": "webform",
+        "display_name": "Webform UI (webform_ui)",
+        "name": "webform_ui",
+        "type": "module",
+        "path": "modules/contrib/webform/modules/webform_ui",
+        "status": "Enabled",
+        "version": "6.3.1"
+    },
+    "webform": {
+        "package": "Webform",
+        "project": "webform",
+        "display_name": "Webform (webform)",
+        "name": "webform",
+        "type": "module",
+        "path": "modules/contrib/webform",
+        "status": "Enabled",
+        "version": "6.3.1"
+    },
+    "claro": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Claro (claro)",
+        "name": "claro",
+        "type": "theme",
+        "path": "core/themes/claro",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "olivero": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Olivero (olivero)",
+        "name": "olivero",
+        "type": "theme",
+        "path": "core/themes/olivero",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "stable9": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Stable 9 (stable9)",
+        "name": "stable9",
+        "type": "theme",
+        "path": "core/themes/stable9",
+        "status": "Enabled",
+        "version": "10.6.19"
+    },
+    "stark": {
+        "package": "Core",
+        "project": "",
+        "display_name": "Stark (stark)",
+        "name": "stark",
+        "type": "theme",
+        "path": "core/themes/stark",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "starterkit_theme": {
+        "package": "",
+        "project": "",
+        "display_name": "Starterkit theme (starterkit_theme)",
+        "name": "starterkit_theme",
+        "type": "theme",
+        "path": "core/themes/starterkit_theme",
+        "status": "Disabled",
+        "version": "10.6.19"
+    },
+    "adminimal_theme": {
+        "package": "",
+        "project": "adminimal_theme",
+        "display_name": "Adminimal (adminimal_theme)",
+        "name": "adminimal_theme",
+        "type": "theme",
+        "path": "themes/contrib/adminimal_theme",
+        "status": "Disabled",
+        "version": "8.x-1.7"
+    },
+    "bootstrap5": {
+        "package": "",
+        "project": "bootstrap5",
+        "display_name": "Bootstrap5 (bootstrap5)",
+        "name": "bootstrap5",
+        "type": "theme",
+        "path": "themes/contrib/bootstrap5",
+        "status": "Enabled",
+        "version": "4.0.8"
+    },
+    "classy": {
+        "package": "Core",
+        "project": "classy",
+        "display_name": "Classy (classy)",
+        "name": "classy",
+        "type": "theme",
+        "path": "themes/contrib/classy",
+        "status": "Enabled",
+        "version": "2.0.3"
+    },
+    "seven": {
+        "package": "",
+        "project": "seven",
+        "display_name": "Seven (seven)",
+        "name": "seven",
+        "type": "theme",
+        "path": "themes/contrib/seven",
+        "status": "Disabled",
+        "version": "1.0.0"
+    },
+    "stable": {
+        "package": "Core",
+        "project": "stable",
+        "display_name": "Stable (stable)",
+        "name": "stable",
+        "type": "theme",
+        "path": "themes/contrib/stable",
+        "status": "Enabled",
+        "version": "2.1.0"
+    },
+    "buriton5": {
+        "package": "",
+        "project": "",
+        "display_name": "Buriton Bootstrap 5 (buriton5)",
+        "name": "buriton5",
+        "type": "theme",
+        "path": "themes/custom/buriton5",
+        "status": "Enabled",
+        "version": null
+    },
+    "zircon": {
+        "package": "Custom",
+        "project": "",
+        "display_name": "Zircon (zircon)",
+        "name": "zircon",
+        "type": "theme",
+        "path": "themes/custom/zircon",
+        "status": "Enabled",
+        "version": null
+    }
+}

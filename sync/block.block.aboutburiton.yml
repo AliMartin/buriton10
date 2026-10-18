@@ -1,0 +1,30 @@
+uuid: 03779162-b65d-44ce-a590-ef31e73775ae
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:67b71f63-50f6-4ae8-8dcb-1e938893f169'
+  module:
+    - block_content
+    - system
+  theme:
+    - buriton5
+id: aboutburiton
+theme: buriton5
+region: sidebar_second
+weight: -4
+provider: null
+plugin: 'block_content:67b71f63-50f6-4ae8-8dcb-1e938893f169'
+settings:
+  id: 'block_content:67b71f63-50f6-4ae8-8dcb-1e938893f169'
+  label: 'About Buriton'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /hallmaster

@@ -1,0 +1,17 @@
+uuid: df51006e-8faa-46be-8c7d-1ced6b392796
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Quick Event'
+type: quickevent
+description: 'Add an event to the website but with only the most basic of information.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,30 @@
+uuid: 0e688e04-f3a8-4501-9fb1-e19b640440b6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fad1640a-5272-4c96-a61a-3d050d8b4359'
+  module:
+    - block_content
+    - system
+  theme:
+    - zircon
+id: zircon_block_1
+theme: zircon
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'block_content:fad1640a-5272-4c96-a61a-3d050d8b4359'
+settings:
+  id: 'block_content:fad1640a-5272-4c96-a61a-3d050d8b4359'
+  label: 'Local Weather'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/hallmaster*'

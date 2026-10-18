@@ -1,0 +1,17 @@
+uuid: 915d0298-4984-4a75-bdd1-0c800bfd213f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: News
+type: news
+description: 'Add a news item to the website. The news item will appear on the website''s "latest news" page and on your own page.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

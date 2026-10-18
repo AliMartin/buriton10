@@ -1,0 +1,21 @@
+uuid: 6f012250-67aa-4e0b-a635-9ac12a1a2e2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitle
+    - node.type.news
+  module:
+    - text
+id: node.news.field_subtitle
+field_name: field_subtitle
+entity_type: node
+bundle: news
+label: Subtitle
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

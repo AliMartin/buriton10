@@ -1,0 +1,36 @@
+uuid: e756a7b7-f89a-496f-adab-01c685da226f
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - ckeditor5
+format: restricted_html
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - bold
+      - italic
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - blockQuote
+      - code
+      - sourceEditing
+  plugins:
+    ckeditor5_list:
+      properties:
+        reversed: false
+        startIndex: true
+      multiBlock: true
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<cite>'
+        - '<blockquote cite>'
+        - '<ul type>'
+        - '<ol type>'
+image_upload:
+  status: false

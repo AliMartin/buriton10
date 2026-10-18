@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Preprocess functions for Buriton's custom Zircon theme.
+ */
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function zircon_preprocess_page(array &$variables) {
+  $first = !empty($variables['page']['sidebar_first']);
+  $second = !empty($variables['page']['sidebar_second']);
+  $variables['page']['main_content_width'] = $first && $second ? 6 : ($first || $second ? 8 : 12);
+  $variables['page']['sidebar_width'] = $first && $second ? 3 : 4;
+  $variables['attributes']['class'][] = $first && $second ? 'layout-two-sidebars' : ($first || $second ? 'layout-one-sidebar' : 'layout-no-sidebars');
+  if ($first && !$second) {
+    $variables['attributes']['class'][] = 'layout-sidebar-first';
+  }
+  elseif ($second && !$first) {
+    $variables['attributes']['class'][] = 'layout-sidebar-second';
+  }
+}

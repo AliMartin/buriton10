@@ -1,0 +1,78 @@
+uuid: 71795987-b3f3-4ad7-a379-8249fa39a31a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.quickevent.comment
+    - field.field.node.quickevent.field_date
+    - field.field.node.quickevent.field_subtitle
+    - field.field.node.quickevent.section
+    - field.field.node.quickevent.tags
+    - node.type.quickevent
+  module:
+    - comment
+    - datetime
+    - text
+    - user
+id: node.quickevent.default
+targetEntityType: node
+bundle: quickevent
+mode: default
+content:
+  comment:
+    type: comment_default
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_event_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  field_subtitle:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  section:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

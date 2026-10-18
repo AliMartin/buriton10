@@ -1,0 +1,17 @@
+uuid: f3d23b16-81bf-4931-be19-bef99ba82975
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Parish Council'
+type: parish_council
+description: 'Pages and documents related to the governance of Buriton Parish Council.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

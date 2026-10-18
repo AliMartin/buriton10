@@ -1,0 +1,147 @@
+{
+    "name": "drupal/legacy-project",
+    "description": "Project template for Drupal 9 projects with composer following drupal/drupal layout",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/drupal",
+    "support": {
+        "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
+        "chat": "https://www.drupal.org/node/314178"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "briancherne/jquery.hover-intent",
+                "version": "1.10.2",
+                "type": "drupal-library",
+                "license": "MIT",
+                "dist": {
+                    "url": "https://github.com/briancherne/jquery-hoverIntent/archive/refs/tags/v1.10.2.tar.gz",
+                    "type": "tar"
+                }
+            }
+        }
+    ],
+    "require": {
+        "briancherne/jquery.hover-intent": "^1.10.2",
+        "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^2.0",
+        "drupal/admin_toolbar": "^3.1",
+        "drupal/adminimal_admin_toolbar": "^2.0",
+        "drupal/adminimal_theme": "^1.7",
+        "drupal/aggregator": "^2.2",
+        "drupal/backup_migrate": "^5.0",
+        "drupal/bootstrap5": "^4.0.8",
+        "drupal/captcha": "^2.0.10",
+        "drupal/ckeditor_iframe": "^2.1",
+        "drupal/classy": "^2.0",
+        "drupal/core-composer-scaffold": "^10.6.19",
+        "drupal/core-project-message": "^10.6.19",
+        "drupal/core-recommended": "^10.6.19",
+        "drupal/core-vendor-hardening": "^10.6.19",
+        "drupal/ctools": "^4.0",
+        "drupal/entity_clone": "^2.0@beta",
+        "drupal/fitvids": "^2.0",
+        "drupal/fontawesome": "^2.23",
+        "drupal/google_analytics": "^4.0",
+        "drupal/honeypot": "^2.1",
+        "drupal/httpswww": "^2.0",
+        "drupal/image_field_to_media": "^2.0.2",
+        "drupal/pathauto": "^1.11",
+        "drupal/recaptcha": "^3.0",
+        "drupal/redirect": "^1.8",
+        "drupal/rules": "^4.0",
+        "drupal/similarterms": "^1.5",
+        "drupal/stable": "^2.1",
+        "drupal/taxonomy_menu": "^3.5",
+        "drupal/tb_megamenu": "^1.7",
+        "drupal/token": "^1.11",
+        "drupal/upgrade_status": "^4.3.10",
+        "drupal/views_slideshow": "^5.0",
+        "drupal/webform": "^6.1",
+        "drush/drush": "^12.5"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "drupal/core-vendor-hardening": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "patches": {
+            "drupal/bootstrap5": {
+                "Preserve base themes still required by Zircon or another installed theme": "patches/bootstrap5-preserve-required-base-themes.patch"
+            }
+        },
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "./"
+            }
+        },
+        "installer-paths": {
+            "core": [
+                "type:drupal-core"
+            ],
+            "libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "profiles/custom/{$name}": [
+                "type:drupal-custom-profile"
+            ],
+            "themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ]
+        },
+        "drupal-core-project-message": {
+            "include-keys": [
+                "homepage",
+                "support"
+            ],
+            "post-create-project-cmd-message": [
+                "<bg=blue;fg=white>                                                         </>",
+                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
+                "<bg=blue;fg=white>  from the drupal/legacy-project template!               </>",
+                "<bg=blue;fg=white>                                                         </>",
+                "",
+                "<bg=yellow;fg=black>Next steps</>:",
+                "  * Install the site: https://www.drupal.org/docs/8/install",
+                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
+                "  * Get support: https://www.drupal.org/support",
+                "  * Get involved with the Drupal community:",
+                "      https://www.drupal.org/getting-involved",
+                "  * Remove the plugin that prints this message:",
+                "      composer remove drupal/core-project-message"
+            ]
+        }
+    }
+}

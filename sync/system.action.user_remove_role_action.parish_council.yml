@@ -1,0 +1,14 @@
+uuid: 2e226be4-65d3-4957-8830-3c395142762f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.parish_council
+  module:
+    - user
+id: user_remove_role_action.parish_council
+label: 'Remove the Parish Council role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: parish_council

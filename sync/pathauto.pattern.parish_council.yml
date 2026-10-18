@@ -1,0 +1,23 @@
+uuid: 90eb886e-dce4-438e-9678-0b10f20ed4b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.parish_council
+  module:
+    - node
+id: parish_council
+label: 'Parish Council'
+type: 'canonical_entities:node'
+pattern: '/parish-council/[node:title]'
+selection_criteria:
+  b54ef8d3-e281-4792-854e-77eb0b45574e:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      parish_council: parish_council
+selection_logic: and
+weight: -5
+relationships: {  }

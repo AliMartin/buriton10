@@ -1,0 +1,28 @@
+uuid: 6635f032-021e-4959-a8eb-b471760d5c2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.parish_council
+    - taxonomy.vocabulary.year
+id: node.parish_council.field_year
+field_name: field_year
+entity_type: node
+bundle: parish_council
+label: Year
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      year: year
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

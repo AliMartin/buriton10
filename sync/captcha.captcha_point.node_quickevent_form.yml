@@ -1,0 +1,7 @@
+uuid: 4f38ffde-c5ba-4dcb-aa74-fde2ab69d7f1
+langcode: en
+status: false
+dependencies: {  }
+formId: node_quickevent_form
+captchaType: default
+label: node_quickevent_form

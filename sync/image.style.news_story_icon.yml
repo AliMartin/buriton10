@@ -1,0 +1,15 @@
+uuid: b1c8547e-7e74-471e-b5dd-bb1b50cc4862
+langcode: en
+status: true
+dependencies: {  }
+name: news_story_icon
+label: News_Story_Icon
+effects:
+  66d70910-f1e8-4e61-bf19-c8ab49d0d516:
+    uuid: 66d70910-f1e8-4e61-bf19-c8ab49d0d516
+    id: image_scale_and_crop
+    weight: 0
+    data:
+      width: 112
+      height: 80
+      anchor: center-center

@@ -1,0 +1,23 @@
+uuid: 13f794a0-512b-44e7-a0b1-35cf65069feb
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - buriton5
+_core:
+  default_config_hash: XR4REgpGMj6dqKCDKdDponbLSUP-Hkh1nrpeLXOIyhE
+id: buriton5_search_form
+theme: buriton5
+region: sidebar_second
+weight: -8
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

@@ -1,0 +1,460 @@
+/*
+ * CSS Overrides for the Buriton Community Website.
+ * Based on the supplied Zircon theme.
+ */
+
+
+
+/* Page layout */
+
+body {
+	background-color: #006be5;
+    color: #333;
+	/* background-image: url('/themes/zircon/images/wallpaper-02.jpg'); */
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+#main .container {
+    /* background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0; */
+    background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+}
+
+#header {
+    background-color: #0f5099;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width : 767px) {
+	#header {
+		background-color: inherit;
+	}
+}
+
+.site-logo img {
+    width: 47px;
+    height: 50px;
+}
+
+.site-logo {
+	float: left;
+	margin-right: 15px;
+}
+
+.site-name a {
+	display: block;
+	width: 500px;
+	color: #fff;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 700;
+	position: relative;
+	top: 15px;
+}
+
+.site-name a:hover {
+	color: #fff;
+}
+
+.navbar-toggle {
+    background: inherit;
+    border-color: inherit;
+    border: none;
+}
+
+.navbar-toggle .icon-bar {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 2px;
+    height: 4px;
+    width: 26px;
+}
+
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+    background: #0f5099 none repeat scroll 0 0;
+}
+
+#footer .container {
+	background: #121212;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+
+
+
+/* Links */
+
+a {
+	color: #8da535;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: #849908;
+    outline: medium none;
+    text-decoration: none;
+}
+
+
+#block-zircon-content a {
+    color: #8da535;
+    text-decoration: none;
+}
+
+
+#block-zircon-content a:hover,
+#block-zircon-content a:focus {
+    color: #849908;
+    outline: medium none;
+    text-decoration: none;
+}
+
+
+
+/* Buttons */
+
+.form-actions .form-submit {
+    background-color: #8da535;
+}
+
+.form-actions .form-submit:hover,
+.form-actions .form-submit:focus {
+    background-color: #849908;
+}
+
+
+
+/* Menu */
+
+#main-menu .container ul.menu li.menu-item--active-trail > a {
+	background: inherit;
+    background-color: #8da535;    
+}
+
+#main-menu .container ul.menu li:hover > a,
+#main-menu .container ul.menu li:focus > a {
+	background: inherit;
+    background-color: #8da535;    
+}
+
+#main-menu .container ul.menu ul.menu {
+    border: 5px solid #8da535;
+}
+
+#main-menu .container ul.menu li > a {
+    text-transform: inherit;
+    padding: 12px 17px;
+}
+
+#footer ul.menu li a.is-active {
+    color: #fff;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #main-menu .container ul.menu li > a {
+    padding: 12px 12px;
+    font-size: 0.97em;
+  }
+}
+
+
+
+/* Mobile menu */
+
+@media only screen and (max-width : 991px) {
+
+	#main-menu .navbar-collapse .container ul.menu li ul.menu li a:hover,
+	#main-menu .navbar-collapse .container ul.menu li ul.menu li a:focus {
+	    color: #8da535;
+	}
+	
+	#main-menu .navbar-collapse .container ul.menu li:hover a,
+	#main-menu .navbar-collapse .container ul.menu li:focus a {
+	    color: #8da535;
+	}
+
+}
+
+#header .block-system-branding-block {
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width : 580px) {
+	.site-name {
+		display: none;
+	}
+}
+
+
+
+/* Remove glow / box shadow */
+
+.box_shadow,
+#main-menu .container,
+#slideshow .container,
+#featured .container,
+#main .container,
+#panel_first .container,
+#panel_second .container {
+	-webkit-box-shadow: inherit;
+	-moz-box-shadow: inherit;
+	box-shadow: inherit;
+}
+
+
+
+/* Slideshow */
+
+.views_slideshow_main .title {
+	font-size: 26px;
+}
+
+.views_slideshow_main .subtitle {
+	color: #fff;
+	font-size: 16px;
+}
+
+
+
+/* National Park Authority branding */
+
+#panel_first .container {
+    padding: 0;
+}
+
+#panel_first .container img {
+	border-radius: 5px;
+}
+
+
+
+/* Sidebar blocks */
+
+.sidebar .block {
+    border: inherit;
+    background-color: #eee;
+}
+
+.sidebar h2 {
+    text-transform: inherit;
+}
+
+
+
+/* Lower blocks */
+
+#panel_second h2 {
+    text-transform: inherit;
+}
+
+
+
+/* Footer */
+
+#footer .block {
+    color: #fff;
+}
+
+#footer a,
+#footer ul.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer a:hover,
+#footer ul.menu li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+
+/*
+ * Content
+ */
+
+.submitted,
+.node__meta,
+.home-page .views-field-field-date,
+.home-page .views-field-created {
+    color: #999;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.field--name-field-news-picture img,
+article .field--name-field-image-media-page img,
+article .media--type-image .field__item img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 30px;
+}
+
+@media only screen and (min-width : 600px) {
+	.field--name-field-news-picture,
+	.home-page .views-field-field-image-media-event {
+	    float: left;
+	    margin-right: 30px;
+	}
+
+	.home-page .media--type-image {
+		float: left;;
+		margin-right: 0;
+	}
+}
+
+.home-page .views-field-field-image,
+.home-page .field--name-field-media-image .field__item img,
+.home-page .views-row > .views-field-field-image-media-event > div > img {
+	border: 1px solid #dadada;
+	padding: 10px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.home-page .views-field-field-image img,
+.field--name-field-image img {
+	width: 100%;
+	height: auto;
+}
+
+.home-page .field--name-field-media-image img,
+.home-page .views-field-field-image-media-event img,
+.home-page .views-row > .views-field-field-image-media-event > div > img {
+	width: 245px;
+	height: auto;
+}
+
+.field--name-field-date {
+	font-family: "oswaldregular";
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.field--name-field-subtitle {
+	font-weight: 600;
+}
+
+.field--name-field-attachments {
+	border: 1px solid #999;
+	padding: 10px 15px;
+	margin-bottom: 30px;
+}
+
+
+
+/*
+ * Contact form
+ */
+
+form label {
+	display: block;
+}
+
+
+/*
+ * Pager
+ */
+
+#block-zircon-content .pager .pager__items li > a,
+#block-zircon-content .pager .pager__items li > span {
+    background: inherit;
+    border: 1px solid #8da535;
+}
+
+#block-zircon-content .pager .pager__items .is-active a {
+    background: #8da535;
+    padding: 3px 7px;
+    color: #fff;
+}
+
+#block-zircon-content .pager .pager__items li > a:hover,
+#block-zircon-content .pager .pager__items li > a:focus,
+#block-zircon-content .pager .pager__items li > span:hover,
+#block-zircon-content .pager .pager__items li > span:focus {
+    border: 1px solid #849908;
+    background: #849908 none repeat scroll 0 0;
+    color: #fff;
+}
+
+
+
+/*
+ * Home page
+ */
+
+.home-page .views-field-title {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 20px;
+	margin-bottom: 6px;
+} 
+
+
+
+/*
+ * Related news block
+ */
+
+.sidebar .views-field-field-image
+.sidebar .field--name-field-media-image {
+	border: 1px solid #dadada;
+	padding: 0;
+}
+
+.sidebar .field--name-field-media-image img {
+	width: 136px;
+	height: auto;
+}
+
+.sidebar .views-field-field-date,
+.sidebar .views-field-created {
+    color: #999;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.sidebar .views-field-title {
+    overflow: hidden;
+}
+
+
+/*
+ * Search results
+ * Suppress author name
+ */
+ 
+.search-result__info a.username {
+	display: none;
+}
+
+.search-result__info::before {
+    content: 'Date';
+}
+
+
+/* Comments */
+
+section.field--name-comment {
+	margin-top: 30px;
+}
+
+footer.comment__meta > a {
+	display: none;
+}
+
+#block-zircon-content li.comment-add > a,
+#block-zircon-content li.comment-edit > a,
+#block-zircon-content li.comment-reply > a,
+#block-zircon-content li.comment-delete > a {
+	color: #fff;
+}
+
+#block-zircon-content li.comment-add > a:hover,
+#block-zircon-content li.comment-edit > a:hover,
+#block-zircon-content li.comment-reply > a:hover,
+#block-zircon-content li.comment-delete > a:hover {
+	background-color: #333;
+	color: #fff;
+}

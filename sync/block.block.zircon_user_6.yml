@@ -1,0 +1,20 @@
+uuid: 4429dc81-30cd-4ce9-b8fd-066c1ef59729
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - zircon
+id: zircon_user_6
+theme: zircon
+region: panel_second_3
+weight: -11
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'USER LOGIN'
+  label_display: visible
+  provider: user
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: a74c854f-cbfb-4873-871d-2b4716a70f50
+langcode: en
+status: true
+dependencies:
+  theme:
+    - buriton5
+_core:
+  default_config_hash: wJJ7yEaq9YIcnvs3FlrgBBWQWtt43c_kDGkEGoojQnE
+id: buriton5_page_title
+theme: buriton5
+region: content
+weight: -9
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,260 @@
+[
+  {
+    "path": "themes/custom/buriton5/README.md",
+    "change": "modified",
+    "before_sha256": "c123af3967d2dc26ded1c490f01abd910b13ed14f1964149e0a84e5f21b7290c",
+    "after_sha256": "ec0ab924370d0fdfeb2fc46a06494d43a17248d07ada64ef60036710beb8c105"
+  },
+  {
+    "path": "themes/custom/buriton5/buriton5.info.yml",
+    "change": "modified",
+    "before_sha256": "727129c0f7e1de5872192c20d7492498c9230bee5a848f21b2df446b25183bab",
+    "after_sha256": "983520ab4cbbbc8269d91e0d336f628af96fd780d6ca28e147042afb582f5d6a"
+  },
+  {
+    "path": "themes/custom/buriton5/css/style.css",
+    "change": "modified",
+    "before_sha256": "44bbcbafe059fa4e8837415bb46ea1d900b9215161c820adba1445ca6ac72d69",
+    "after_sha256": "62e9f2595d69172bfd4fc450c0e025e21f4617cac74142a76cb6ade406b96ab4"
+  },
+  {
+    "path": "themes/custom/buriton5/css/style.css.map",
+    "change": "modified",
+    "before_sha256": "8b4b32c4b9f79d6c5e3aab49a59a3da4ef48ff0175d48fc31e289540bbb056b1",
+    "after_sha256": "70d30d39dba4e3db38d7181cf50411406b12c445869ee7e12aa1a72aceb8206b"
+  },
+  {
+    "path": "themes/custom/buriton5/scss/_footer.scss",
+    "change": "modified",
+    "before_sha256": "4c5b25c0c0f817015960b46f8d743ba21acb4c7e12b255bd5e9a2eb64d6cdca2",
+    "after_sha256": "82663c1f9e48506849f60cbf04793d1893350768216a8e7d8abfbaff40bdff76"
+  },
+  {
+    "path": "themes/custom/buriton5/scss/_menus.scss",
+    "change": "modified",
+    "before_sha256": "309a9c9a702227bc75554210839ef1bf006c25071c53aa7117ddb2727051ddea",
+    "after_sha256": "5f0f62cb795ec872e598c19f11c7ce6394ccc7a9a865f6e6c943f33523b2b43f"
+  },
+  {
+    "path": "themes/custom/buriton5/templates/layout/html.html.twig",
+    "change": "modified",
+    "before_sha256": "8f1599c7f1d04ac14dbdcf9c53317dd857216d9e9ec2a220c1f56ab6c3dfc361",
+    "after_sha256": "fd3d57ce621d397fe16ee43f18fca188ed74e6d79ca895d40f9a3482419bcae1"
+  },
+  {
+    "path": "themes/custom/buriton5/templates/layout/page.html.twig",
+    "change": "modified",
+    "before_sha256": "65490a0d8a9c67a805d4fd8932ca3588f96744be6600c8514d333af421c39a2f",
+    "after_sha256": "0e4c994646f8ce886573788468a154f243ca60974c1f65f6d95fa5bdbf3f18c3"
+  },
+  {
+    "path": "themes/custom/zircon/README.md",
+    "change": "added",
+    "before_sha256": null,
+    "after_sha256": "cb3b3910746d5f1fa94e2d5b7eef3adc740eafa3c29eb56c3dedd849b39ab4d3"
+  },
+  {
+    "path": "themes/custom/zircon/includes/bootstrap/css/bootstrap-theme.css",
+    "change": "modified",
+    "before_sha256": "76277ac909f2a26af03b51f7fdacd5c9b91394c57c7fb76b1334d4ba084b67d5",
+    "after_sha256": "a0858cc08fdc8e11c1cf6b0fdefc8e1927350e61aa034f5e253a49759426b4df"
+  },
+  {
+    "path": "themes/custom/zircon/includes/bootstrap/css/bootstrap-theme.css.map",
+    "change": "modified",
+    "before_sha256": "2732c7f06f590884df48002c6b309af1700bcfefb5c56acc64db99b715b30061",
+    "after_sha256": "f2faa64d2fb77e336f19bbf344b5133dd9c62cba2818f779ff1397c0afa09fae"
+  },
+  {
+    "path": "themes/custom/zircon/includes/bootstrap/css/bootstrap-theme.min.css",
+    "change": "modified",
+    "before_sha256": "34b102cb7689409fd1c3c180aeb1fd3f0b8bf0b47ab25c74c42eaff574e661a9",
+    "after_sha256": "f2e1cc227d6bbb4192e4a3becdfed971c7fc530d76200e43add11c98cb962c53"
+  },
+  {
+    "path": "themes/custom/zircon/includes/bootstrap/css/bootstrap-theme.min.css.map",
+    "change": "added",
+    "before_sha256": null,
+    "after_sha256": "5ebabc49db378681cf6412aa00bd3b7a111a09f2815231f4b56e296fac486130"
+  },
+  {
+    "path": "themes/custom/zircon/includes/bootstrap/css/bootstrap.css",
+    "change": "modified",
+    "before_sha256": "d08f291bcb83079b1333094f4c021641b33182915b5e74ae8bddf5d7b4fd4698",
+    "after_sha256": "d170052c16caec3810f2dee6456539045d8e326f6d8ed7c7f78e59ed34de348a"
+  },
+  {
+    "path": "themes/custom/zircon/includes/bootstrap/css/bootstrap.css.map",
+    "change": "modified",
+    "before_sha256": "3c40401f3763a60a8f7b72854cc5778d25eac0b687d1623241f5e2de3a6c095b",
+    "after_sha256": "4a220750b3f226cd58bb2e6eef7634c06e122da1783f8a43fb251f6377e1d304"
+  },
+  {
+    "path": "themes/custom/zircon/includes/bootstrap/css/bootstrap.min.css",
+    "change": "modified",
+    "before_sha256": "b5fd723750763ebb731f9221e413e7d64d58d5192dc040e42292ed3dcccca732",
+    "after_sha256": "6d92dfc1700fd38cd130ad818e23bc8aef697f815b2ea5face2b5dfad22f2e11"
+  },
+  {
+    "path": "themes/custom/zircon/includes/bootstrap/css/bootstrap.min.css.map",
+    "change": "added",
+    "before_sha256": null,
+    "after_sha256": "78b58c9ebfd42ec2c61bc4fdf46a5df998e6cd907c773076a0a6e8f5686bafc3"
+  },
+  {
+    "path": "themes/custom/zircon/includes/bootstrap/fonts/glyphicons-halflings-regular.eot",
+    "change": "modified",
+    "before_sha256": "f495f34e4f177cf0115af995bbbfeb3fcabc88502876e76fc51a4ab439bc8431",
+    "after_sha256": "13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407"
+  },
+  {
+    "path": "themes/custom/zircon/includes/bootstrap/fonts/glyphicons-halflings-regular.svg",
+    "change": "modified",
+    "before_sha256": "d168d50a88c730b4e6830dc0da2a2b51dae4658a77d9619943c27b8ecfc19d1a",
+    "after_sha256": "42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5"
+  },
+  {
+    "path": "themes/custom/zircon/includes/bootstrap/fonts/glyphicons-halflings-regular.ttf",
+    "change": "modified",
+    "before_sha256": "bd18efd3efd70fec8ad09611a20cdbf99440b2c1d40085c29be036f891d65358",
+    "after_sha256": "e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456"
+  },
+  {
+    "path": "themes/custom/zircon/includes/bootstrap/fonts/glyphicons-halflings-regular.woff",
+    "change": "modified",
+    "before_sha256": "fc969dc1c6ff531abcf368089dcbaf5775133b0626ff56b52301a059fc0f9e1e",
+    "after_sha256": "a26394f7ede100ca118eff2eda08596275a9839b959c226e15439557a5a80742"
+  },
+  {
+    "path": "themes/custom/zircon/includes/bootstrap/fonts/glyphicons-halflings-regular.woff2",
+    "change": "added",
+    "before_sha256": null,
+    "after_sha256": "fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c"
+  },
+  {
+    "path": "themes/custom/zircon/includes/bootstrap/js/bootstrap.js",
+    "change": "modified",
+    "before_sha256": "7970f31907d91bf0f19efe8aefee74d6f0a2d8c72b2f8f20a5e297d3c414a78f",
+    "after_sha256": "dbd2a35e72edc7d6bde483481a912f1c38aa57fab2747d9b071d317339ee03a2"
+  },
+  {
+    "path": "themes/custom/zircon/includes/bootstrap/js/bootstrap.min.js",
+    "change": "modified",
+    "before_sha256": "24cc29533598f962823c4229bc280487646a27a42a95257c31de1b9b18f3710f",
+    "after_sha256": "9ee2fcff6709e4d0d24b09ca0fc56aade12b4961ed9c43fd13b03248bfb57afe"
+  },
+  {
+    "path": "themes/custom/zircon/includes/bootstrap/js/npm.js",
+    "change": "added",
+    "before_sha256": null,
+    "after_sha256": "c7aa82a1aa7d45224a38d926d2adaff7fe4aef5bcdafa2a47bdac057f4422c2d"
+  },
+  {
+    "path": "themes/custom/zircon/includes/flexslider/flexslider.css",
+    "change": "modified",
+    "before_sha256": "b5866500ce35d12dd24ad7bc4d1d96762ed895784ad46bae3dcf2715b73b75fa",
+    "after_sha256": "77f76910108b7062309dd6bfa310123a867fca01b12eef62c37e5d2d0d0cc794"
+  },
+  {
+    "path": "themes/custom/zircon/includes/flexslider/fonts/flexslider-icon.eot",
+    "change": "modified",
+    "before_sha256": "615a7b9866cfadd3b50cdce8eb6addcd93acd2b93260c3270c573cf4bc48e502",
+    "after_sha256": "427c549989d40688b2f96bf38cd63568b61c412fe0a60bdb642da5fa7af51954"
+  },
+  {
+    "path": "themes/custom/zircon/includes/flexslider/jquery.flexslider-min.js",
+    "change": "modified",
+    "before_sha256": "df3f85779a6ccee916f58e95d0e385d2f439bb0345d2f83fe404f6649a391912",
+    "after_sha256": "5e1a3fc0ee5a71ce8585a3464a579461e0dc853ce9073beb88297babe8d2b701"
+  },
+  {
+    "path": "themes/custom/zircon/includes/flexslider/jquery.flexslider.js",
+    "change": "modified",
+    "before_sha256": "83be565a09d3a7b5c1109ef4b477605e5451533ce1bf1061f633df7472743b68",
+    "after_sha256": "487639627bd943c11e40764b968904c921e505bb73f0ae5d7367c8c8ff84a526"
+  },
+  {
+    "path": "themes/custom/zircon/includes/slick/slick/slick-theme.css",
+    "change": "added",
+    "before_sha256": null,
+    "after_sha256": "7adaf08052c6a6a0f8a0d0055b4f191fd07389fe41c972b69573472b2ecb406a"
+  },
+  {
+    "path": "themes/custom/zircon/includes/slick/slick/slick.css",
+    "change": "modified",
+    "before_sha256": "35546869c0f1dfa6bcd7f8d6891fec8aeae09f92180f1f151eec95bd877abd6b",
+    "after_sha256": "de1e399b07289f3b0a8d35142e363e128124a1185770e214e25e58030dad48e5"
+  },
+  {
+    "path": "themes/custom/zircon/includes/slick/slick/slick.js",
+    "change": "modified",
+    "before_sha256": "0f233dd67dafa3b70ce57dcdda15336590826e2169eb49c8fe2414e2f75587b2",
+    "after_sha256": "9baa573e4378873b7ac81ccb1d954ce9bb2b1a933947ad3012263ddc604d8505"
+  },
+  {
+    "path": "themes/custom/zircon/includes/slick/slick/slick.min.js",
+    "change": "modified",
+    "before_sha256": "66b5c22988581391a004ca7f230c7801bfde7098b109c1c9ca7477655671d92b",
+    "after_sha256": "0c7178cc6ca34fb18e30f070a5e7a1c287b2d7ccfcba2cfdf06e0f46eda55740"
+  },
+  {
+    "path": "themes/custom/zircon/js/carousel.js",
+    "change": "modified",
+    "before_sha256": "a6c7974ec90fe628c49405a56254fe04749d5053dfcc686bb187a013811db21b",
+    "after_sha256": "67e74540713e7e123b160cb5b56394461a572245e4a97ca114565fe3976af6a8"
+  },
+  {
+    "path": "themes/custom/zircon/js/fix_script.js",
+    "change": "removed",
+    "before_sha256": "b1397620925bc311c115dc978f2938cb0ece9b9a1f50cf13d74dc852352d84e7",
+    "after_sha256": null
+  },
+  {
+    "path": "themes/custom/zircon/js/slideshow.js",
+    "change": "modified",
+    "before_sha256": "f7ff568207b183ee1bd2b287dfab1ba80501dff3c7eb0dbed8c1d6bd52bf7db1",
+    "after_sha256": "bbe7cbe9aba492e4ce3ec06f818fdb2b2de8f4de47f88d7108b20530830cac87"
+  },
+  {
+    "path": "themes/custom/zircon/js/zircon.js",
+    "change": "modified",
+    "before_sha256": "6c56b1edc43181f8777f735390a1f6d78bbb1d55c18d63b4e7d3853d9348dfdf",
+    "after_sha256": "963bfb5cf0a8d81c00f3ab3a9e297db0c8a823789c1c9bdc18fa37d182b6a9d0"
+  },
+  {
+    "path": "themes/custom/zircon/templates/html.html.twig",
+    "change": "modified",
+    "before_sha256": "70969c849da478db42aa31883cca514da266991440fe2e1785f60e4c1e3ba534",
+    "after_sha256": "369b6a8ecee84e3e65bbd71b20908bbe066b83647ba891a9f6b3856b1dc82c9e"
+  },
+  {
+    "path": "themes/custom/zircon/templates/page.html.twig",
+    "change": "modified",
+    "before_sha256": "d6f6ce701363cdcbab143e2bde00c116c4d2fa7074803b8340a366179fbe6c7e",
+    "after_sha256": "117f97f540eb6917ed045340b65f1bf08ff7dbbb89b7d4de3bd29a16e6bba6be"
+  },
+  {
+    "path": "themes/custom/zircon/templates/views/views-view-grid.html.twig",
+    "change": "modified",
+    "before_sha256": "c19ae0e90c9572b9beee935ff84d24198a438901d0e07a388404b25ea7c28c64",
+    "after_sha256": "e38ec80ca0b406ba3452092a07dc95a76fb778fa978f81ed99f4af6621bbf58c"
+  },
+  {
+    "path": "themes/custom/zircon/zircon.info.yml",
+    "change": "modified",
+    "before_sha256": "3b0753656389c1125062a252a4ed3ede4dedd278bd32d120ef02969018d95b48",
+    "after_sha256": "8cfa4ea27b2d803b4bf380ec7a72052719954bc90c7161d77c0483bd8d78eb13"
+  },
+  {
+    "path": "themes/custom/zircon/zircon.libraries.yml",
+    "change": "modified",
+    "before_sha256": "23897540099003531e6e34b90b7993255d14d957f15619bd54dcf804a092d66e",
+    "after_sha256": "010f6968dc98723519ccb19a46b12875e32c230adb88da5002916f867e8ad97b"
+  },
+  {
+    "path": "themes/custom/zircon/zircon.theme",
+    "change": "modified",
+    "before_sha256": "6e71dcfcfc994d6387bf62bcd24815e697c930545bd8a4f8a3eaa2a0a7a351c9",
+    "after_sha256": "e5ac099ccfc838b385fb9beb5bbaf0cd2f5abfb07236ca3a8339f98e88159fc1"
+  }
+]

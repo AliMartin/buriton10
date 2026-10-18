@@ -1,0 +1,52 @@
+Choices 11.0.2 (Installed)
+    The Choices library is installed in /libraries/choices.(Choices.js is
+    used to improve the user experience for select menus. Choices.js is an
+    alternative to Select2.}
+Code Mirror 5.65.12 (Installed)
+    The Code Mirror library is installed in /libraries/codemirror.(Code
+    Mirror is used to provide a text editor for YAML, HTML, CSS, and
+    JavaScript configuration settings and messages.}
+jQuery: Input Mask 5.0.9 (Installed)
+    The jQuery: Input Mask library is installed in
+    /libraries/jquery.inputmask.(Input masks are used to ensure predefined
+    and custom formats for text fields.}
+jQuery: International Telephone Input 17.0.19 (Installed)
+    The jQuery: International Telephone Input library is installed in
+    /libraries/jquery.intl-tel-input.(International Telephone Input is used
+    by the Telephone element.}
+jQuery: RateIt 1.1.5 (Installed)
+    The jQuery: RateIt library is installed in
+    /libraries/jquery.rateit.(RateIt is used to provide a customizable rating
+    element.}
+jQuery: Select2 4.0.13 (Installed)
+    The jQuery: Select2 library is installed in
+    /libraries/jquery.select2.(Select2 is used to improve the user experience
+    for select menus. Select2 is the recommended select menu enhancement
+    library.}
+jQuery: Text Counter 0.9.1 (Installed)
+    The jQuery: Text Counter library is installed in
+    /libraries/jquery.textcounter.(Word or character counting, with
+    server-side validation, is available for text fields and text areas.}
+jQuery: Timepicker 1.14.0 (Installed)
+    The jQuery: Timepicker library is installed in
+    /libraries/jquery.timepicker.(Timepicker is used to provide a polyfill
+    for HTML 5 time elements.}
+Popper.js 2.11.6 (Installed)
+    The Popper.js library is installed in /libraries/popperjs.(Popper.js is
+    used to provide tooltip behavior for elements.}
+Progress Tracker 2.0.7 (Installed)
+    The Progress Tracker library is installed in
+    /libraries/progress-tracker.(Progress Tracker is used by multi-step
+    wizard forms.}
+Signature Pad 2.3.0 (Installed)
+    The Signature Pad library is installed in
+    /libraries/signature_pad.(Signature Pad is used to provide a signature
+    element.}
+Tabby 12.0.3 (Installed)
+    The Tabby library is installed in /libraries/tabby.(Tabby is used to
+    display tabs in the administrative UI}
+Tippy.js 6.3.7 (Installed)
+    The Tippy.js library is installed in /libraries/tippyjs.(Tippy.js is used
+    to provide tooltip behavior for elements.}
+
+

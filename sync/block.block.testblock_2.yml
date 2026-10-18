@@ -1,0 +1,31 @@
+uuid: 07255ae5-542e-42f4-9c11-c9c6809264e5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:67b71f63-50f6-4ae8-8dcb-1e938893f169'
+  module:
+    - block_content
+    - system
+  theme:
+    - zircon
+id: testblock_2
+theme: zircon
+region: sidebar_second
+weight: -10
+provider: null
+plugin: 'block_content:67b71f63-50f6-4ae8-8dcb-1e938893f169'
+settings:
+  id: 'block_content:67b71f63-50f6-4ae8-8dcb-1e938893f169'
+  label: 'About Buriton'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

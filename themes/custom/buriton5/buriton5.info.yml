@@ -1,0 +1,26 @@
+name: 'Buriton Bootstrap 5'
+type: theme
+description: 'Buriton Bootstrap 5 subtheme based on Bootstrap 5 theme.'
+core_version_requirement: '^9.5 || ^10.1'
+'base theme': bootstrap5
+dependencies:
+  - bootstrap5:bootstrap5
+libraries:
+  - buriton5/global-styling
+libraries-override:
+  bootstrap5/global-styling:
+    css:
+      theme:
+        css/style.css: false
+regions:
+  header: Header
+  nav_branding: 'Navigation branding region'
+  nav_main: 'Main navigation region'
+  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
+  mega_menu: 'Mega menu navigation'
+  breadcrumb: Breadcrumbs
+  content: 'Main content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer
+  sub_footer: 'Sub footer'

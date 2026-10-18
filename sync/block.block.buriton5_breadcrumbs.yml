@@ -1,0 +1,22 @@
+uuid: bd03cbb1-fd11-437d-87f7-f201b06b2f71
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - buriton5
+_core:
+  default_config_hash: 0R8AWgz39Y4eHBtZPYQY0EU6igvYIqMegziG0UHVV0c
+id: buriton5_breadcrumbs
+theme: buriton5
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

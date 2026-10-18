@@ -1,0 +1,70 @@
+uuid: db49a124-25de-4e50-bc79-f735628837c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.event.body
+    - field.field.node.event.field_date
+    - field.field.node.event.field_image
+    - field.field.node.event.field_image_media_event
+    - field.field.node.event.field_subtitle
+    - field.field.node.event.section
+    - field.field.node.event.tags
+    - field.field.node.event.upload
+    - node.type.event
+  module:
+    - image
+    - text
+    - user
+id: node.event.search_index
+targetEntityType: node
+bundle: event
+mode: search_index
+content:
+  field_event_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: fallback
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  field_image_media_event:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  field_subtitle:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_date: true
+  section: true
+  tags: true
+  upload: true

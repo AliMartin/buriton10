@@ -1,0 +1,26 @@
+{
+  "public_pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 44605
+    },
+    {
+      "path": "/contact",
+      "status": 200,
+      "bytes": 32878
+    },
+    {
+      "path": "/user/login",
+      "status": 200,
+      "bytes": 28770
+    },
+    {
+      "path": "/parish-council-minutes",
+      "status": 200,
+      "bytes": 71570
+    }
+  ],
+  "webform_admin": "rendered HTTP 200",
+  "unique_local_css_js_urls_ok": 21
+}

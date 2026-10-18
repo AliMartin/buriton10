@@ -1,0 +1,20 @@
+uuid: f1ada70b-8bc3-4681-84ae-8a88c6166644
+langcode: en
+status: true
+dependencies:
+  theme:
+    - buriton5
+_core:
+  default_config_hash: lRgYs3zh-to6WbK6DUBuGph54jOsRuE7e-CdRWtnJdk
+id: buriton5_local_actions
+theme: buriton5
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

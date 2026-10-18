@@ -1,0 +1,25 @@
+uuid: 4bc59985-d0c7-477b-aac1-4620ba4ec569
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:bcaf3917-00e9-4153-82ba-e7b2c8c767c3'
+  module:
+    - block_content
+  theme:
+    - zircon
+id: hermajestyqueenelizabethll
+theme: zircon
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:bcaf3917-00e9-4153-82ba-e7b2c8c767c3'
+settings:
+  id: 'block_content:bcaf3917-00e9-4153-82ba-e7b2c8c767c3'
+  label: 'Her Majesty Queen Elizabeth ll'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

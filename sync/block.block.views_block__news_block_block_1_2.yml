@@ -1,0 +1,34 @@
+uuid: 8fd7b2d2-7e66-47fc-9791-c1e0bf612b27
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_block
+  module:
+    - node
+    - views
+  theme:
+    - buriton5
+id: views_block__news_block_block_1_2
+theme: buriton5
+region: sidebar_second
+weight: -6
+provider: null
+plugin: 'views_block:news_block-block_1'
+settings:
+  id: 'views_block:news_block-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      news: news
+      page: page

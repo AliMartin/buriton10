@@ -1,0 +1,11 @@
+uuid: 2e874fc7-5001-4332-9209-ae3c38fba3d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.page_listing
+id: page_listing
+label: 'Page listing'
+image_style_mappings: {  }
+breakpoint_group: responsive_image
+fallback_image_style: page_listing

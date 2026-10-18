@@ -1,0 +1,38 @@
+uuid: 8d541b18-8830-410e-acdc-e35bb9de3191
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.files.body
+    - field.field.node.files.comment
+    - field.field.node.files.section
+    - field.field.node.files.tags
+    - field.field.node.files.upload
+    - node.type.files
+  module:
+    - text
+    - user
+id: node.files.teaser
+targetEntityType: node
+bundle: files
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  comment: true
+  section: true
+  tags: true
+  upload: true

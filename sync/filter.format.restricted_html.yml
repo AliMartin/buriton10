@@ -1,0 +1,38 @@
+uuid: 4680059e-9793-4ad6-9fcf-4d751bf30285
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: KUjJ8Ti_ZJSlhGM88E_mhJP-8mmQRNUB6RFof615Kt0
+name: 'Restricted HTML'
+format: restricted_html
+weight: -9
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<br> <p> <cite> <blockquote cite> <ul type> <ol type start> <strong> <em> <code> <li>'
+      filter_html_help: true
+      filter_html_nofollow: true
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: true
+    weight: 9
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72

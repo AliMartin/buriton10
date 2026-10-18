@@ -1,0 +1,11 @@
+uuid: e2c7d0fb-5c69-4140-b0e9-ae6e38104b92
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.page_listing
+label: 'Page listing'
+description: ''
+targetEntityType: media
+cache: true

@@ -1,0 +1,11 @@
+uuid: 02a2aea5-481e-4c98-8545-660d18a3b15f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lO5ziR5dVI1PpEeHZsSOfQ-Y7NWihSDKW8-MMf6uoms
+name: Tags
+vid: tags
+description: 'Add optional keywords to your article to help identify and sort it later.'
+weight: 0
+new_revision: false

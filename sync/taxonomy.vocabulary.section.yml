@@ -1,0 +1,9 @@
+uuid: 6531a7ca-ae23-45e4-9fb3-12c64a321e05
+langcode: en
+status: true
+dependencies: {  }
+name: Section
+vid: section
+description: null
+weight: -10
+new_revision: false

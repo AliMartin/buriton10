@@ -1,0 +1,25 @@
+uuid: 1def4f99-6a2f-443c-9c40-37dfeeede128
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - buriton5
+_core:
+  default_config_hash: U1yqt1uJLd-EW_DK-dBot1uZxoZjRZyVwqhT998azrU
+id: buriton5_branding
+theme: buriton5
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

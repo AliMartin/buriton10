@@ -1,0 +1,22 @@
+uuid: 3d0f41bf-c241-44ae-b1d3-10fbbe8e300d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - buriton5
+_core:
+  default_config_hash: GIESozc2K3jhPu2qCV5J0syPUXBzffU3Ycy0zA-L3nQ
+id: buriton5_content
+theme: buriton5
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

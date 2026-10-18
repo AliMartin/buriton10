@@ -1,0 +1,17 @@
+{
+    "_hash": "e50e0578a21b7985b3413989ec5e8cab4304a38b5a9413fc570a53420ac44800",
+    "patches": {
+        "drupal/bootstrap5": [
+            {
+                "package": "drupal/bootstrap5",
+                "description": "Preserve base themes still required by Zircon or another installed theme",
+                "url": "patches/bootstrap5-preserve-required-base-themes.patch",
+                "sha256": "e4dea352cdd5942981eafc74c8599f44ec621cf37570322ec5aec429d620f8af",
+                "depth": 1,
+                "extra": {
+                    "provenance": "root"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,46 @@
+uuid: 953fdb27-0d01-4f63-b3b5-fb4f2bef11c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.quickevent.comment
+    - field.field.node.quickevent.field_date
+    - field.field.node.quickevent.field_subtitle
+    - field.field.node.quickevent.section
+    - field.field.node.quickevent.tags
+    - node.type.quickevent
+  module:
+    - text
+    - user
+id: node.quickevent.search_index
+targetEntityType: node
+bundle: quickevent
+mode: search_index
+content:
+  field_event_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: fallback
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  field_subtitle:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  comment: true
+  field_date: true
+  section: true
+  tags: true

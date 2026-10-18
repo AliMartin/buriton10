@@ -1,0 +1,27 @@
+uuid: ed388a3c-b2eb-45a9-afdd-ba7d664a50e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachments
+    - node.type.parish_council
+  module:
+    - file
+id: node.parish_council.field_attachments
+field_name: field_attachments
+entity_type: node
+bundle: parish_council
+label: Attachments
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp docx xlsx'
+  max_filesize: ''
+  description_field: true
+field_type: file

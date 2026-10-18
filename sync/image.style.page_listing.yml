@@ -1,0 +1,15 @@
+uuid: f970d140-4779-49f8-80df-963893dddd39
+langcode: en
+status: true
+dependencies: {  }
+name: page_listing
+label: 'Page listing'
+effects:
+  46aec2ca-6cbd-482b-974f-ad20875cc8d2:
+    uuid: 46aec2ca-6cbd-482b-974f-ad20875cc8d2
+    id: image_scale_and_crop
+    weight: 0
+    data:
+      width: 608
+      height: 412
+      anchor: center-center

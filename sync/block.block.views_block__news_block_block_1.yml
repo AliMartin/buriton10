@@ -1,0 +1,33 @@
+uuid: cc600a36-2897-4d7a-8197-fe0befc66979
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_block
+  module:
+    - node
+    - views
+  theme:
+    - zircon
+id: views_block__news_block_block_1
+theme: zircon
+region: sidebar_second
+weight: -12
+provider: null
+plugin: 'views_block:news_block-block_1'
+settings:
+  id: 'views_block:news_block-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      news: news
+      page: page

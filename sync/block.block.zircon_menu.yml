@@ -1,0 +1,25 @@
+uuid: 33cb4261-3121-4446-9f69-06a281cd29e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.primary-links
+  module:
+    - system
+  theme:
+    - zircon
+id: zircon_menu
+theme: zircon
+region: footer
+weight: -10
+provider: null
+plugin: 'system_menu_block:primary-links'
+settings:
+  id: 'system_menu_block:primary-links'
+  label: Links
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

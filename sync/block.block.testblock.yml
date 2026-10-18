@@ -1,0 +1,31 @@
+uuid: f11faafd-b008-4b9a-9b4a-32065859b72f
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:67b71f63-50f6-4ae8-8dcb-1e938893f169'
+  module:
+    - block_content
+    - system
+  theme:
+    - zircon
+id: testblock
+theme: zircon
+region: header
+weight: -9
+provider: null
+plugin: 'block_content:67b71f63-50f6-4ae8-8dcb-1e938893f169'
+settings:
+  id: 'block_content:67b71f63-50f6-4ae8-8dcb-1e938893f169'
+  label: 'Test block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: ''

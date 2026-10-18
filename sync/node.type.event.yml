@@ -1,0 +1,17 @@
+uuid: 48a089b4-4805-4f4e-b917-4669f820b38e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Event
+type: event
+description: 'Add an event to the website. The event will appear in the websites "events listing" page and on your own page.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,27 @@
+uuid: 4d1df189-313e-4d73-b861-e7bc0922ec9c
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - buriton5
+_core:
+  default_config_hash: jN5ltJ3Vb7UxkUyuJdRsovtWc9LSwo7J3JSnluTJoDg
+id: buriton5_main_navigation
+theme: buriton5
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

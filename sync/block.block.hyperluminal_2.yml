@@ -1,0 +1,25 @@
+uuid: ab9e07db-a65e-4199-bf51-aaf4e6a59a5c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5995f7e8-887a-4c44-b534-f4802e3f5b95'
+  module:
+    - block_content
+  theme:
+    - buriton5
+id: hyperluminal_2
+theme: buriton5
+region: sub_footer
+weight: -9
+provider: null
+plugin: 'block_content:5995f7e8-887a-4c44-b534-f4802e3f5b95'
+settings:
+  id: 'block_content:5995f7e8-887a-4c44-b534-f4802e3f5b95'
+  label: Hyperluminal
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

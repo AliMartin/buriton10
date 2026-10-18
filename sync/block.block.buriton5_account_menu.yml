@@ -1,0 +1,27 @@
+uuid: 2bc81c16-0301-43dc-9de0-69f2bbc48de5
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - buriton5
+_core:
+  default_config_hash: P-P54mTiMl3cj8_RrPU_686PKLejKJpyT49WBJIr8ac
+id: buriton5_account_menu
+theme: buriton5
+region: nav_additional
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

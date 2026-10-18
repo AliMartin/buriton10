@@ -1,0 +1,20 @@
+uuid: 1bce407c-437e-495f-a041-a48f6b1bf1f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - secondary-links
+    parent: 'secondary-links:'
+_core:
+  default_config_hash: zhtPXoRcC6REiepM0k16zw__FDW5YOXDR6U2WlldTrs
+name: Page
+type: page
+description: 'A <em>page</em>, similar in form to a <em>story</em>, is a simple method for creating and displaying information that rarely changes, such as an "About us" section of a website. By default, a <em>page</em> entry does not allow visitor comments and is not featured on the site''s initial home page.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

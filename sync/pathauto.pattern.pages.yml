@@ -1,0 +1,26 @@
+uuid: 35dc1cf2-9d33-4215-87b0-9499ef24b9ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.page
+    - node.type.webform
+  module:
+    - node
+id: pages
+label: Pages
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  ca65067d-51eb-42f8-b7d6-52c7c844052a:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+      page: page
+      webform: webform
+selection_logic: and
+weight: -5
+relationships: {  }

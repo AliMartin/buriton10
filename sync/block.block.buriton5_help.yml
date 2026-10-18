@@ -1,0 +1,22 @@
+uuid: b745c374-bf70-46b2-97b9-f1a7030818df
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - buriton5
+_core:
+  default_config_hash: ISHgpHdO7RF_rvFSN0Zfz2TKx5829vtBg4oktZdwx6A
+id: buriton5_help
+theme: buriton5
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -1,0 +1,1666 @@
+
+================================================================================
+Aggregator,  2.2.6
+Scanned on Sun, 18/10/2026 - 10:46am
+
+FILE: modules/contrib/aggregator/src/Entity/Feed.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 67   Attribute class                                             
+                    Drupal\Core\Entity\Attribute\ContentEntityType does not     
+                    exist.                                                      
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/src/Entity/Item.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 52   Attribute class                                             
+                    Drupal\Core\Entity\Attribute\ContentEntityType does not     
+                    exist.                                                      
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/src/Hook/AggregatorHooks.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 42   Attribute class Drupal\Core\Hook\Attribute\Hook does not    
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 121  Attribute class Drupal\Core\Hook\Attribute\Hook does not    
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 188  Attribute class Drupal\Core\Hook\Attribute\Hook does not    
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 214  Attribute class Drupal\Core\Hook\Attribute\Hook does not    
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 224  Attribute class Drupal\Core\Hook\Attribute\Hook does not    
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 228  Access to constant AMONG_ALL on an unknown class            
+                    Drupal\jsonapi\JsonApiFilter.                               
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/src/Hook/ThemeHooks.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 19   Attribute class Drupal\Core\Hook\Attribute\Hook does not    
+                    exist.                                                      
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/modules/aggregator_display_configurable_test/sr
+c/Hook/AggregatorDisplayConfigurableTestHooks.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class Drupal\Core\Hook\Attribute\Hook does not    
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 37   Attribute class Drupal\Core\Hook\Attribute\Hook does not    
+                    exist.                                                      
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/modules/aggregator_test/src/Hook/AggregatorTest
+Hooks.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 19   Attribute class Drupal\Core\Hook\Attribute\Hook does not    
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 27   Attribute class Drupal\Core\Hook\Attribute\Hook does not    
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 35   Attribute class Drupal\Core\Hook\Attribute\Hook does not    
+                    exist.                                                      
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/AddFeedTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 14   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 15   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 41   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AddFeedTest::assertTrue()
+                    .                                                           
+--------------------------------------------------------------------------------
+Check manually 79   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AddFeedTest::assertString
+                    ContainsString().                                           
+--------------------------------------------------------------------------------
+Check manually 101  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AddFeedTest::assertTrue()
+                    .                                                           
+--------------------------------------------------------------------------------
+Check manually 102  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AddFeedTest::assertTrue()
+                    .                                                           
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/AggregatorAdminTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 13   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 14   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/AggregatorCronTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 17   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 40   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorCronTest::asser
+                    tEquals().                                                  
+--------------------------------------------------------------------------------
+Check manually 42   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorCronTest::asser
+                    tEquals().                                                  
+--------------------------------------------------------------------------------
+Check manually 44   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorCronTest::asser
+                    tEquals().                                                  
+--------------------------------------------------------------------------------
+Check manually 50   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorCronTest::asser
+                    tEquals().                                                  
+--------------------------------------------------------------------------------
+Check manually 53   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorCronTest::asser
+                    tEquals().                                                  
+--------------------------------------------------------------------------------
+Check manually 74   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorCronTest::asser
+                    tCount().                                                   
+--------------------------------------------------------------------------------
+Check manually 75   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorCronTest::asser
+                    tEquals().                                                  
+--------------------------------------------------------------------------------
+Check manually 77   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorCronTest::asser
+                    tCount().                                                   
+--------------------------------------------------------------------------------
+Check manually 78   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorCronTest::asser
+                    tEquals().                                                  
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/AggregatorDisplayConfigurableTes
+t.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 15   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/AggregatorRenderingTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 15   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 152  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorRenderingTest::
+                    assertEquals().                                             
+--------------------------------------------------------------------------------
+Check manually 153  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorRenderingTest::
+                    assertEquals().                                             
+--------------------------------------------------------------------------------
+Check manually 156  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorRenderingTest::
+                    assertEquals().                                             
+--------------------------------------------------------------------------------
+Check manually 157  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorRenderingTest::
+                    assertEquals().                                             
+--------------------------------------------------------------------------------
+Check manually 158  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorRenderingTest::
+                    assertEquals().                                             
+--------------------------------------------------------------------------------
+Check manually 159  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorRenderingTest::
+                    assertEquals().                                             
+--------------------------------------------------------------------------------
+Check manually 160  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorRenderingTest::
+                    assertEquals().                                             
+--------------------------------------------------------------------------------
+Check manually 167  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorRenderingTest::
+                    assertEquals().                                             
+--------------------------------------------------------------------------------
+Check manually 168  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorRenderingTest::
+                    assertEquals().                                             
+--------------------------------------------------------------------------------
+Check manually 169  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorRenderingTest::
+                    assertEquals().                                             
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/AggregatorTestBase.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 110  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorTestBase::asser
+                    tNotEmpty().                                                
+--------------------------------------------------------------------------------
+Check manually 229  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorTestBase::asser
+                    tEquals().                                                  
+--------------------------------------------------------------------------------
+Check manually 279  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorTestBase::asser
+                    tGreaterThan().                                             
+--------------------------------------------------------------------------------
+Check manually 282  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\AggregatorTestBase::asser
+                    tEquals().                                                  
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/DeleteFeedItemTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 14   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 15   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/DeleteFeedTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 13   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 14   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 48   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\DeleteFeedTest::assertNul
+                    l().                                                        
+--------------------------------------------------------------------------------
+Check manually 49   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\DeleteFeedTest::assertEqu
+                    als().                                                      
+--------------------------------------------------------------------------------
+Check manually 62   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\DeleteFeedTest::assertEqu
+                    als().                                                      
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/FeedAdminDisplayTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 13   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 14   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/FeedCacheTagsTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 17   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 18   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/FeedFetcherPluginTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 15   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 42   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\FeedFetcherPluginTest::as
+                    sertNotEmpty().                                             
+--------------------------------------------------------------------------------
+Check manually 51   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\FeedFetcherPluginTest::as
+                    sertEmpty().                                                
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/FeedLanguageTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 15   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 85   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\FeedLanguageTest::assertE
+                    quals().                                                    
+--------------------------------------------------------------------------------
+Check manually 86   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\FeedLanguageTest::assertE
+                    quals().                                                    
+--------------------------------------------------------------------------------
+Check manually 98   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\FeedLanguageTest::assertN
+                    otEmpty().                                                  
+--------------------------------------------------------------------------------
+Check manually 100  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\FeedLanguageTest::assertE
+                    quals().                                                    
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/FeedProcessorPluginTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 17   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 18   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 45   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\FeedProcessorPluginTest::
+                    assertStringStartsWith().                                   
+--------------------------------------------------------------------------------
+Check manually 58   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\FeedProcessorPluginTest::
+                    assertEmpty().                                              
+--------------------------------------------------------------------------------
+Check manually 73   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\FeedProcessorPluginTest::
+                    assertEquals().                                             
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/ImportOpmlTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 14   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 15   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 88   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\ImportOpmlTest::assertEqu
+                    als().                                                      
+--------------------------------------------------------------------------------
+Check manually 111  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\ImportOpmlTest::assertEqu
+                    als().                                                      
+--------------------------------------------------------------------------------
+Check manually 132  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\ImportOpmlTest::assertEqu
+                    als().                                                      
+--------------------------------------------------------------------------------
+Check manually 144  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\ImportOpmlTest::assertEqu
+                    als().                                                      
+--------------------------------------------------------------------------------
+Check manually 145  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\ImportOpmlTest::assertEqu
+                    als().                                                      
+--------------------------------------------------------------------------------
+Check manually 146  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\ImportOpmlTest::assertTru
+                    e().                                                        
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/ItemCacheTagsTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 20   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 21   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 90   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\ItemCacheTagsTest::assert
+                    False().                                                    
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/Jsonapi/FeedTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 18   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 19   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/Jsonapi/ItemTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 17   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 132  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Jsonapi\ItemTest::markTes
+                    tSkipped().                                                 
+--------------------------------------------------------------------------------
+Check manually 139  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Jsonapi\ItemTest::markTes
+                    tSkipped().                                                 
+--------------------------------------------------------------------------------
+Check manually 146  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Jsonapi\ItemTest::markTes
+                    tSkipped().                                                 
+--------------------------------------------------------------------------------
+Check manually 153  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Jsonapi\ItemTest::markTes
+                    tSkipped().                                                 
+--------------------------------------------------------------------------------
+Check manually 160  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Jsonapi\ItemTest::markTes
+                    tSkipped().                                                 
+--------------------------------------------------------------------------------
+Check manually 167  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Jsonapi\ItemTest::markTes
+                    tSkipped().                                                 
+--------------------------------------------------------------------------------
+Check manually 174  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Jsonapi\ItemTest::markTes
+                    tSkipped().                                                 
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/Plugin/aggregator/fetcher/Defaul
+tFetcherTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 15   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 64   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Plugin\aggregator\fetcher
+                    \DefaultFetcherTest::assertSame().                          
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/Plugin/aggregator/parser/Default
+ParserTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 13   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 14   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/Plugin/aggregator/processor/Defa
+ultProcessorTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 14   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 15   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 35   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Plugin\aggregator\process
+                    or\DefaultProcessorTest::assertNotNull().                   
+--------------------------------------------------------------------------------
+Check manually 46   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Plugin\aggregator\process
+                    or\DefaultProcessorTest::assertNull().                      
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/Rest/FeedJsonAnonTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 12   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 13   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/Rest/FeedJsonBasicAuthTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 12   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 13   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/Rest/FeedJsonCookieTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 12   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 13   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/Rest/FeedXmlAnonTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 13   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 14   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/Rest/FeedXmlBasicAuthTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 13   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 14   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/Rest/FeedXmlCookieTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 13   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 14   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/Rest/ItemJsonAnonTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 12   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 13   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/Rest/ItemJsonBasicAuthTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 12   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 13   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/Rest/ItemJsonCookieTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 12   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 13   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/Rest/ItemXmlAnonTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 13   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 14   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/Rest/ItemXmlBasicAuthTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 13   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 14   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/Rest/ItemXmlCookieTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 13   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 14   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/Update/AggregatorUpdateBrokenRss
+FeedViewTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 15   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 17   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 33   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateBr
+                    okenRssFeedViewTest::markTestSkipped().                     
+--------------------------------------------------------------------------------
+Check manually 52   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateBr
+                    okenRssFeedViewTest::assertSame().                          
+--------------------------------------------------------------------------------
+Check manually 65   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateBr
+                    okenRssFeedViewTest::assertSame().                          
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/Update/AggregatorUpdateDeleteQue
+ueTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 17   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 18   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 67   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateDe
+                    leteQueueTest::assertEquals().                              
+--------------------------------------------------------------------------------
+Check manually 71   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateDe
+                    leteQueueTest::assertEquals().                              
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/Update/AggregatorUpdateFeedsTest
+.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 17   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 18   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 47   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateFe
+                    edsTest::assertNull().                                      
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/Update/AggregatorUpdateItemsTest
+.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 17   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 18   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 19   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 45   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateIt
+                    emsTest::assertNotNull().                                   
+--------------------------------------------------------------------------------
+Check manually 48   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateIt
+                    emsTest::fail().                                            
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/Update/AggregatorUpdateRssFeedVi
+ewTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 15   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 17   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 47   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateRs
+                    sFeedViewTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 50   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateRs
+                    sFeedViewTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 51   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateRs
+                    sFeedViewTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 71   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateRs
+                    sFeedViewTest::assertSame().                                
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/Update/AggregatorUpdateSettingsT
+est.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 17   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 18   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 19   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 51   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateSe
+                    ttingsTest::assertSame().                                   
+--------------------------------------------------------------------------------
+Check manually 52   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateSe
+                    ttingsTest::assertNull().                                   
+--------------------------------------------------------------------------------
+Check manually 53   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateSe
+                    ttingsTest::assertNull().                                   
+--------------------------------------------------------------------------------
+Check manually 59   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateSe
+                    ttingsTest::assertNull().                                   
+--------------------------------------------------------------------------------
+Check manually 61   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateSe
+                    ttingsTest::assertNotNull().                                
+--------------------------------------------------------------------------------
+Check manually 64   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateSe
+                    ttingsTest::assertSame().                                   
+--------------------------------------------------------------------------------
+Check manually 65   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateSe
+                    ttingsTest::assertSame().                                   
+--------------------------------------------------------------------------------
+Check manually 69   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateSe
+                    ttingsTest::assertNull().                                   
+--------------------------------------------------------------------------------
+Check manually 70   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateSe
+                    ttingsTest::assertFalse().                                  
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/UpdateFeedItemTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 17   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 80   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\UpdateFeedItemTest::asser
+                    tSame().                                                    
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Functional/UpdateFeedTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 13   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 14   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 46   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\UpdateFeedTest::assertTru
+                    e().                                                        
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/Views/Handler/HandlerAggregatorT
+est.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 19   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 20   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 97   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Views\Handler\HandlerAggr
+                    egatorTest::assertInstanceOf().                             
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/Views/Plugin/StyleOpmlTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 15   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 65   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Views\Plugin\StyleOpmlTes
+                    t::assertEquals().                                          
+--------------------------------------------------------------------------------
+Check manually 66   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Views\Plugin\StyleOpmlTes
+                    t::assertEquals().                                          
+--------------------------------------------------------------------------------
+Check manually 67   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Views\Plugin\StyleOpmlTes
+                    t::assertEquals().                                          
+--------------------------------------------------------------------------------
+Check manually 79   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Views\Plugin\StyleOpmlTes
+                    t::assertEquals().                                          
+--------------------------------------------------------------------------------
+Check manually 80   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Views\Plugin\StyleOpmlTes
+                    t::assertEquals().                                          
+--------------------------------------------------------------------------------
+Check manually 81   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Views\Plugin\StyleOpmlTes
+                    t::assertEquals().                                          
+--------------------------------------------------------------------------------
+Check manually 83   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\Views\Plugin\StyleOpmlTes
+                    t::assertNull().                                            
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/views_ui/DisplayOpmlFeedTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 15   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 90   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Functional\views_ui\DisplayOpmlFeedT
+                    est::assertEquals().                                        
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Functional/views_ui/NewViewAggregatorConfig
+SchemaTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 14   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 15   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Kernel/AggregatorLegacyFeedHashTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 18   Attribute class                                             
+                    PHPUnit\Framework\Attributes\IgnoreDeprecations does not    
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 19   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 20   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 53   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorLegacyFeedHashTest:
+                    :expectDeprecation().                                       
+--------------------------------------------------------------------------------
+Check manually 53   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorLegacyFeedHashTest:
+                    :expectUserDeprecationMessage().                            
+--------------------------------------------------------------------------------
+Check manually 55   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorLegacyFeedHashTest:
+                    :expectDeprecation().                                       
+--------------------------------------------------------------------------------
+Check manually 55   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorLegacyFeedHashTest:
+                    :expectUserDeprecationMessage().                            
+--------------------------------------------------------------------------------
+Check manually 57   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorLegacyFeedHashTest:
+                    :assertSame().                                              
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Kernel/AggregatorLegacyItemTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 18   Attribute class                                             
+                    PHPUnit\Framework\Attributes\IgnoreDeprecations does not    
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 19   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 20   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 51   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorLegacyItemTest::exp
+                    ectDeprecation().                                           
+--------------------------------------------------------------------------------
+Check manually 51   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorLegacyItemTest::exp
+                    ectUserDeprecationMessage().                                
+--------------------------------------------------------------------------------
+Check manually 53   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorLegacyItemTest::ass
+                    ertSame().                                                  
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Kernel/AggregatorLegacyTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 18   Attribute class                                             
+                    PHPUnit\Framework\Attributes\IgnoreDeprecations does not    
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 19   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 20   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 49   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorLegacyTest::expectD
+                    eprecation().                                               
+--------------------------------------------------------------------------------
+Check manually 49   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorLegacyTest::expectU
+                    serDeprecationMessage().                                    
+--------------------------------------------------------------------------------
+Check manually 51   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorLegacyTest::assertS
+                    ame().                                                      
+--------------------------------------------------------------------------------
+Check manually 52   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorLegacyTest::expectD
+                    eprecation().                                               
+--------------------------------------------------------------------------------
+Check manually 52   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorLegacyTest::expectU
+                    serDeprecationMessage().                                    
+--------------------------------------------------------------------------------
+Check manually 54   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorLegacyTest::assertS
+                    ame().                                                      
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Kernel/AggregatorLocalTasksTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 15   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 29   Attribute class PHPUnit\Framework\Attributes\DataProvider   
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 51   Attribute class PHPUnit\Framework\Attributes\DataProvider   
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 85   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorLocalTasksTest::ass
+                    ertSame().                                                  
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Kernel/AggregatorPluginManagerTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 14   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 15   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 33   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorPluginManagerTest::
+                    assertTrue().                                               
+--------------------------------------------------------------------------------
+Check manually 44   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorPluginManagerTest::
+                    assertTrue().                                               
+--------------------------------------------------------------------------------
+Check manually 55   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorPluginManagerTest::
+                    assertTrue().                                               
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Kernel/AggregatorTitleTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 17   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 79   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorTitleTest::assertSt
+                    ringContainsString().                                       
+--------------------------------------------------------------------------------
+Check manually 80   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorTitleTest::assertSt
+                    ringContainsString().                                       
+--------------------------------------------------------------------------------
+Check manually 87   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorTitleTest::assertSt
+                    ringContainsString().                                       
+--------------------------------------------------------------------------------
+Check manually 88   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorTitleTest::assertSt
+                    ringNotContainsString().                                    
+--------------------------------------------------------------------------------
+Check manually 97   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorTitleTest::assertSt
+                    ringContainsString().                                       
+--------------------------------------------------------------------------------
+Check manually 98   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorTitleTest::assertSt
+                    ringContainsString().                                       
+--------------------------------------------------------------------------------
+Check manually 105  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorTitleTest::assertSt
+                    ringContainsString().                                       
+--------------------------------------------------------------------------------
+Check manually 106  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\AggregatorTitleTest::assertSt
+                    ringNotContainsString().                                    
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Kernel/ConfigDependenciesTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 17   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 44   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\ConfigDependenciesTest::asser
+                    tNotNull().                                                 
+--------------------------------------------------------------------------------
+Check manually 47   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\ConfigDependenciesTest::asser
+                    tNull().                                                    
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Kernel/FeedValidationTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 17   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 47   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\FeedValidationTest::assertCou
+                    nt().                                                       
+--------------------------------------------------------------------------------
+Check manually 61   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\FeedValidationTest::assertCou
+                    nt().                                                       
+--------------------------------------------------------------------------------
+Check manually 62   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\FeedValidationTest::assertEqu
+                    als().                                                      
+--------------------------------------------------------------------------------
+Check manually 63   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\FeedValidationTest::assertEqu
+                    als().                                                      
+--------------------------------------------------------------------------------
+Check manually 64   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\FeedValidationTest::assertEqu
+                    als().                                                      
+--------------------------------------------------------------------------------
+Check manually 65   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\FeedValidationTest::assertEqu
+                    als().                                                      
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Kernel/ItemWithoutFeedTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 15   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 42   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\ItemWithoutFeedTest::assertCo
+                    unt().                                                      
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Kernel/Plugin/Block/AggregatorFeedBlockTest
+.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 18   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 19   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 74   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\Block\AggregatorFeedBl
+                    ockTest::assertCount().                                     
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Kernel/Plugin/aggregator/parser/DefaultPars
+erTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 15   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 60   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 61   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 62   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 63   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertEquals().                              
+--------------------------------------------------------------------------------
+Check manually 67   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 68   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 69   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 70   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertEquals().                              
+--------------------------------------------------------------------------------
+Check manually 90   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertStringStartsWith().                    
+--------------------------------------------------------------------------------
+Check manually 101  Attribute class PHPUnit\Framework\Attributes\DataProvider   
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 133  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 185  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 189  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 190  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 191  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 196  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 197  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 198  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 199  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertStringContainsString().                
+--------------------------------------------------------------------------------
+Check manually 203  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 204  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 205  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 206  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 210  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 211  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 212  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+Check manually 213  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\parser\Defa
+                    ultParserTest::assertSame().                                
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Kernel/Plugin/aggregator/processor/DefaultP
+rocessorTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 17   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 61   Attribute class PHPUnit\Framework\Attributes\DataProvider   
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 78   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\processor\D
+                    efaultProcessorTest::assertCount().                         
+--------------------------------------------------------------------------------
+Check manually 84   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\processor\D
+                    efaultProcessorTest::assertCount().                         
+--------------------------------------------------------------------------------
+Check manually 180  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\processor\D
+                    efaultProcessorTest::assertStringStartsWith().              
+--------------------------------------------------------------------------------
+Check manually 207  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\processor\D
+                    efaultProcessorTest::assertSame().                          
+--------------------------------------------------------------------------------
+Check manually 233  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Plugin\aggregator\processor\D
+                    efaultProcessorTest::assertStringStartsWith().              
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Kernel/Views/AggregatorFeedViewsFieldAccess
+Test.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 15   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Kernel/Views/AggregatorItemViewsFieldAccess
+Test.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 16   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 17   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Kernel/Views/IntegrationTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 21   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 22   Attribute class                                             
+                    PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses    
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 127  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Views\IntegrationTest::assert
+                    Equals().                                                   
+--------------------------------------------------------------------------------
+Check manually 133  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Views\IntegrationTest::assert
+                    Equals().                                                   
+--------------------------------------------------------------------------------
+Check manually 139  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Kernel\Views\IntegrationTest::assert
+                    Equals().                                                   
+--------------------------------------------------------------------------------
+
+FILE: modules/contrib/aggregator/tests/src/Unit/BubbleableMetadataTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 14   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 24   Attribute class PHPUnit\Framework\Attributes\DataProvider   
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 26   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\BubbleableMetadataTest::assertS
+                    ame().                                                      
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Unit/Plugin/AggregatorPluginSettingsBaseTes
+t.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 21   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 32   Property                                                    
+                    Drupal\Tests\aggregator\Unit\Plugin\AggregatorPluginSettings
+                    BaseTest::$configFactory has unknown class                  
+                    PHPUnit\Framework\MockObject\MockObject as its type.        
+--------------------------------------------------------------------------------
+Check manually 55   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\Plugin\AggregatorPluginSettings
+                    BaseTest::createStub().                                     
+--------------------------------------------------------------------------------
+Check manually 57   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\Plugin\AggregatorPluginSettings
+                    BaseTest::createMock().                                     
+--------------------------------------------------------------------------------
+Check manually 58   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\Plugin\AggregatorPluginSettings
+                    BaseTest::once().                                           
+--------------------------------------------------------------------------------
+Check manually 64   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\Plugin\AggregatorPluginSettings
+                    BaseTest::createMock().                                     
+--------------------------------------------------------------------------------
+Check manually 65   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\Plugin\AggregatorPluginSettings
+                    BaseTest::never().                                          
+--------------------------------------------------------------------------------
+Check manually 90   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\Plugin\AggregatorPluginSettings
+                    BaseTest::getMockBuilder().                                 
+--------------------------------------------------------------------------------
+Check manually 94   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\Plugin\AggregatorPluginSettings
+                    BaseTest::once().                                           
+--------------------------------------------------------------------------------
+Check manually 96   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\Plugin\AggregatorPluginSettings
+                    BaseTest::anything().                                       
+--------------------------------------------------------------------------------
+Check manually 98   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\Plugin\AggregatorPluginSettings
+                    BaseTest::once().                                           
+--------------------------------------------------------------------------------
+Check manually 100  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\Plugin\AggregatorPluginSettings
+                    BaseTest::anything().                                       
+--------------------------------------------------------------------------------
+Check manually 101  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\Plugin\AggregatorPluginSettings
+                    BaseTest::once().                                           
+--------------------------------------------------------------------------------
+Check manually 103  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\Plugin\AggregatorPluginSettings
+                    BaseTest::anything().                                       
+--------------------------------------------------------------------------------
+Check manually 105  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\Plugin\AggregatorPluginSettings
+                    BaseTest::once().                                           
+--------------------------------------------------------------------------------
+Check manually 107  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\Plugin\AggregatorPluginSettings
+                    BaseTest::equalTo().                                        
+--------------------------------------------------------------------------------
+
+FILE:
+modules/contrib/aggregator/tests/src/Unit/ZfExtensionManagerSfContainerTest.php
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 18   Attribute class PHPUnit\Framework\Attributes\Group does not 
+                    exist.                                                      
+--------------------------------------------------------------------------------
+Check manually 33   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\ZfExtensionManagerSfContainerTe
+                    st::assertEquals().                                         
+--------------------------------------------------------------------------------
+Check manually 35   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\ZfExtensionManagerSfContainerTe
+                    st::assertInstanceOf().                                     
+--------------------------------------------------------------------------------
+Check manually 38   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\ZfExtensionManagerSfContainerTe
+                    st::assertInstanceOf().                                     
+--------------------------------------------------------------------------------
+Check manually 53   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\ZfExtensionManagerSfContainerTe
+                    st::assertTrue().                                           
+--------------------------------------------------------------------------------
+Check manually 54   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\ZfExtensionManagerSfContainerTe
+                    st::assertFalse().                                          
+--------------------------------------------------------------------------------
+Check manually 55   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\ZfExtensionManagerSfContainerTe
+                    st::assertFalse().                                          
+--------------------------------------------------------------------------------
+Check manually 57   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\ZfExtensionManagerSfContainerTe
+                    st::assertTrue().                                           
+--------------------------------------------------------------------------------
+Check manually 64   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\ZfExtensionManagerSfContainerTe
+                    st::expectException().                                      
+--------------------------------------------------------------------------------
+Check manually 65   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\ZfExtensionManagerSfContainerTe
+                    st::expectExceptionMessage().                               
+--------------------------------------------------------------------------------
+Check manually 74   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\ZfExtensionManagerSfContainerTe
+                    st::expectException().                                      
+--------------------------------------------------------------------------------
+Check manually 75   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\ZfExtensionManagerSfContainerTe
+                    st::expectExceptionMessage().                               
+--------------------------------------------------------------------------------
+Check manually 95   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\ZfExtensionManagerSfContainerTe
+                    st::assertTrue().                                           
+--------------------------------------------------------------------------------
+Check manually 96   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\ZfExtensionManagerSfContainerTe
+                    st::assertFalse().                                          
+--------------------------------------------------------------------------------
+Check manually 97   Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\ZfExtensionManagerSfContainerTe
+                    st::assertEquals().                                         
+--------------------------------------------------------------------------------
+Check manually 104  Attribute class PHPUnit\Framework\Attributes\DataProvider   
+                    does not exist.                                             
+--------------------------------------------------------------------------------
+Check manually 112  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\ZfExtensionManagerSfContainerTe
+                    st::assertTrue().                                           
+--------------------------------------------------------------------------------
+Check manually 113  Call to an undefined method                                 
+                    Drupal\Tests\aggregator\Unit\ZfExtensionManagerSfContainerTe
+                    st::assertEquals().                                         
+--------------------------------------------------------------------------------
+

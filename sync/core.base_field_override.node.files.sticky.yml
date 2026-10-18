@@ -1,0 +1,22 @@
+uuid: a02f8168-a148-4d9f-9fe3-a8c8c9b3fadc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.files
+id: node.files.sticky
+field_name: sticky
+entity_type: node
+bundle: files
+label: 'Sticky at the top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

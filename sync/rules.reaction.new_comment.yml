@@ -1,0 +1,51 @@
+uuid: 939802ff-1a62-419b-86df-08d8c24caf0d
+langcode: en
+status: true
+dependencies: {  }
+id: new_comment
+label: 'New comment'
+events:
+  -
+    event_name: 'rules_entity_insert:comment'
+description: "Send an email when there's a new comment."
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 368d1fb1-7619-4353-b7a2-db9413582f05
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: d6587b7a-4e8e-4964-8a03-6e410847d101
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: b14f7cd2-d390-4134-bcfe-877f3faa3f2c
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: a54bd73c-3563-4163-b9f8-9dbdb55bf663
+        weight: 0
+        action_id: rules_send_email
+        context_values:
+          to:
+            - alistairamartin@me.com
+          subject: 'New comment on the Buriton website to moderate'
+          message: 'New comment posted at {{ comment.entity_id.entity | entity_url }}'
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }

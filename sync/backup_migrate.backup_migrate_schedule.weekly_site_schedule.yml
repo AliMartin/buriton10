@@ -1,0 +1,15 @@
+uuid: e366a7e0-ec80-4097-9852-48547d590928
+langcode: en
+status: true
+dependencies: {  }
+id: weekly_site_schedule
+label: 'Weekly Site Schedule'
+enabled: false
+keep: null
+encrypt: false
+encrypt_password: ''
+period: 604800
+cron: null
+source_id: default_db
+destination_id: private_files
+settings_profile_id: null

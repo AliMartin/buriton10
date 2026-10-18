@@ -1,0 +1,29 @@
+uuid: 58005486-d817-4bed-a161-8d9c0225a4c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.covid_19_news
+  module:
+    - system
+    - views
+  theme:
+    - buriton5
+id: views_block__covid_19_news_block_1_2
+theme: buriton5
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'views_block:covid_19_news-block_1'
+settings:
+  id: 'views_block:covid_19_news-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/covid-19*'

@@ -1,0 +1,15 @@
+--- a/bootstrap5.post_update.php
++++ b/bootstrap5.post_update.php
+@@ -27,6 +27,12 @@
+ 
+   foreach (['classy', 'stable'] as $theme) {
+     if ($theme_handler->themeExists($theme)) {
++      // Other installed themes may still need this base theme.
++      foreach ($theme_handler->listInfo() as $installed_theme) {
++        if (isset($installed_theme->base_themes[$theme])) {
++          continue 2;
++        }
++      }
+       $theme_installer->uninstall([$theme]);
+     }
+   }

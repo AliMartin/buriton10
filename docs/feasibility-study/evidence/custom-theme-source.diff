@@ -1,0 +1,853 @@
+--- a/themes/custom/buriton5/README.md
++++ b/themes/custom/buriton5/README.md
+@@ -2,10 +2,39 @@
+ 
+ [Bootstrap 5](https://www.drupal.org/project/bootstrap5) subtheme.
+ 
+-## Development.
++The subtheme supports Drupal 9.5 and Drupal 10.1+.
+ 
+-### CSS compilation.
++The project now uses Bootstrap5 4.0.8 on Drupal 10. The Drupal 9 preparation
++used Bootstrap5 3.0.16 as a temporary bridge. A Composer-managed patch preserves
++Classy and
++Stable during Bootstrap5's database updates because Zircon still needs them.
++See [the upgrade notes](../../../docs/theme-upgrade.md).
++
++The subtheme's `libraries-override` removes only the parent's compiled stylesheet;
++other parent libraries, including Bootstrap's JavaScript, remain available.
++
++## Development
++
++### CSS compilation
+ 
+ Prerequisites: install [sass](https://sass-lang.com/install).
+ 
+-To compile, run from subtheme directory: `sass scss/style.scss css/style.css`
++To compile, run from the subtheme directory:
++
++```sh
++sass --style=compressed scss/style.scss css/style.css
++```
++
++Rebuild the CSS after every parent-theme upgrade, then run `ddev drush cr`.
++The source builds against both Bootstrap5 3.0.16 and 4.0.8. Upstream Sass
++deprecation warnings still occur with Dart Sass 1.98; compilation succeeds.
++
++The page template uses a 3/6/3 grid with both sidebars and a 4/8 grid with one
++sidebar. Navigation indicators use CSS rather than depending on a Font Awesome
++font being attached by another module.
++
++Run the CLI-only rendering and asset check without changing the selected theme:
++
++```sh
++ddev exec env THEME_QA_THEME=buriton5 vendor/bin/drush php:script tools/check-theme.php
++```
+--- a/themes/custom/buriton5/buriton5.info.yml
++++ b/themes/custom/buriton5/buriton5.info.yml
+@@ -1,12 +1,17 @@
+ name: 'Buriton Bootstrap 5'
+ type: theme
+ description: 'Buriton Bootstrap 5 subtheme based on Bootstrap 5 theme.'
+-core_version_requirement: '^8.9 || ^9'
++core_version_requirement: '^9.5 || ^10.1'
+ 'base theme': bootstrap5
++dependencies:
++  - bootstrap5:bootstrap5
+ libraries:
+   - buriton5/global-styling
+-stylesheets-remove:
+-  - '@bootstrap5/css/style.css'
++libraries-override:
++  bootstrap5/global-styling:
++    css:
++      theme:
++        css/style.css: false
+ regions:
+   header: Header
+   nav_branding: 'Navigation branding region'
+--- a/themes/custom/buriton5/scss/_footer.scss
++++ b/themes/custom/buriton5/scss/_footer.scss
+@@ -24,6 +24,7 @@
+ footer .region-footer {
+   display: flex;
+   flex-direction: row;
++  flex-wrap: wrap;
+   gap: 60px;
+ 
+   > div ul,
+@@ -73,4 +74,4 @@
+     }
+   }
+ 
+-}+}
+--- a/themes/custom/buriton5/scss/_menus.scss
++++ b/themes/custom/buriton5/scss/_menus.scss
+@@ -33,9 +33,11 @@
+     .tbm-item--has-dropdown a.level-1::after {
+       margin-left: 5px;
+       color: $green;
+-      font-weight: 900;
+-      font-family: "Font Awesome 5 Free";
+-      content: "\f0dd";
++      content: "";
++      display: inline-block;
++      border-left: 0.3em solid transparent;
++      border-right: 0.3em solid transparent;
++      border-top: 0.35em solid currentColor;
+       position: relative;
+       top: -3px;
+     }
+--- a/themes/custom/buriton5/templates/layout/html.html.twig
++++ b/themes/custom/buriton5/templates/layout/html.html.twig
+@@ -36,7 +36,7 @@
+ %}
+ 
+ <!DOCTYPE html>
+-<html{{ html_attributes.addClass('h-100') }}>
++<html{{ html_attributes.addClass('h-100').setAttribute('data-bs-theme', b5_theme_mode|default('light')) }}>
+   <head>
+     <head-placeholder token="{{ placeholder_token }}">
+     <title>{{ head_title|safe_join(' | ') }}</title>
+@@ -48,9 +48,9 @@
+       Keyboard navigation/accessibility link to main content section in
+       page.html.twig.
+     #}
+-    <a href="#main-content" class="visually-hidden focusable skip-link">
+-      {{ 'Skip to main content'|t }}
+-    </a>
++    <div class="visually-hidden-focusable skip-link p-3 container">
++      <a href="#main-content" class="p-2">{{ 'Skip to main content'|t }}</a>
++    </div>
+     {{ page_top }}
+     {{ page }}
+     {{ page_bottom }}
+--- a/themes/custom/buriton5/templates/layout/page.html.twig
++++ b/themes/custom/buriton5/templates/layout/page.html.twig
+@@ -66,7 +66,7 @@
+ 
+       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+-              aria-expanded="false" aria-label="Toggle navigation">
++              aria-expanded="false" aria-label="{{ 'Toggle navigation'|t }}">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+ 
+@@ -90,11 +90,11 @@
+   <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+ 
+   {%
+-  set sidebar_first_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-4' : 'col-12 col-lg-4'
++  set sidebar_first_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-4'
+   %}
+ 
+   {%
+-  set sidebar_second_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-4' : 'col-12 col-lg-4'
++  set sidebar_second_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-4'
+   %}
+ 
+   {%
+@@ -134,9 +134,9 @@
+ {% endif %}
+ 
+ {% if page.sub_footer %}
+-  <div class="mt-auto subfooter {{ sub_footer_classes }}">
++  <div class="mt-auto subfooter">
+     <div class="{{ b5_top_container }}">
+       {{ page.sub_footer }}
+     </div>
+   </div>
+-{% endif %}+{% endif %}
+--- /dev/null
++++ b/themes/custom/zircon/README.md
+@@ -0,0 +1,33 @@
++# Buriton Zircon
++
++This is Buriton's maintained custom copy of Zircon, supporting Drupal 9.5 and 10.
++The duplicate `drupal/zircon` Composer package is intentionally removed: it had
++the same machine name and did not supply the custom theme actually used here.
++
++Classy remains the base theme to preserve existing markup and styling. Composer
++explicitly supplies contributed Classy and Stable for the Drupal 10 transition.
++Drupal 9 continues to use its core copies of those base themes.
++
++The custom scripts use Drupal behaviors and `core/once`. They support AJAX
++attachment without duplicate listeners or slider instances. The old form DOM
++replacement and placeholder polyfill have been removed. FlexSlider supplies its
++own touch support and pause/play controls; reduced-motion preferences disable
++automatic playback.
++
++Bundled assets loaded by `zircon.libraries.yml`:
++
++| Library | Version | Upstream package |
++| --- | --- | --- |
++| Bootstrap | 3.4.1 | https://registry.npmjs.org/bootstrap/-/bootstrap-3.4.1.tgz |
++| FlexSlider | 2.7.2 | https://registry.npmjs.org/flexslider/-/flexslider-2.7.2.tgz |
++| Slick | 1.8.1 | https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz |
++
++Their licence headers and font resources are preserved. Bootstrap 3 remains an
++upstream end-of-life dependency; a Bootstrap 5 redesign is a separate transition.
++The two Bootstrap major versions must not be loaded together on the same page.
++
++Run the rendering and asset check without changing the site's selected theme:
++
++```sh
++ddev exec env THEME_QA_THEME=zircon vendor/bin/drush php:script tools/check-theme.php
++```
+--- a/themes/custom/zircon/js/carousel.js
++++ b/themes/custom/zircon/js/carousel.js
+@@ -1,47 +1,25 @@
+-(function ($, Drupal) {
++(function ($, Drupal, once) {
++  "use strict";
+ 
+-  "use strict";
+   Drupal.behaviors.zirconCarousel = {
+-    attach: function (context, settings) {  
+-      $(document).ready(function() {
+-      if($('.carousel-responsive').length) {
+-        $('.carousel-responsive').slick({
+-            dots: false,
+-            infinite: true,
+-            speed: 300,
+-            slidesToShow: 4,
+-            slidesToScroll: 4,
+-            responsive: [{
+-                breakpoint: 992,
+-                settings: {
+-                    slidesToShow: 3,
+-                    slidesToScroll: 3,
+-                    infinite: true,
+-                    dots: true
+-                }
+-            }, {
+-                breakpoint: 768,
+-                settings: {
+-                    slidesToShow: 2,
+-                    slidesToScroll: 2
+-                }
+-            }, {
+-                breakpoint: 480,
+-                settings: {
+-                    slidesToShow: 1,
+-                    slidesToScroll: 1
+-                }
+-            }]
+-          });
++    attach: function (context) {
++      $(once('zircon-carousel', '.carousel-responsive', context)).each(function () {
++        if ($(this).hasClass('slick-initialized')) {
++          return;
+         }
++        $(this).slick({
++          dots: false,
++          infinite: true,
++          speed: 300,
++          slidesToShow: 4,
++          slidesToScroll: 4,
++          responsive: [
++            {breakpoint: 992, settings: {slidesToShow: 3, slidesToScroll: 3, dots: true}},
++            {breakpoint: 768, settings: {slidesToShow: 2, slidesToScroll: 2, dots: true}},
++            {breakpoint: 480, settings: {slidesToShow: 1, slidesToScroll: 1, dots: true}}
++          ]
++        });
+       });
+     }
+   };
+-
+-
+-})(jQuery, Drupal);
+-
+-
+-
+-
+-
++})(jQuery, Drupal, once);
+--- a/themes/custom/zircon/js/fix_script.js
++++ /dev/null
+@@ -1,39 +0,0 @@
+-(jQuery)(function () {
+-	
+-	fix_placeholder();
+-	fix_contact_form();
+-	
+-	function fix_placeholder() {
+-		(jQuery)('[placeholder]').focus(function() {
+-			var input = (jQuery)(this);
+-			if (input.val() == input.attr('placeholder')) {
+-				input.val('');
+-				input.removeClass('placeholder');
+-			}
+-		}).blur(function() {
+-			var input = (jQuery)(this);
+-			if (input.val() == '' || input.val() == input.attr('placeholder')) {
+-				input.addClass('placeholder');
+-				input.val(input.attr('placeholder'));
+-			}
+-		}).blur().parents('form').submit(function() {
+-			(jQuery)(this).find('[placeholder]').each(function() {
+-				var input = (jQuery)(this);
+-				if (input.val() == input.attr('placeholder')) {
+-				input.val('');
+-				}
+-			})
+-		});	
+-	}
+-	
+-	function fix_contact_form() {
+-		var userAgent = window.navigator.userAgent;
+-		if (userAgent.indexOf('Firefox')) {
+-			var form = (jQuery)('#contact-message-feedback-form');
+-			var parent = form.parent();
+-			var formHTML = parent.html();
+-			parent.empty();
+-			parent.html(formHTML);
+-		}	
+-	}
+-});--- a/themes/custom/zircon/js/slideshow.js
++++ b/themes/custom/zircon/js/slideshow.js
+@@ -1,201 +1,40 @@
+-/*
+-(function ($, Drupal) {
++(function ($, Drupal, once) {
++  "use strict";
+ 
+-  "use strict";
+   Drupal.behaviors.zirconSlideshow = {
+-    attach: function (context, settings) {  
+-      jQuery(document).ready(function ($) {
+-        if($('#slideshow_container').length) {
+-			
+-            var _SlideshowTransitions = [
+-            { $Duration: 1500, $Opacity: 2 }
+-            ];
+-
+-            var options = {
+-                $AutoPlay: true,
+-                $AutoPlaySteps: 1,
+-                $AutoPlayInterval: 3000,
+-                $PauseOnHover: 0,
+-                $ArrowKeyNavigation: true,
+-                $SlideDuration: 500,
+-                $MinDragOffsetToSlide: 20,
+-                //$SlideWidth: 1170,
+-                //$SlideHeight: 390,
+-                $SlideSpacing: 0,
+-                $DisplayPieces: 1,
+-                $ParkingPosition: 0,
+-                $UISearchMode: 1,
+-                $PlayOrientation: 1,
+-                $DragOrientation: 3,
+-
+-                $SlideshowOptions: {
+-                    $Class: $JssorSlideshowRunner$,
+-                    $Transitions: _SlideshowTransitions,
+-                    $TransitionsOrder: 1,
+-                    $ShowLink: true
+-                },
+-
+-                $BulletNavigatorOptions: {
+-                    $Class: $JssorBulletNavigator$,
+-                    $ChanceToShow: 2,
+-                    $AutoCenter: 1,
+-                    $Steps: 1,
+-                    $Lanes: 1,
+-                    $SpacingX: 10,
+-                    $SpacingY: 10,
+-                    $Orientation: 1
+-                },
+-
+-                $ArrowNavigatorOptions: {
+-                    $Class: $JssorArrowNavigator$,
+-                    $ChanceToShow: 2,
+-                    $Steps: 1
+-                }
+-            };
+-            var jssor_slider1 = new $JssorSlider$("slideshow_container", options);
+-			
+-            ScaleSlider();
+-
+-            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+-                $(window).bind('resize', ScaleSlider);
++    attach: function (context) {
++      once('zircon-slideshow', '#slideshow_container', context).forEach(function (element) {
++        var container = $(element);
++        if (!container.children('ul.slides').length) {
++          var slides = $('<ul class="slides"></ul>');
++          container.children('[u="slides"]').children().each(function () {
++            var row = $(this);
++            var image = row.find('.views-field-field-slideshow img, .views-field-field-image img').first();
++            if (!image.length) {
++              return;
+             }
+-			
++            var imageLink = image.closest('a');
++            var slide = $('<li></li>').append((imageLink.length ? imageLink : image).clone());
++            var title = row.find('.views-field-title a').first();
++            if (title.length) {
++              slide.append($('<p class="flex-caption"></p>').append(title.clone()));
++            }
++            slides.append(slide);
++          });
++          if (!slides.children().length) {
++            return;
++          }
++          container.empty().append(slides);
+         }
+-		
+-        function ScaleSlider() {
+-            var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+-            if (parentWidth)
+-                jssor_slider1.$SetScaleWidth(Math.min(parentWidth, 1170));
+-            else
+-                window.setTimeout(ScaleSlider, 30);
+-        }
+-		
+-
++        container.flexslider({
++          animation: 'slide',
++          pauseOnHover: true,
++          pausePlay: true,
++          pauseText: Drupal.t('Pause'),
++          playText: Drupal.t('Play'),
++          slideshow: !(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)
++        });
+       });
+     }
+-  }
+-
+-
+-})(jQuery, Drupal);
+-
+-*/
+-
+-(jQuery)(function () {
+-	
+-	fix_slider_html();
+-	(jQuery)('#slideshow_container').flexslider({
+-		animation: "slide",
+-	});
+-	onDrag();
+-	
+-	function fix_slider_html() {
+-		var parent = (jQuery)('#slideshow_container');
+-		var sliderContainer = (jQuery)(parent.children()[1]);
+-		var slider = (jQuery)('<ul class="slides"></ul>');
+-		sliderContainer.children().each(function (i, e) {
+-			var self = (jQuery)(this);
+-			var image = self.find('.views-field-field-slideshow img').parent().parent();
+-			var title = self.find('.views-field-title a').parent();
+-			
+-			var newElement = '<li>' + image.html() + '<p class="flex-caption">' + title.html() + '</p></li>';
+-			
+-			(jQuery)(slider).append(newElement);
+-		});
+-		parent.empty();
+-		parent.append(slider);
+-	}
+-	
+-	function onDrag() {
+-		var isDragging = false;
+-		var img = (jQuery)('#slideshow_container .slides img');
+-		var deltaX, deltaY;
+-		
+-		img.mousedown(function(event) {
+-			isDragging = false;
+-			deltaX = event.offsetX;
+-			//deltaY = event.offsetY;
+-		})
+-		.mousemove(function(event) {
+-			isDragging = true;
+-		})
+-		.mouseup(function(event) {
+-			var wasDragging = isDragging;
+-			
+-			isDragging = false;
+-			deltaX -= event.offsetX;
+-			//deltaY -= event.offsetY;
+-			
+-			if (Math.abs(deltaX) > 20/* || Math.abs(deltaY) > 20*/) {
+-				if (deltaX < 0) {
+-					movePrev();
+-				} else {
+-					moveNext();
+-				}
+-				/*
+-				if (Math.abs(deltaX) > Math.abs(deltaY)) {
+-					if (deltaX < 0) {
+-						movePrev();
+-					} else {
+-						moveNext();
+-					}
+-				} else {
+-					if (deltaY < 0) {
+-						moveTop();
+-					} else {
+-						moveDown();
+-					}
+-				}
+-				*/				
+-			}
+-		});
+-	}
+-	
+-	function moveNext() {
+-		(jQuery)('#slideshow_container').flexslider({
+-			direction: "horizontal"
+-		});
+-		(jQuery)('#slideshow_container').flexslider("next");
+-	}
+-	
+-	function movePrev() {
+-		(jQuery)('#slideshow_container').flexslider({
+-			direction: "horizontal"
+-		});
+-		(jQuery)('#slideshow_container').flexslider("prev");
+-	}
+-	
+-	function moveTop() {
+-		(jQuery)('#slideshow_container').flexslider({
+-			direction: "vertical"
+-		});
+-		(jQuery)('#slideshow_container').flexslider("next");
+-	}
+-	
+-	function moveDown() {
+-		(jQuery)('#slideshow_container').flexslider({
+-			direction: "vertical"
+-		});
+-		(jQuery)('#slideshow_container').flexslider("prev");
+-	}
+-	
+-	/*
+-		<ul class="slides">
+-            <li>
+-  	    	    <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+-              <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+-  	    		</li>
+-  	    		<li>
+-  	    	    <img src="images/kitchen_adventurer_lemon.jpg" />
+-              <p class="flex-caption">Adventurer Lemon</p>
+-  	    		</li>
+-  	    		<li>
+-  	    	    <img src="images/kitchen_adventurer_donut.jpg" />
+-              <p class="flex-caption">Adventurer Donut</p>
+-  	    		</li>
+-  	    		<li>
+-  	    	    <img src="images/kitchen_adventurer_caramel.jpg" />
+-              <p class="flex-caption">Adventurer Caramel</p>
+-  	    		</li>
+-          </ul>
+-		*/
+-});+  };
++})(jQuery, Drupal, once);
+--- a/themes/custom/zircon/js/zircon.js
++++ b/themes/custom/zircon/js/zircon.js
+@@ -1,39 +1,21 @@
+-(function ($, Drupal) {
++(function ($, Drupal, once) {
++  "use strict";
+ 
+-  "use strict";
+-  
+   Drupal.behaviors.zircon = {
+-    attach: function (context, settings) {
+-      $('.btn-btt').smoothScroll({speed: 1000});
+-      if($("#search-block-form [name='keys']").val() === "") {
+-        $("#search-block-form input[name='keys']").val(Drupal.t("Keywords"));
+-      }
+-      $("#search-block-form input[name='keys']").focus(function() {
+-        if($(this).val() === Drupal.t("Keywords")) {
+-          $(this).val("");
+-        }
+-      }).blur(function() {
+-        if($(this).val() === "") {
+-          $(this).val(Drupal.t("Keywords"));
+-        }
++    attach: function (context) {
++      $(once('zircon-back-to-top', '.btn-btt', context)).each(function () {
++        $(this).smoothScroll({speed: 1000});
+       });
+-      $(window).scroll(function() {
+-        if($(window).scrollTop() > 200) {
+-            $('.btn-btt').show();
+-          }
+-          else {
+-            $('.btn-btt').hide();
+-          }
+-     }).resize(function(){
+-        if($(window).scrollTop() > 200) {
+-            $('.btn-btt').show();
+-          }
+-          else {
+-            $('.btn-btt').hide();
+-          }
+-      });      
++      $(once('zircon-search', '#search-block-form input[name="keys"]', context))
++        .attr('placeholder', Drupal.t('Keywords'));
++
++      once('zircon-scroll', 'html', context).forEach(function () {
++        var update = function () {
++          $('.btn-btt').toggle($(window).scrollTop() > 200);
++        };
++        $(window).on('scroll.zircon resize.zircon', update);
++        update();
++      });
+     }
+   };
+-})(jQuery, Drupal);
+-
+-
++})(jQuery, Drupal, once);
+--- a/themes/custom/zircon/templates/html.html.twig
++++ b/themes/custom/zircon/templates/html.html.twig
+@@ -1,14 +1,10 @@
+ <!DOCTYPE html>
+ <html{{ html_attributes }}>
+   <head>
+-    <head-placeholder token="{{ placeholder_token|raw }}">
++    <head-placeholder token="{{ placeholder_token }}">
+     <title>{{ head_title|safe_join(' | ') }}</title>
+-    <css-placeholder token="{{ placeholder_token|raw }}">
+-    <js-placeholder token="{{ placeholder_token|raw }}">
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+-    <meta name="HandheldFriendly" content="true" />
+-    <meta name="apple-touch-fullscreen" content="YES" />
+-  </head>
++    <css-placeholder token="{{ placeholder_token }}">
++    <js-placeholder token="{{ placeholder_token }}">
+ 
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NL740YDZ3X"></script>
+@@ -19,6 +15,7 @@
+ 
+     gtag('config', 'G-NL740YDZ3X');
+   </script>
++  </head>
+ 
+   <body{{ attributes }}>
+     <a href="#main-content" class="visually-hidden focusable">
+@@ -27,7 +24,7 @@
+     {{ page_top }}
+     {{ page }}
+     {{ page_bottom }}
+-    <js-bottom-placeholder token="{{ placeholder_token|raw }}">
++    <js-bottom-placeholder token="{{ placeholder_token }}">
+     <script data-account="nKnP5Hm2P4" src="https://cdn.userway.org/widget.js"></script>
+   </body>
+ </html>
+--- a/themes/custom/zircon/templates/page.html.twig
++++ b/themes/custom/zircon/templates/page.html.twig
+@@ -1,10 +1,10 @@
+ <div class="page">
+ <a name="Top" id="Top"></a>
+-<header id="header" class="header" role="header">
++<header id="header" class="header" role="banner">
+   <div class="container">
+     {% if logo %}
+       <a id="logo" href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">
+-        <img src="logo.png" alt="{{ 'Home'|t }}"/>
++        <img src="{{ logo }}" alt="{{ 'Home'|t }}"/>
+       </a>
+     {% endif %}
+ 
+@@ -27,8 +27,8 @@
+         {% endif %}
+       </div>
+    {% endif %}
+-   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu-inner">
+-      <span class="sr-only">Toggle navigation</span>
++   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu-inner" aria-controls="main-menu-inner" aria-expanded="false" aria-label="{{ 'Toggle navigation'|t }}">
++      <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+@@ -91,19 +91,17 @@
+   {% endif %}    
+ 
+   <section id="main" class="main" role="main">
+-    <a id="main-content"></a>
++    <a id="main-content" tabindex="-1"></a>
+     <div class="container">
+       <div class="row">
+         
+         {% if page.sidebar_first %}
+-          <!--<aside class="sidebar-first sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12" role="complementary">-->
+-          <aside class="sidebar-first sidebar col-lg-4 col-md-4 col-sm-12 col-xs-12" role="complementary">
++          <aside class="sidebar-first sidebar col-lg-{{ page.sidebar_width }} col-md-{{ page.sidebar_width }} col-sm-12 col-xs-12" role="complementary">
+             {{ page.sidebar_first }}
+           </aside>
+         {% endif %}
+ 		
+-        <!--<div class="content  col-lg-{{ page.main_content_width }} col-md-{{ page.main_content_width }} col-sm-12 col-xs-12">-->
+-        <div class="content  col-lg-8 col-md-8 col-sm-12 col-xs-12">
++        <div class="content col-lg-{{ page.main_content_width }} col-md-{{ page.main_content_width }} col-sm-12 col-xs-12">
+           {{ page.highlighted }}
+ 
+           {{ title_prefix }}
+@@ -124,8 +122,7 @@
+         </div>
+ 
+         {% if page.sidebar_second %}
+-          <!--<aside class="sidebar-second sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12" role="complementary">-->
+-          <aside class="sidebar-second sidebar col-lg-4 col-md-4 col-sm-12 col-xs-12" role="complementary">
++          <aside class="sidebar-second sidebar col-lg-{{ page.sidebar_width }} col-md-{{ page.sidebar_width }} col-sm-12 col-xs-12" role="complementary">
+             {{ page.sidebar_second }}
+           </aside>
+         {% endif %}
+@@ -173,7 +170,7 @@
+       </div>
+     </section>
+   {% endif %}
+-  <a href="#Top" class="btn-btt" title="Back to Top" style="display: block;"></a>          
++  <a href="#Top" class="btn-btt" title="{{ 'Back to top'|t }}" aria-label="{{ 'Back to top'|t }}"></a>
+ 
+   {% if page.footer %}
+     <footer id="footer" class="footer" role="contentinfo">
+--- a/themes/custom/zircon/templates/views/views-view-grid.html.twig
++++ b/themes/custom/zircon/templates/views/views-view-grid.html.twig
+@@ -41,6 +41,8 @@
+       options.alignment == 'horizontal' ? 'clearfix',
+     ]
+   %}
++{% else %}
++  {% set row_classes = [] %}
+ {% endif %}
+ {% if options.col_class_default %}
+   {%
+@@ -49,6 +51,8 @@
+       options.alignment == 'vertical' ? 'clearfix',
+     ]
+   %}
++{% else %}
++  {% set col_classes = [] %}
+ {% endif %}
+ {% if title %}
+   <h3>{{ title }}</h3>
+--- a/themes/custom/zircon/zircon.info.yml
++++ b/themes/custom/zircon/zircon.info.yml
+@@ -1,10 +1,11 @@
+ name: Zircon
+ type: theme
+ base theme: classy
+-description: 'A flexible, recolorable theme with many regions and a responsive, mobile-first layout.'
+-package: Core
+-# version: 8.0.0-rc1
+-# core: 8.x
++description: 'Buriton customisation of Zircon, compatible with Drupal 9.5 and 10.'
++package: Custom
++core_version_requirement: '^9.5 || ^10'
++dependencies:
++  - classy:classy
+ libraries:
+   - zircon/global-styling
+ regions:
+@@ -30,10 +31,3 @@
+   footer: Footer
+ 
+ 
+-# Information added by Drupal.org packaging script on 2015-11-09
+-version: '8.x-1.0-rc1'
+-project: 'zircon'
+-datestamp: 1447086847
+-
+-core: 8.x
+-core_version_requirement: ^8 || ^9--- a/themes/custom/zircon/zircon.libraries.yml
++++ b/themes/custom/zircon/zircon.libraries.yml
+@@ -1,5 +1,5 @@
+ global-styling:
+-  version: 8.0.0-rc1
++  version: 1.1.0
+   css:
+     base:
+       includes/bootstrap/css/bootstrap.css: {}
+@@ -8,7 +8,7 @@
+       includes/fontawesome/css/font-awesome.min.css: {}
+       includes/slick/slick/slick.css: {}
+       includes/slick/css/style.css: {}
+-      includes/monokai/monokai.min/css: {}
++      includes/monokai/monokai.min.css: {}
+       includes/flexslider/flexslider.css: {}
+       css/html.css: {}
+       css/page.css: {}
+@@ -19,24 +19,16 @@
+       css/overrides.css: {}
+       css/print.css: { media: print }
+   js:
+-    # js/scripts.js: {}
+-    includes/respond/respond.min.js: {}
+-    includes/respond/html5shiv.min.js: {}
+     includes/js/jquery.smooth-scroll.js: {}
+-    includes/jssor/js/jssor.core.js: {}
+-    includes/jssor/js/jssor.utils.js: {}
+-    includes/jssor/js/jssor.slider.js: {}
+     includes/slick/slick/slick.js: {}
+     includes/bootstrap/js/bootstrap.js: {}
+     includes/flexslider/jquery.flexslider.js: {}
+-    includes/flexslider/jquery.flexslider-min.js: {}
+     js/slideshow.js: {}
+     js/carousel.js: {}
+     js/zircon.js: {}
+-    js/fix_script.js: {}
+   dependencies:
+     - core/jquery
+     - core/drupal.ajax
+     - core/drupal
+     - core/drupalSettings
+-    - core/jquery.once
++    - core/once
+--- a/themes/custom/zircon/zircon.theme
++++ b/themes/custom/zircon/zircon.theme
+@@ -1,33 +1,23 @@
+ <?php
+ 
+-use Drupal\Component\Utility\Xss;
+-use Drupal\Core\Template\Attribute;
++/**
++ * @file
++ * Preprocess functions for Buriton's custom Zircon theme.
++ */
+ 
+-function zircon_preprocess_html(&$variables) {
+-  // Add information about the number of sidebars.
++/**
++ * Implements hook_preprocess_page().
++ */
++function zircon_preprocess_page(array &$variables) {
++  $first = !empty($variables['page']['sidebar_first']);
++  $second = !empty($variables['page']['sidebar_second']);
++  $variables['page']['main_content_width'] = $first && $second ? 6 : ($first || $second ? 8 : 12);
++  $variables['page']['sidebar_width'] = $first && $second ? 3 : 4;
++  $variables['attributes']['class'][] = $first && $second ? 'layout-two-sidebars' : ($first || $second ? 'layout-one-sidebar' : 'layout-no-sidebars');
++  if ($first && !$second) {
++    $variables['attributes']['class'][] = 'layout-sidebar-first';
++  }
++  elseif ($second && !$first) {
++    $variables['attributes']['class'][] = 'layout-sidebar-second';
++  }
+ }
+-
+-function zircon_preprocess_page(&$variables) {
+-  if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+-    $variables['attributes']['class'][] = 'layout-two-sidebars';
+-    $variables['page']['main_content_width'] = 6;    
+-  }
+-  elseif (!empty($variables['page']['sidebar_first'])) {
+-    $variables['attributes']['class'][] = 'layout-one-sidebar';
+-    $variables['attributes']['class'][] = 'layout-sidebar-first';
+-    $variables['page']['main_content_width'] = 9;    
+-  }
+-  elseif (!empty($variables['page']['sidebar_second'])) {
+-    $variables['attributes']['class'][] = 'layout-one-sidebar';
+-    $variables['attributes']['class'][] = 'layout-sidebar-second';
+-    $variables['page']['main_content_width'] = 9;    
+-  }
+-  else {
+-    $variables['attributes']['class'][] = 'layout-no-sidebars';
+-    $variables['page']['main_content_width'] = 12;    
+-  }
+-  
+-  //$variables['logo'] = str_replace('.svg', '.png', $variables['logo']);
+-  //print_r($variables);
+-  //exit;
+-}

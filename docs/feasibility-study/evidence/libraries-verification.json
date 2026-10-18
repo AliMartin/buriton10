@@ -1,0 +1,99 @@
+{
+    "packages": {
+        "briancherne/jquery.hover-intent": {
+            "version": "1.10.2",
+            "directory": "jquery.hover-intent"
+        },
+        "choices/choices": {
+            "version": "11.0.2",
+            "directory": "choices"
+        },
+        "codemirror/codemirror": {
+            "version": "5.65.12",
+            "directory": "codemirror"
+        },
+        "davatron5000/fitvids": {
+            "version": "1.1.0",
+            "directory": "fitvids"
+        },
+        "douglascrockford/json2": {
+            "version": "2023.05.10",
+            "directory": "json2"
+        },
+        "drupal-ckeditor-libraries-group/fakeobjects": {
+            "version": "4.22.1",
+            "directory": "fakeobjects"
+        },
+        "drupal-ckeditor-libraries-group/iframe": {
+            "version": "4.22.1",
+            "directory": "iframe"
+        },
+        "jquery/chosen": {
+            "version": "1.8.7",
+            "directory": "jquery.chosen"
+        },
+        "jquery/hotkeys": {
+            "version": "0.2.0",
+            "directory": "jquery.hotkeys"
+        },
+        "jquery/image-picker": {
+            "version": "0.3.1",
+            "directory": "jquery.image-picker"
+        },
+        "jquery/inputmask": {
+            "version": "5.0.9",
+            "directory": "jquery.inputmask"
+        },
+        "jquery/intl-tel-input": {
+            "version": "17.0.19",
+            "directory": "jquery.intl-tel-input"
+        },
+        "jquery/rateit": {
+            "version": "1.1.5",
+            "directory": "jquery.rateit"
+        },
+        "jquery/select2": {
+            "version": "4.0.13",
+            "directory": "jquery.select2"
+        },
+        "jquery/textcounter": {
+            "version": "0.9.1",
+            "directory": "jquery.textcounter"
+        },
+        "jquery/timepicker": {
+            "version": "1.14.0",
+            "directory": "jquery.timepicker"
+        },
+        "malsup/jquery.cycle": {
+            "version": "3.0.3",
+            "directory": "jquery.cycle"
+        },
+        "popperjs/popperjs": {
+            "version": "2.11.6",
+            "directory": "popperjs"
+        },
+        "progress-tracker/progress-tracker": {
+            "version": "2.0.7",
+            "directory": "progress-tracker"
+        },
+        "signature_pad/signature_pad": {
+            "version": "2.3.0",
+            "directory": "signature_pad"
+        },
+        "svg-pan-zoom/svg-pan-zoom": {
+            "version": "3.6.1",
+            "directory": "svg-pan-zoom"
+        },
+        "tabby/tabby": {
+            "version": "12.0.3",
+            "directory": "tabby"
+        },
+        "tippyjs/tippyjs": {
+            "version": "6.3.7",
+            "directory": "tippyjs"
+        }
+    },
+    "checked_asset_files": 40,
+    "missing": [],
+    "unmanaged_directories": []
+}

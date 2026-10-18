@@ -1,0 +1,25 @@
+uuid: efd8e659-1271-41c1-a159-2306e7571b0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.secondary-links
+  module:
+    - system
+  theme:
+    - zircon
+id: zircon_menu_1
+theme: zircon
+region: main_menu
+weight: -10
+provider: null
+plugin: 'system_menu_block:secondary-links'
+settings:
+  id: 'system_menu_block:secondary-links'
+  label: ''
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

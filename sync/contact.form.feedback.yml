@@ -1,0 +1,15 @@
+uuid: 8cf597b7-038d-4464-b5ee-b66613296fff
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Website feedback'
+recipients:
+  - doug.pam@btinternet.com
+  - info@alimartin.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''
